@@ -3,7 +3,8 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import { BrowserRouter, Route, Routes, NavLink } from 'react-router-dom';
+import { BrowserRouter, Route, Routes, useNavigate } from 'react-router-dom';
+import Test from "./Test";
 
 function Header() {
   return(
@@ -12,20 +13,22 @@ function Header() {
 }
 
 function Body() {
+  const navigate = useNavigate();
+  const navigateToTest = () => {
+    navigate("/Test");
+  }
   return(
     <>
     <h2>This is the body where the button starting our test lies.</h2>
-    <NavLink to="/test">Start test</NavLink>
-
-    <Routes>
-      <Route path="/test" element={<Test />} />
-    </Routes>
+   <button onClick={navigateToTest}>
+    Start test
+   </button>
     </>
 
   )
 }
 
-function Footer() {
+export default function Footer() {
   return(
     <h3>This is the footer.</h3>
   )
@@ -41,14 +44,14 @@ function Home() {
   );
 }
 
-function Test() {
+/*function Test() {
   return (
     <div>
       <h1>This is the test page</h1>
       <Footer></Footer>
     </div>
   );
-}
+}*/
 
 /*function Result() {
   return (
@@ -61,11 +64,11 @@ function App() {
     <div>
       <Routes>
         <Route path="/*" element={<Home />}/>
+        <Route path="/Test" element={<Test />}/>
       </Routes>
     </div>
   )
 }
-
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(<BrowserRouter><App /></BrowserRouter>);
