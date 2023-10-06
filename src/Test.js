@@ -53,7 +53,11 @@ export default function Test() {
     const [id, setId] = useState(1);
 
     function NextPage() {
-        const Next = () => {setId(Number(id)+1)};
+        const Next = (event) => {
+            event.preventDefault();
+            setId(Number(id)+1);
+            
+        };
         console.log('props', id)
         let move = null;
         if (id < 5) {

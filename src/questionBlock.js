@@ -7,17 +7,17 @@ export default function QuestionBlock(props){
     return(
         <div>
             <form>
-                <fieldset>
+            <fieldset>
                 <legend>{props.name}</legend>
-                <input type="radio" name="choice" id="strongly disagree"></input>
+                <input type="radio" name="choice" id="strongly disagree" value="-2"></input>
                 <label for="strongly disagree">절대부정</label>
-                <input type="radio" name="choice" id="disagree"></input>
+                <input type="radio" name="choice" id="disagree" value="-1"></input>
                 <label for="disagree">부정</label>
-                <input type="radio" name="choice" id="neutral"></input>
+                <input type="radio" name="choice" id="neutral" value="0"></input>
                 <label for="neutral">중립</label>
-                <input type="radio" name="choice" id="agree"></input>
+                <input type="radio" name="choice" id="agree" value="1"></input>
                 <label for="agree">긍정</label>
-                <input type="radio" name="choice" id="strongly agree"></input>
+                <input type="radio" name="choice" id="strongly agree" value="2"></input>
                 <label for="strongly agree">절대긍정</label>
             </fieldset>
             </form>
