@@ -54,7 +54,7 @@ export default function TestPage (props) {
         if (id < 5) {
             move = <button onClick={Next}>Move to the Next Page</button>
         } else if (id === 5) {
-            move = move = <button onClick={Next}>Get Your Result</button>
+            move = move = <input value='Get Your Result' onClick={Next}></input>
         } else if (id === 6) {
             move = null;
         }
