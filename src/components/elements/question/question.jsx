@@ -93,6 +93,31 @@ const FCQuestion = [
         statement: 0,
         question:"상대와 만나는 시간을 일부러 다양하게 한다"
     },
+    {
+        id:6,
+        statement: 0,
+        question:"공1"
+    },
+    {
+        id:7,
+        statement: 0,
+        question:"공2"
+    },
+    {
+        id:8,
+        statement: 0,
+        question:"공3"
+    },
+    {
+        id:9,
+        statement: 0,
+        question:"공4"
+    },
+    {
+        id:10,
+        statement: 0,
+        question:"공5"
+    },
     
 ]
 
@@ -263,6 +288,6 @@ const PMQuestion = [
     
 ]
 
-export default function Question() {
-    return DPQuestion,FCQuestion,CNQuestion,TFQuestion,PMQuestion;
+export {
+    DPQuestion, FCQuestion, CNQuestion, TFQuestion, PMQuestion
 };
