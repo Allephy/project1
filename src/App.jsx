@@ -6,7 +6,8 @@ import TestPage from "@routes/test-page";
 import TypeView from "@routes/type-view";
 import LoadingScreen from "@components/loading-screen";
 import Layout from "@components/layout";
-import GlobalStyles from "@components/global-style";
+import QuestionBlock from '@components/elements/question/questionBlock';
+
 
 import Charisma from "@components/elements/type/charisma";
 import Charmer from "@components/elements/type/charmer";
@@ -34,7 +35,6 @@ function App() {
 
   return (
     <>
-      <GlobalStyles />
       {isLoading ? <LoadingScreen /> : (
         <BrowserRouter>
           <div className='App'>
@@ -48,6 +48,7 @@ function App() {
               <button>
                 <Link to="/typeview">Type</Link>
               </button>
+              
             </div>
           </div>
 
@@ -55,18 +56,18 @@ function App() {
             <Route path="/" element={<Layout />} />
             <Route index element={<Home />} />
               <Route path="testpage" element={<TestPage />} />
-              <Route path="typeview" element={<TypeView />} >
-                  <Route path='charisma' element={<Charisma />} />
-                  <Route path='charmer' element={<Charmer />} />
-                  <Route path='coquet' element={<Coquet/>} />
-                  <Route path='danay' element={<Dandy />} />
-                  <Route path='ideallover' element={<Ideallover />} />
-                  <Route path='lake' element={<Lake />} />
-                  <Route path='natural' element={<Natural />} />
-                  <Route path='siren' element={<Siren/>} />
-                  <Route path='star' element={<Star/>} />
-              <Route/>
-            </Route>
+
+              <Route path="typeview" element={<TypeView />} />
+                <Route path='/charisma' element={<Charisma />} />
+                <Route path='/charmer' element={<Charmer />} />
+                <Route path='/coquet' element={<Coquet/>} />
+                <Route path='/dandy' element={<Dandy />} />
+                <Route path='/ideallover' element={<Ideallover />} />
+                <Route path='/lake' element={<Lake />} />
+                <Route path='/natural' element={<Natural />} />
+                <Route path='/siren' element={<Siren/>} />
+                <Route path='/star' element={<Star/>} />
+
           </Routes>
         </BrowserRouter>
       )}
