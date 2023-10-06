@@ -2,11 +2,11 @@ import React, { useState } from 'react';
 //import ReactDOM from 'react-dom/client';
 //import { BrowserRouter, Route, Routes} from 'react-router-dom';
 
-import Test1 from '../components/elements/question/Test1';
-import Test2 from '../components/elements/question/Test2';
-import Test3 from '../components/elements/question/Test3';
-import Test4 from '../components/elements/question/Test4';
-import Test5 from '../components/elements/question/Test5';
+import Test1 from '@components/elements/test/Test1';
+import Test2 from '@components/elements/test/Test2';
+import Test3 from '@components/elements/test/Test3';
+import Test4 from '@components/elements/test/Test4';
+import Test5 from '@components/elements/test/Test5';
 
 
 
