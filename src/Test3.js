@@ -1,5 +1,5 @@
 import React from 'react';
-import QuestionBlock from './QuestionBlock'
+import QuestionBlock from './questionBlock'
 
 export default function Test3() {
     return(
