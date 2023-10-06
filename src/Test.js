@@ -3,11 +3,11 @@ import React, { useState } from 'react';
 //import { BrowserRouter, Route, Routes} from 'react-router-dom';
 import Footer from './index';
 import Test1 from './Test1';
-import Test2 from './Test1';
-import Test3 from './Test1';
-import Test4 from './Test1';
-import Test5 from './Test1';
-
+import Test2 from './Test2';
+import Test3 from './Test3';
+import Test4 from './Test4';
+import Test5 from './Test5';
+import Result from './Result';
 function Header2() {
     return(
         <h1>This is a new header for test pages, which will remain until the end of the test.</h1>
@@ -23,15 +23,21 @@ function TestPage(props) {
 
     if (Number(props.id) === 1) {
         content = <Test1></Test1>
-        console.log('idin', props.id)
+        console.log('test1')
     } else if (Number(props.id) === 2) {
         content = <Test2></Test2>
+        console.log('test2')
     } else if (Number(props.id) === 3) {
         content = <Test3></Test3>
+        console.log('test3')
     } else if (Number(props.id) === 4) {
         content = <Test4></Test4>
+        console.log('test4')
     } else if (Number(props.id) === 5) {
         content = <Test5></Test5>
+        console.log('test5')
+    } else if (Number(props.id) === 6){
+        content = <Result></Result>
     }
 
     return(
@@ -46,11 +52,24 @@ function TestPage(props) {
 export default function Test() {
     const [id, setId] = useState(1);
 
-    function NextPage(props) {
-        const Next = () => {setId(Number(props.id)+1)};
-        console.log('props', props.id)
+    function NextPage() {
+        const Next = () => {setId(Number(id)+1)};
+        console.log('props', id)
+        let move = null;
+        if (id < 5) {
+            move = <button onClick={Next}>Move to the Next Page</button>
+        } else if (id === 5) {
+            move = move = <button onClick={Next}>Get Your Result</button>
+        } else if (id === 6) {
+            move = null;
+        }
+
+
+
         return(
-            <button onClick={Next}>Next Page</button>
+            <div>
+                {move}
+            </div>
         );
     }
 
