@@ -1,10 +1,10 @@
 import React from 'react';
-
+import QuestionBlock from '@components/elements/question/questionBlock'
 
 
 export default function Test2() {
     return(
-        <form>
+        <div>
             <h1>This is test 2</h1>
             <div>
             <QuestionBlock name="question 1">1</QuestionBlock>
@@ -18,7 +18,7 @@ export default function Test2() {
             <QuestionBlock name="question 9">9</QuestionBlock>
             <QuestionBlock name="question 10">10</QuestionBlock>
             </div>
-        </form>
+        </div>
         
         
     )

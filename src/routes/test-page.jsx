@@ -7,6 +7,7 @@ import Test2 from '../components/elements/question/Test2';
 import Test3 from '../components/elements/question/Test3';
 import Test4 from '../components/elements/question/Test4';
 import Test5 from '../components/elements/question/Test5';
+import Result from '../routes/result';
 
 function Header2() {
     return(
@@ -66,7 +67,7 @@ function TestPage (props) {
         if (id < 5) {
             move = <button onClick={Next}>Move to the Next Page</button>
         } else if (id === 5) {
-            move = <input value='Get Your Result' onClick={Next}></input>
+            move = <input type='submit' value='Get Your Result' onClick={Next}></input>
         } else if (id === 6) {
             move = null;
         }
