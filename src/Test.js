@@ -13,13 +13,17 @@ function Header2() {
         <h1>This is a new header for test pages, which will remain until the end of the test.</h1>
     )
 }
+//Otherwise you can reuse the header on the main page.
 
 function TestPage(props) {
+
+    console.log('props', props.id)
 
     let content = null;
 
     if (Number(props.id) === 1) {
         content = <Test1></Test1>
+        console.log('idin', props.id)
     } else if (Number(props.id) === 2) {
         content = <Test2></Test2>
     } else if (Number(props.id) === 3) {
@@ -30,24 +34,21 @@ function TestPage(props) {
         content = <Test5></Test5>
     }
 
-
-
-
-
-
-
     return(
-        {content}
+        <div id={props.id}>
+            {content}
+        </div>
     );
 }
 
 
 
 export default function Test() {
-    const [id, setId] = useState('1');
+    const [id, setId] = useState(1);
 
-    function NextPage() {
-        const Next = () => {setId(Number(id)+1)};
+    function NextPage(props) {
+        const Next = () => {setId(Number(props.id)+1)};
+        console.log('props', props.id)
         return(
             <button onClick={Next}>Next Page</button>
         );
@@ -61,7 +62,7 @@ export default function Test() {
         <h1>This is the test page.</h1>
         <Header2></Header2>
         <TestPage id={id}></TestPage>
-        <NextPage></NextPage>
+        <NextPage id={id}></NextPage>
         <Footer></Footer>
         
     </div>
