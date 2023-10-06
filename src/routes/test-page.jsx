@@ -2,15 +2,26 @@ import React, { useState } from 'react';
 //import ReactDOM from 'react-dom/client';
 //import { BrowserRouter, Route, Routes} from 'react-router-dom';
 
-import Test1 from '@components/elements/test/Test1';
-import Test2 from '@components/elements/test/Test2';
-import Test3 from '@components/elements/test/Test3';
-import Test4 from '@components/elements/test/Test4';
-import Test5 from '@components/elements/test/Test5';
+import Test1 from '../components/elements/question/Test1';
+import Test2 from '../components/elements/question/Test2';
+import Test3 from '../components/elements/question/Test3';
+import Test4 from '../components/elements/question/Test4';
+import Test5 from '../components/elements/question/Test5';
+import Result from '../routes/result';
 
+function Header2() {
+    return(
+        <h1>This is a new header for the test-page</h1>
+    )
+}
 
+function Footer(){
+    return(
+        <h3>This is a temporary footer for the test-page</h3>
+    )
+}
 
-export default function TestPage (props) {
+function TestPage (props) {
     console.log('props', props.id)
 
     let content = null;
@@ -39,8 +50,10 @@ export default function TestPage (props) {
             {content}
         </div>
     );
+}
 
-    function Test() {
+    export default function Test() {
+
     const [id, setId] = useState(1);
     
         function NextPage() {
@@ -54,7 +67,7 @@ export default function TestPage (props) {
         if (id < 5) {
             move = <button onClick={Next}>Move to the Next Page</button>
         } else if (id === 5) {
-            move = move = <button onClick={Next}>Get Your Result</button>
+            move = <input type='submit' value='Get Your Result' onClick={Next}></input>
         } else if (id === 6) {
             move = null;
         }
@@ -83,4 +96,3 @@ export default function TestPage (props) {
         
         );
     }
-}
