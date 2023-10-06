@@ -6,7 +6,6 @@ import TestPage from "@routes/test-page";
 import TypeView from "@routes/type-view";
 import LoadingScreen from "@components/loading-screen";
 import Layout from "@components/layout";
-import QuestionBlock from '@components/elements/question/questionBlock';
 
 
 import Charisma from "@components/elements/type/charisma";

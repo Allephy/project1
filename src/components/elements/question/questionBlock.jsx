@@ -9,7 +9,7 @@ export default function QuestionBlock(props){
                 <fieldset>
                 <legend>{props.name}</legend>
 
-                <input type="radio" name="choice" id="strongly disagree"></input>
+                <input type="radio" name="choice" id="strongly disagree" ></input>
                 <label for="strongly disagree">절대부정</label>
 
                 <input type="radio" name="choice" id="disagree"></input>
