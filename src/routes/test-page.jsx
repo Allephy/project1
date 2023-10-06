@@ -8,9 +8,19 @@ import Test3 from '../components/elements/question/Test3';
 import Test4 from '../components/elements/question/Test4';
 import Test5 from '../components/elements/question/Test5';
 
+function Header2() {
+    return(
+        <h1>This is a new header for the test-page</h1>
+    )
+}
 
+function Footer(){
+    return(
+        <h3>This is a temporary footer for the test-page</h3>
+    )
+}
 
-export default function TestPage (props) {
+function TestPage (props) {
     console.log('props', props.id)
 
     let content = null;
@@ -39,8 +49,10 @@ export default function TestPage (props) {
             {content}
         </div>
     );
+}
 
-    function Test() {
+    export default function Test() {
+
     const [id, setId] = useState(1);
     
         function NextPage() {
@@ -54,7 +66,7 @@ export default function TestPage (props) {
         if (id < 5) {
             move = <button onClick={Next}>Move to the Next Page</button>
         } else if (id === 5) {
-            move = move = <input value='Get Your Result' onClick={Next}></input>
+            move = <input value='Get Your Result' onClick={Next}></input>
         } else if (id === 6) {
             move = null;
         }
@@ -83,4 +95,3 @@ export default function TestPage (props) {
         
         );
     }
-}

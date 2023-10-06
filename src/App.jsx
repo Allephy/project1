@@ -2,7 +2,7 @@ import { useState ,useEffect } from 'react';
 import { BrowserRouter, Routes, Route,Link } from 'react-router-dom';
 
 import Home from '@routes/home';
-import TestPage from "@routes/test-page";
+import Test from "@routes/test-page";
 import TypeView from "@routes/type-view";
 import LoadingScreen from "@components/loading-screen";
 import Layout from "@components/layout";
@@ -55,7 +55,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Layout />} />
             <Route index element={<Home />} />
-              <Route path="testpage" element={<TestPage />} />
+              <Route path="testpage" element={<Test />} />
 
               <Route path="typeview" element={<TypeView />} />
                 <Route path='/charisma' element={<Charisma />} />
