@@ -3,7 +3,7 @@ import QuestionBlock from './QuestionBlock'
 
 export default function Test2() {
     return(
-        <form>
+        <div>
             <h1>This is test 2</h1>
                 <div>
                     <QuestionBlock name="question 11">1</QuestionBlock>
@@ -17,6 +17,6 @@ export default function Test2() {
                     <QuestionBlock name="question 19">9</QuestionBlock>
                     <QuestionBlock name="question 20">10</QuestionBlock>
                 </div>
-    </form>
+        </div>
     )
 }
