@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Question from '@components/elements/question/question';
-import QuestionBlock from '@components/elements/question/qustionBlock';
+import QuestionBlock from '@components/elements/question/question-block';
 
 
 export default function Test3() {
@@ -21,5 +21,5 @@ export default function Test3() {
             <QuestionBlock name="question 30">30</QuestionBlock>
             </div>
         </div>
-    )
+    );
 }

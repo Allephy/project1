@@ -7,7 +7,8 @@ import Test2 from '@components/elements/test/Test2';
 import Test3 from '@components/elements/test/Test3';
 import Test4 from '@components/elements/test/Test4';
 import Test5 from '@components/elements/test/Test5';
-import Result from '@routes/result/result';
+import Result from '@routes/result-routes/result';
+
 
 function Header2() {
     return(

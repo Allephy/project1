@@ -1,5 +1,7 @@
 import React from 'react';
-import QuestionBlock from '@components/elements/question/questionBlock'
+
+import Question from '@components/elements/question/question';
+import QuestionBlock from '@components/elements/question/question-block';
 
 
 export default function Test1() {
@@ -29,5 +31,5 @@ export default function Test1() {
 
 
 
-    )
+    );
 }
