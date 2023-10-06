@@ -6,7 +6,7 @@ import QuestionBlock from '@components/elements/question/qustionBlock';
 
 export default function Test2() {
     return(
-        <form>
+        <div>
             <h1>This is test 2</h1>
             <div>
             <QuestionBlock name="question 11">11</QuestionBlock>
@@ -20,7 +20,7 @@ export default function Test2() {
             <QuestionBlock name="question 19">19</QuestionBlock>
             <QuestionBlock name="question 20">20</QuestionBlock>
             </div>
-        </form>
+        </div>
         
         
     )
