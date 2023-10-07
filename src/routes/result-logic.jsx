@@ -1,30 +1,31 @@
 import { useState } from "react";
 
-import { UserResult } from "@routes";
+import { ResultPage } from "@routes/result";
 
+//testpage->result-logic->result-page
 //Logic 구현
 //testpage에서 받은 props
 
-export default function Result(props) {
+export default function ResultLogic(props) {
     const DPScore = props.DPScore;
     const FCScore = props.FCScore;
     const CNScore = props.CNScore;
     const TFScore = props.TFScore;
     const PMScore = props.PMScore;
   
-    const [DP,setDP] = useState("");
-    const [FC,setFC] = useState("");
-    const [CN,setCN] = useState("");
-    const [TF,setTF] = useState("");
-    const [PM,setPM] = useState("");
+    let DP;
+    let FC;
+    let CN;
+    let TF;
+    let PM;
 
     //속성을 하나로 정한다.
 
-    if( DPScore < 0) { setDP("D");} else { setDP("P");}
-    if( FCScore < 0) { setFC("F");} else { setDP("C");}
-    if( CNScore < 0) { setCN("C");} else { setDP("N");}
-    if( TFScore < 0) { setTF("T");} else { setTF("F");}
-    if( PMScore < 0) { setPM("P");} else { setPM("M");}
+    if( DPScore < 0) { DP = ("D");} else { DP = ("P");}
+    if( FCScore < 0) { FC = ("F");} else { FC = ("C");}
+    if( CNScore < 0) { CN = ("C");} else { CN = ("N");}
+    if( TFScore < 0) { TF = ("T");} else { TF = ("F");}
+    if( PMScore < 0) { PM = ("P");} else { PM = ("M");}
 
     const scoreArr = [
         {
@@ -58,15 +59,16 @@ export default function Result(props) {
     
     const sortedArr = handleArr(scoreArr); 
 
-    const type = chooseTtpe(sortedArr);
+    const type = chooseType(sortedArr);
 
     return (
-        <UserResult percentage={percentage} type={type}/>     
+        <ResultPage percentage={percentage} type={type}/>     
     )
 }
+
 function handleArr(arr) {
     for (let i = 1; i < arr.length; i++) {
-        let currentVal = arr[i].score;
+        let currentVal = arr[i];
         let j;
         for (j = i - 1; j >= 0 && Math.abs(arr[j].score) > Math.abs(currentVal.score); j--) {
             arr[j + 1] = arr[j];
@@ -101,11 +103,10 @@ function resultCalculation(arr) {
     if(scoreArr.name === "P") { v = -v;}
     else { setPercentage[4](v); }
 
-    
-
+    return percentage;
 }
 
-function chooseTtpe() {
+function chooseType() {
 
 }
 //We should display the result type depending on some values in the test pages.

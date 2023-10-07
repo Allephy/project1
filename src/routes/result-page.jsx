@@ -1,13 +1,14 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { React, useState } from "react";
 
-export default function UserResult(props) {
-    const scoreArr = props.scoreArr;
-    const FirstCharacter = props.FirstCharacter;
-    const SecondCharacter = props.SecondCharacter;
-    const ThirdCharacter = props.ThirdCharacter;
+//testpage->result-logiv->result-page
+//ResultPage 구현
+export default function ResultPage(props) {
 
+        //ResultLogic에서 받은 props
+        const type = props.type;
+        const percentage = props.percentage;
 
-    const [id, setId] = useState(1);
+        const [id, setId] = useState(1);
     
         function NextPage() {
         const Next = (event) => {
@@ -39,18 +40,19 @@ export default function UserResult(props) {
     
         return(
         <div>
-            <h1>This is the test page.</h1>
-            <Header2></Header2>
+            <h1>This is TypePage</h1>
+ 
             <TestPage id={id}></TestPage>
             <NextPage id={id}></NextPage>
-            <Footer></Footer>
             
         </div>
         )
-}
-
-
-
 
     
-       
+        
+
+    
+}
+//We should display the result type depending on some values in the test pages.
+
+
