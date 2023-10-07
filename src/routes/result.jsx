@@ -75,3 +75,24 @@ function insertionSort(arr) {
     return arr;
 }
 //We should display the result type depending on some values in the test pages.
+
+
+/* If you revise the code above in reference with this below, the program will work.
+import React from 'react';
+import {DPScore} from '@components/elements/test/Test1';
+import {FCScore} from '@components/elements/test/Test2';
+import {CNScore} from '@components/elements/test/Test3';
+import {TFScore} from '@components/elements/test/Test4';
+import {PMScore} from '@components/elements/test/Test5';
+export default function Result() {
+    
+    console.log('1:', DPScore)
+    console.log('2:', FCScore)
+    console.log('3:', CNScore)
+    console.log('4:', TFScore)
+    console.log('5:', PMScore)
+    return(
+        <h1>This is result.</h1>
+    )
+}
+*/
