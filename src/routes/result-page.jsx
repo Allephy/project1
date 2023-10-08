@@ -20,7 +20,7 @@ export default function ResultPage(props) {
         if (id < 5) {
             move = <button onClick={Next}>Move to the Next Page</button>
         } else if (id === 5) {
-            move = <input type='submit' value='Get Your Result' onClick={TypeNavigation}></input>
+            move = <input type='submit' value='Get Your Result Type' onClick={TypeNavigation}></input>
         } else if (id === 6) {
             move = null;
         }
@@ -44,32 +44,33 @@ export default function ResultPage(props) {
             result_page_show = props.percentage[3].value
         } else if (Number(id) === 5) {
             result_page_show = props.percentage[4].value
-        } else if (Number(id) === 6) {
+        }
+        /* else if (Number(id) === 6) {
             result_page_show = <chooseType></chooseType>
         }
-
+        */
         
     
 
         const navigate = useNavigate();
         const TypeNavigation = () => {
-            if( type === "Charisma") {
+            if(props.type === "Charisma") {
                 navigate("/charisma");
-            } else if( type === "Charmer") {
+            } else if(props.type === "Charmer") {
                 navigate("/charmer");
-            } else if (type === "Coquet") {
+            } else if (props.type === "Coquet") {
                 navigate("/coquet");
-            } else if( type === "Dandy") {
+            } else if(props.type === "Dandy") {
                 navigate("/dandy");
-            } else if( type === "IdealLover") {
+            } else if(props.type === "IdealLover") {
                 navigate("/ideallover");
-            } else if( type === "Lake") {
+            } else if(props.type === "Lake") {
                 navigate("/lake");
-            } else if( type === "Natural") {
+            } else if(props.type === "Natural") {
                 navigate("/natural");
-            } else if( type === "Siren") {
+            } else if(props.type === "Siren") {
                 navigate("/siren");
-            } else if( type === "Star") {
+            } else if(props.type === "Star") {
                 navigate("/star");
             } 
 
