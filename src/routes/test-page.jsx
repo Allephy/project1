@@ -44,7 +44,7 @@ function TestPage (props) {
         content = <Test5></Test5>
         console.log('test5')
     } else if (Number(props.id) === 6){
-        content = <Result></Result>
+        content = <ResultLogic></ResultLogic>
     }
 
     return(

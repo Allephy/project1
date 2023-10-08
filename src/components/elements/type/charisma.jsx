@@ -1,4 +1,4 @@
-import { ResultLogic } from "@routes/result-logic;"
+//import { ResultLogic } from "@routes/result-logic;"
 
 //Charisma 	1. PCCTM, PCCFM, PCNTM,PCNFM
 const typearr = ["PCCTM","PCCFM","PCNTM","PCNFM"];

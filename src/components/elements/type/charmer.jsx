@@ -1,4 +1,4 @@
-import { ResultLogic } from "@routes/result-logic;"
+//import { ResultLogic } from "@routes/result-logic;"
 
 //Charmer 	2. PFNTM, PFNFM, PFNTP, PFNFP,
 const typearr = ["PFNTM","PFNFM","PFNTP","PFNFP"];

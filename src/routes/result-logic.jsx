@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import { ResultPage } from "@routes/result";
+import ResultPage from "@routes/result-page";
 
 import {DPScore} from '@components/elements/test/Test1';
 import {FCScore} from '@components/elements/test/Test2';
@@ -60,10 +60,11 @@ export default function ResultLogic() {
     
     const sortedArr = handleArr(scoreArr); 
 
-    const type = chooseType(sortedArr);
+    const type = ChooseType(sortedArr);
 
+    //console.log('^%', $percentage.id)
     return (
-        <ResultPage percentage={percentage} type={type}/>     
+        <ResultPage percentage={percentage} id='1' type={type}/>     
     )
 }
 
@@ -81,33 +82,41 @@ function handleArr(arr) {
 
 function resultCalculation(arr) {
     const scoreArr = arr;
-    const [percentage,setPercentage] = useState([]);
     let v;
 
+    let $percentage = [];
+
     v = scoreArr[0].score / 20 * 100;
-    if(scoreArr.name === "D") { v = -v; setPercentage[0](v); }
-    else { setPercentage[0](v);}
+    if(scoreArr[0].name === "D") { v = -v; $percentage.push({id: 1, value: v}); }
+    else { $percentage.push({id: 1, value: v});}
+
 
     v = scoreArr[1].score / 20 * 100;
-    if(scoreArr.name === "F") { v = -v;}
-    else { setPercentage[1](v); }
+    if(scoreArr[1].name === "F") { v = -v; $percentage.push({id: 2, value: v}); }
+    else { $percentage.push({id: 2, value: v}); }
 
     v = scoreArr[2].score / 20 * 100;
-    if(scoreArr.name === "C") { v = -v;}
-    else { setPercentage[2](v); }
+    if(scoreArr[2].name === "C") { v = -v; $percentage.push({id: 3, value: v}); }
+    else { $percentage.push({id: 3, value: v}); }
 
     v = scoreArr[3].score / 20 * 100;
-    if(scoreArr.name === "T") { v = -v;}
-    else { setPercentage[3](v); }
+    if(scoreArr[3].name === "T") { v = -v; $percentage.push({id: 4, value: v}); }
+    else { $percentage.push({id: 4, value: v}); }
 
     v = scoreArr[4].score / 20 * 100;
-    if(scoreArr.name === "P") { v = -v;}
-    else { setPercentage[4](v); }
+    if(scoreArr[4].name === "P") { v = -v; $percentage.push({id: 5, value: v}); }
+    else { $percentage.push({id: 5, value: v}); }
 
-    return percentage;
+    console.log('^^^^^^^^', $percentage)
+
+    return $percentage;
 }
 
-function chooseType() {
-
+function ChooseType() {
+    return(
+        <p>Your type is ...</p>
+    )
 }
+
+export { ChooseType }
 //We should display the result type depending on some values in the test pages.

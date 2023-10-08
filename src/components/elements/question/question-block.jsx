@@ -37,9 +37,6 @@ export default function QuestionBlock(props){
             </form>
             
         </div>
-        
-
-        
     );
 }
 
