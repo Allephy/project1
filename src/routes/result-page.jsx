@@ -67,10 +67,12 @@ export default function ResultPage(props) {
     
         return(
         <div>
-            <h1>This is ResultPage</h1>
+            <h1>This is TypePage</h1>
 
+            <TestPage id={id}></TestPage>
+            {result_page_show}
             <NextPage id={id}></NextPage>
-            
+
         </div>
         )
 
