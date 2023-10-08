@@ -74,7 +74,7 @@ function TestPage (props) {
             move = <button onClick={Next}>Move to the Next Page</button>
         } else if (id === 5) { 
             // id가 5가 된 후 submit을 하면, result-page로 
-            move = <input type='submit' value='Get Your Result' onClick={() => navigate("/resultpage")}></input>
+            move = <input type='submit' value='Get Your Result' onClick={() => navigate("/resultlogic")}></input>
         } else if (id === 6) {
             move = null;
         }

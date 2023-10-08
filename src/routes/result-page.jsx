@@ -35,15 +35,15 @@ export default function ResultPage(props) {
         console.log('@@', props.percentage)
 
        if (Number(id) === 1) {
-            result_page_show = '1' //props.percentage[0].value
+            result_page_show = props.percentage[0].value
         } else if (Number(id) === 2) {
-            result_page_show = '2' //props.percentage[1].value
+            result_page_show = props.percentage[1].value
         } else if (Number(id) === 3) {
-            result_page_show = '3' //props.percentage[2].value
+            result_page_show = props.percentage[2].value
         } else if (Number(id) === 4) {
-            result_page_show = '4' //props.percentage[3].value
+            result_page_show = props.percentage[3].value
         } else if (Number(id) === 5) {
-            result_page_show = '5' //props.percentage[4].value
+            result_page_show = props.percentage[4].value
         } else if (Number(id) === 6) {
             result_page_show = <chooseType></chooseType>
         }

@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route,Link } from 'react-router-dom';
 import Home from '@routes/home';
 import Test from "@routes/test-page";
 import TypeView from "@routes/type-view";
+import ResultLogic from '@routes/result-logic';
 import ResultPage from '@routes/result-page';
 
 import LoadingScreen from "@components/loading-screen";
@@ -57,6 +58,7 @@ function App() {
             <Route path="/" element={<Layout />} />
             <Route index element={<Home />} />
               <Route path="testpage" element={<Test />} />
+                <Route path='/resultlogic' element={<ResultLogic />} />
                 <Route path='/resultpage' element={<ResultPage />} />  
 
               <Route path="typeview" element={<TypeView />} />

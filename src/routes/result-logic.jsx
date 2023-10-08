@@ -79,7 +79,6 @@ export default function ResultLogic() {
         }
     }
     */
-   
     return (
         <ResultPage percentage={percentage} id="1" type={type}/>     
     )
@@ -124,7 +123,7 @@ function resultCalculation(arr) {
     if(scoreArr[4].name === "P") { v = -v; $percentage.push({id: 5, value: v}); }
     else { $percentage.push({id: 5, value: v}); }
 
-
+    
     return $percentage;
 }
 
