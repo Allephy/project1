@@ -57,8 +57,7 @@ function App() {
             <Route path="/" element={<Layout />} />
             <Route index element={<Home />} />
               <Route path="testpage" element={<Test />} />
-
-              <Route path='resultpage' element={<ResultPage />} />
+                <Route path='/resultpage' element={<ResultPage />} />  
 
               <Route path="typeview" element={<TypeView />} />
                 <Route path='/charisma' element={<Charisma />} />
