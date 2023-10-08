@@ -2,17 +2,18 @@ import { useState } from "react";
 
 import { ResultPage } from "@routes/result";
 
+import {DPScore} from '@components/elements/test/Test1';
+import {FCScore} from '@components/elements/test/Test2';
+import {CNScore} from '@components/elements/test/Test3';
+import {TFScore} from '@components/elements/test/Test4';
+import {PMScore} from '@components/elements/test/Test5';
+
 //testpage->result-logic->result-page
 //Logic 구현
 //testpage에서 받은 props
 
-export default function ResultLogic(props) {
-    const DPScore = props.DPScore;
-    const FCScore = props.FCScore;
-    const CNScore = props.CNScore;
-    const TFScore = props.TFScore;
-    const PMScore = props.PMScore;
-  
+export default function ResultLogic() {
+    
     let DP;
     let FC;
     let CN;
@@ -20,7 +21,7 @@ export default function ResultLogic(props) {
     let PM;
 
     //속성을 하나로 정한다.
-
+    
     if( DPScore < 0) { DP = ("D");} else { DP = ("P");}
     if( FCScore < 0) { FC = ("F");} else { FC = ("C");}
     if( CNScore < 0) { CN = ("C");} else { CN = ("N");}
