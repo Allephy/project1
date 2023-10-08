@@ -1,7 +1,7 @@
 import { ResultLogic } from "@routes/result-logic;"
 
-//DCCTM,DCCFM,DCCTP,DCCTM
-const type = [D,C,C,O,O];
+//Charisma 	1. PCCTM, PCCFM, PCNTM,PCNFM
+const typearr = ["PCCTM","PCCFM","PCNTM","PCNFM"];
 
 export default function Charisma() {
     return (
