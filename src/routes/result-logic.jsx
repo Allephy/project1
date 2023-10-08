@@ -1,5 +1,4 @@
 import { useState } from "react";
-
 import ResultPage from "@routes/result-page";
 
 import {DPScore} from '@components/elements/test/Test1';
@@ -8,8 +7,8 @@ import {CNScore} from '@components/elements/test/Test3';
 import {TFScore} from '@components/elements/test/Test4';
 import {PMScore} from '@components/elements/test/Test5';
 
-import { dbService } from "../firebase";
-import { addDoc, collection } from "firebase/firestore";
+//import { dbService } from "../firebase";
+//import { addDoc, collection } from "../firebase/firestore";
 
 //testpage->result-logic->result-page
 //Logic 구현
@@ -63,23 +62,23 @@ export default function ResultLogic() {
     const percentage = resultCalculation(scoreArr);
     
     //점수의 절대값 비교는 만약 필요하다면 하겠음
-    const sortedArr = handleArr(scoreArr); 
+    //const sortedArr = handleArr(scoreArr); 
 
     const type = chooseType(scoreArr);
 
+    /**
     const onSubmit = async (e) => {
-        e.preventDefault(collection(dbService,"user"),{
-            percentage,
-            type,
-        });
+        e.preventDefault();
         try {
-            await addDoc()
+            await addDoc(collection(dbService,"user"),{
+                percentage,
+                type,
+            })
         } catch(e) {
             console.log(e);
         }
     }
-
-    onSubmit;
+    */
     return (
         <ResultPage percentage={percentage} id="1" type={type}/>     
     )

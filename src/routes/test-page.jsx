@@ -6,6 +6,7 @@ import Test2 from '@components/elements/test/Test2';
 import Test3 from '@components/elements/test/Test3';
 import Test4 from '@components/elements/test/Test4';
 import Test5 from '@components/elements/test/Test5';
+import ResultLogic from './result-logic';
 
 //import ResultLogic from '@routes/result-logic';
 
@@ -44,7 +45,7 @@ function TestPage (props) {
         content = <Test5></Test5>
         console.log('test5')
     } else if (Number(props.id) === 6){
-        content = <Result></Result>
+        content = <ResultLogic></ResultLogic>
     }
 
     return(
@@ -73,7 +74,7 @@ function TestPage (props) {
             move = <button onClick={Next}>Move to the Next Page</button>
         } else if (id === 5) { 
             // id가 5가 된 후 submit을 하면, result-page로 
-            move = <input type='submit' value='Get Your Result' onClick={() => navigate("/resultpage") }></input>
+            move = <input type='submit' value='Get Your Result' onClick={navigate("/resultpage") }></input>
         } else if (id === 6) {
             move = null;
         }

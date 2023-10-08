@@ -6,8 +6,7 @@ import { useNavigate } from "react-router-dom";
 export default function ResultPage(props) {
 
         //ResultLogic에서 받은 props
-        let type = props.type;
-        let percentage = props.percentage;
+        let result_page_show = null;
 
         const [id, setId] = useState(1);
     
@@ -17,6 +16,22 @@ export default function ResultPage(props) {
         setId(Number(id)+1);
                 
         };
+        console.log('&&', props.id)
+        console.log('@@', props.percentage)
+
+       if (Number(id) === 1) {
+            result_page_show = props.percentage[0].value
+        } else if (Number(id) === 2) {
+            result_page_show = props.percentage[1].value
+        } else if (Number(id) === 3) {
+            result_page_show = props.percentage[2].value
+        } else if (Number(id) === 4) {
+            result_page_show = props.percentage[3].value
+        } else if (Number(id) === 5) {
+            result_page_show = props.percentage[4].value
+        } else if (Number(id) === 6) {
+            result_page_show = <chooseType></chooseType>
+        }
 
         const navigate = useNavigate();
         const TypeNavigation = () => {
