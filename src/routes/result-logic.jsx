@@ -66,7 +66,7 @@ export default function ResultLogic() {
 
     const type = chooseType(scoreArr);
 
-    /**
+    /*
     const onSubmit = async (e) => {
         e.preventDefault();
         try {
@@ -79,12 +79,13 @@ export default function ResultLogic() {
         }
     }
     */
+   
     return (
         <ResultPage percentage={percentage} id="1" type={type}/>     
     )
 }
 
-function handleArr(arr) {
+/*function handleArr(arr) {
     for (let i = 1; i < arr.length; i++) {
         let currentVal = arr[i];
         let j;
@@ -94,7 +95,7 @@ function handleArr(arr) {
         arr[j + 1] = currentVal;
     }
     return arr;
-}
+}*/
 
 function resultCalculation(arr) {
     const scoreArr = arr;

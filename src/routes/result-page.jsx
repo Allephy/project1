@@ -14,24 +14,42 @@ export default function ResultPage(props) {
         const Next = (event) => {
         event.preventDefault();
         setId(Number(id)+1);
-                
+        }  
+        console.log('props', id)
+        let move = null;
+        if (id < 5) {
+            move = <button onClick={Next}>Move to the Next Page</button>
+        } else if (id === 5) {
+            move = <input type='submit' value='Get Your Result' onClick={TypeNavigation}></input>
+        } else if (id === 6) {
+            move = null;
+        }
+    
+        return(
+            <div>
+                {move}
+            </div>
+        ); 
         };
         console.log('&&', props.id)
         console.log('@@', props.percentage)
 
        if (Number(id) === 1) {
-            result_page_show = props.percentage[0].value
+            result_page_show = '1' //props.percentage[0].value
         } else if (Number(id) === 2) {
-            result_page_show = props.percentage[1].value
+            result_page_show = '2' //props.percentage[1].value
         } else if (Number(id) === 3) {
-            result_page_show = props.percentage[2].value
+            result_page_show = '3' //props.percentage[2].value
         } else if (Number(id) === 4) {
-            result_page_show = props.percentage[3].value
+            result_page_show = '4' //props.percentage[3].value
         } else if (Number(id) === 5) {
-            result_page_show = props.percentage[4].value
+            result_page_show = '5' //props.percentage[4].value
         } else if (Number(id) === 6) {
             result_page_show = <chooseType></chooseType>
         }
+
+        
+    
 
         const navigate = useNavigate();
         const TypeNavigation = () => {
@@ -57,34 +75,12 @@ export default function ResultPage(props) {
 
             
         }
-
-        console.log('props', id)
-        let move = null;
-        if (id < 5) {
-            move = <button onClick={Next}>Move to the Next Page</button>
-        } else if (id === 5) {
-            move = <input type='submit' value='Get Your Result' onClick={TypeNavigation}></input>
-        } else if (id === 6) {
-            move = null;
-        }
-    
-    
-    
-        return(
-            <div>
-                {move}
-            </div>
-        );
-    }
-    
         console.log('id', id);
     
     
         return(
         <div>
             <h1>This is TypePage</h1>
-
-            <TestPage id={id}></TestPage>
             {result_page_show}
             <NextPage id={id}></NextPage>
 
