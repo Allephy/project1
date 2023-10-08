@@ -1,7 +1,7 @@
 
 //DFCTP,DFCFP,PFCTP,PFCFP
 
-//Siren		8. DFCTP, DFCFP, DFCTM, DFCFM *
+//Siren		8. DFCTP, DFCFP, *
 
 export default function Siren() {
     return (

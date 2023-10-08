@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import { ResultPage } from "@routes/result";
+import {ResultPage} from "@routes/result-page";
 
 import {DPScore} from '@components/elements/test/Test1';
 import {FCScore} from '@components/elements/test/Test2';
@@ -8,9 +8,13 @@ import {CNScore} from '@components/elements/test/Test3';
 import {TFScore} from '@components/elements/test/Test4';
 import {PMScore} from '@components/elements/test/Test5';
 
+import { dbService } from "../firebase";
+import { addDoc, collection } from "firebase/firestore";
+
 //testpage->result-logic->result-page
 //Logic 구현
 //testpage에서 받은 props
+//result-logic에서 firebase로 데이터를 받아올 생각이다.
 
 export default function ResultLogic() {
     
@@ -63,6 +67,19 @@ export default function ResultLogic() {
 
     const type = chooseType(scoreArr);
 
+    const onSubmit = async (e) => {
+        e.preventDefault(collection(dbService,"user"),{
+            percentage,
+            type,
+        });
+        try {
+            await addDoc()
+        } catch(e) {
+            console.log(e);
+        }
+    }
+
+    onSubmit;
     return (
         <ResultPage percentage={percentage} type={type}/>     
     )

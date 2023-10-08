@@ -1,15 +1,15 @@
 import React, { useState } from 'react';
-//import ReactDOM from 'react-dom/client';
-//import { BrowserRouter, Route, Routes} from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 import Test1 from '@components/elements/test/Test1';
 import Test2 from '@components/elements/test/Test2';
 import Test3 from '@components/elements/test/Test3';
 import Test4 from '@components/elements/test/Test4';
 import Test5 from '@components/elements/test/Test5';
-import ResultLogic from '@routes/result-logic';
 
-//testpage->result-logic->result-page
+//import ResultLogic from '@routes/result-logic';
+
+//testpage->result-logic->result-page;
 
 function Header2() {
     return(
@@ -64,12 +64,15 @@ function TestPage (props) {
         setId(Number(id)+1);
                 
         };
+
+        
         console.log('props', id)
         let move = null;
         if (id < 5) {
             move = <button onClick={Next}>Move to the Next Page</button>
-        } else if (id === 5) {
-            move = <input type='submit' value='Get Your Result' onClick={Next}></input>
+        } else if (id === 5) { 
+            // id가 5가 된 후 submit을 하면, result-page로 
+            move = <input type='submit' value='Get Your Result' onClick={() => useNavigate("/resultpage") }></input>
         } else if (id === 6) {
             move = null;
         }
@@ -94,6 +97,6 @@ function TestPage (props) {
             <NextPage id={id}></NextPage>
             <Footer></Footer>
         </div>
-        
+
         );
     }
