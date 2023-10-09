@@ -13,7 +13,7 @@ section1의 1번 statement와 section2의 1번 statement 각각의 가중치의 
 const DPQuestion = [
     {
         id:1,
-        statement: 0,
+        statement: -1,
         question:"내가 관심이 있는 상대와 둘이 약속을 잡기보다 상대가 참석하는 자리에 참석한다"
     },
     {
@@ -28,12 +28,12 @@ const DPQuestion = [
     },
     {
         id:4,
-        statement: 0,
+        statement: -1,
         question:"상대에게 관심이 있다는 사실이 알려졌을 때 주로 상대가 나에게 관심을 잃었다"
     },
     {
         id:5,
-        statement: 0,
+        statement: -1,
         question:"관심이 있는 상대를 일부러 차갑게 대한다"
     },
     {
@@ -48,12 +48,12 @@ const DPQuestion = [
     },
     {
         id:8,
-        statement: 0,
+        statement: -1,
         question:"일부러 연인에게 약간 못되게 굴 때가 있었다"
     },
     {
         id:9,
-        statement: 0,
+        statement: -1,
         question:"내가 상대를 슬프게 해도 그로 인해 나를 더 사랑하게 된다면 괜찮다"
     },
     {
@@ -70,52 +70,52 @@ const DPQuestion = [
 const FCQuestion = [
     {
         id:1,
-        statement: 0,
+        statement: -1,
         question:"평소에 연락하지 않는 시간에 불쑥 연락하곤 한다"
     },
     {
         id:2,
-        statement: 0,
+        statement: -1,
         question:"상대의 이상형처럼 바뀌기 위해 상당히 노력해본 적이 있다"
     },
     {
         id:3,
-        statement: 0,
+        statement: -1,
         question:"상대와 만날 때 꾸미는 스타일을 자주 바꾼다"
     },
     {
         id:4,
-        statement: 0,
+        statement: -1,
         question:"상대와 약속을 잡을 때 만나는 장소를 일부러 다양하게 한다"
     },
     {
         id:5,
-        statement: 0,
+        statement: -1,
         question:"상대와 만나는 시간을 일부러 다양하게 한다"
     },
     {
         id:6,
-        statement: 0,
+        statement: -1,
         question:"공1"
     },
     {
         id:7,
-        statement: 0,
+        statement: -1,
         question:"공2"
     },
     {
         id:8,
-        statement: 0,
+        statement: -1,
         question:"공3"
     },
     {
         id:9,
-        statement: 0,
+        statement: -1,
         question:"공4"
     },
     {
         id:10,
-        statement: 0,
+        statement: -1,
         question:"공5"
     },
     
@@ -136,7 +136,7 @@ const CNQuestion = [
     },
     {
         id:3,
-        statement: 0,
+        statement: -1,
         question:"상대에게 먼저 장난을 친다"
     },
     {
@@ -151,7 +151,7 @@ const CNQuestion = [
     },
     {
         id:6,
-        statement: 0,
+        statement: -1,
         question:"관심 있는 상대가 있는 자리에 갈 때 평소보다 화려하게 입는다"
     },
     {
@@ -166,7 +166,7 @@ const CNQuestion = [
     },
     {
         id:9,
-        statement: 0,
+        statement: -1,
         question:"내가 나를 보는 모습과 사람들이 나를 보는 모습은 꽤나 다르다"
     },
     {
@@ -192,7 +192,7 @@ const TFQuestion= [
     },
     {
         id:3,
-        statement: 0,
+        statement: -1,
         question:"이성친구보다 동성친구가 나와 잘 맞는다"
     },
     {
@@ -202,7 +202,7 @@ const TFQuestion= [
     },
     {
         id:5,
-        statement: 0,
+        statement: -1,
         question:"연인의 마음을 잘 알아차리지 못해 속상하게 한 적이 있다"
     },
     {
@@ -212,17 +212,17 @@ const TFQuestion= [
     },
     {
         id:7,
-        statement: 0,
+        statement: -1,
         question:"개인의 관심사보다 사회의 관심사가 먼저다"
     },
     {
         id:8,
-        statement: 0,
+        statement: -1,
         question:"이상적인 가정 환경은 정해진 역할들을 충실히 이행하였을 때 실현된다"
     },
     {
         id:9,
-        statement: 0,
+        statement: -1,
         question:"정체성의 유연함보다 정체성의 확립이 중요하다"
     },
     {
@@ -262,7 +262,7 @@ const PMQuestion = [
     },
     {
         id:6,
-        statement: 0,
+        statement: -1,
         question:"스킨십을 주도하려고 하며 적극적이다."
     },
     {
@@ -272,17 +272,17 @@ const PMQuestion = [
     },
     {
         id:8,
-        statement: 0,
+        statement: -1,
         question:"상대가 내 성격보다 외모에 반하는 것이 좋다"
     },
     {
         id:9,
-        statement: 0,
+        statement: -1,
         question:"헤어진 연인의 신체적 특징이 성격보다 기억에 더 남는다"
     },
     {
         id:10,
-        statement: 0,
+        statement: -1,
         question:"연인이 자주 바뀌었다"
     },
     
