@@ -63,7 +63,7 @@ export default function ResultPage(props) {
         } else if (Number(id) === 6) {
             result_page_show = <chooseType></chooseType>
         }*/
-        }
+        
 
         
     
@@ -109,8 +109,7 @@ export default function ResultPage(props) {
             } else {
                 navigate("/err");
             }
-
-            
+            }
         }
         console.log('id', id);
     
