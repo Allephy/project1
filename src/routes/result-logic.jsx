@@ -66,7 +66,6 @@ export default function ResultLogic() {
 
     const type = chooseType(scoreArr);
 
-    console.log('type: ', type)
     /*
     const onSubmit = async (e) => {
         e.preventDefault();
@@ -140,65 +139,61 @@ function chooseType(arr) {
     const Siren = ["DFCTP","DFCFP"];
     const Star = ["DCCTP","DCCFP","DCCTM","DCCFM"];
     
-    const typeArr = [arr[0].name,arr[1].name,arr[2].name,arr[3].name,arr[4].name]
-    
-    //const typeArr= $typeArr.prototype.join("");
+    const typeArr = [arr[0].name,arr[1].name,arr[2].name,arr[3].name,arr[4].name];
     let type;
 
-    console.log(typeArr.join(''))
-
     for(let i=0;i<Charisma.length;i++){
-        if( typeArr.join('') === Charisma[i]) {
-            type = "Charisma";
+        if( typeArr === Charisma[i]) {
+            type = Charisma;
             return type;
         }
     }
     for(let i=0;i<Charmer.length;i++){
-        if( typeArr.join('') === Charmer[i]) {
-            type = "Charmer";
+        if( typeArr === Charmer[i]) {
+            type = Charmer;
             return type;
         }
     }
     for(let i=0;i<Coquet.length;i++){
-        if( typeArr.join('') === Coquet[i]) {
-            type = "Coquet";
+        if( typeArr === Coquet[i]) {
+            type = Coquet;
             return type;
         }
     }
     for(let i=0;i<Dandy.length;i++){
-        if( typeArr.join('') === Dandy[i]) {
-            type = "Charisma";
+        if( typeArr === Dandy[i]) {
+            type = Charisma;
             return type;
         }
     }
     for(let i=0;i<IdealLover.length;i++){
-        if( typeArr.join('') === IdealLover[i]) {
-            type = "IdealLover";
+        if( typeArr === IdealLover[i]) {
+            type = IdealLover;
             return type;
         }
     }
     for(let i=0;i<Lake.length;i++){
-        if( typeArr.join('') === Lake[i]) {
-            type = "Lake";
+        if( typeArr === Lake[i]) {
+            type = Lake;
             return type;
         }
     }
     for(let i=0;i<Natural.length;i++){
-        if( typeArr.join('') === Natural[i]) {
-            type = "Natural";
+        if( typeArr === Natural[i]) {
+            type = Natural;
             return type;
         }
     }
     for(let i=0;i<Siren.length;i++){
-        if( typeArr.join('') === Siren[i]) {
-            type = "Siren";
+        if( typeArr === Siren[i]) {
+            type = Siren;
             return type;
         }
     }
 
     for(let i=0;i<Star.length;i++){
-        if( typeArr.join('') === Star[i]) {
-            type = "Star";
+        if( typeArr === Star[i]) {
+            type = Star;
             return type;
         }
     }

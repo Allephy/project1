@@ -35,7 +35,7 @@ export default function ResultPage(props) {
         if (id < 5) {
             move = <button onClick={Next }>Move to the Next Page</button>
         } else if (id === 5) {
-            move = <input type='submit' value='Get Your Result Type' onClick={TypeNavigation}></input>
+            move = <input type='submit' value='Get Your Result' onClick={TypeNavigation}></input>
         } else if (id === 6) {
             move = null;
         }
@@ -59,8 +59,12 @@ export default function ResultPage(props) {
             result_page_show = ("P: "+ percentage5 + "M: "+ (100-percentage5))
         }
         /* else if (Number(id) === 6) {
+            result_page_show = props.percentage[4].value
+        } else if (Number(id) === 6) {
             result_page_show = <chooseType></chooseType>
         }*/
+        }
+
         
     
 
@@ -68,30 +72,39 @@ export default function ResultPage(props) {
         const TypeNavigation = () => {
             if( answer.type === "Charisma") {
             if(props.type === "Charisma") {
+            if( type === "Charisma") {
                 navigate("/charisma");
             } else if( answer.type === "Charmer") {
             } else if(props.type === "Charmer") {
+            } else if( type === "Charmer") {
                 navigate("/charmer");
             } else if (answer.type === "Coquet") {
             } else if (props.type === "Coquet") {
+            } else if (type === "Coquet") {
                 navigate("/coquet");
             } else if( answer.type === "Dandy") {
             } else if(props.type === "Dandy") {
+            } else if( type === "Dandy") {
                 navigate("/dandy");
             } else if( answer.type === "IdealLover") {
             } else if(props.type === "IdealLover") {
+            } else if( type === "IdealLover") {
                 navigate("/ideallover");
             } else if( answer.type === "Lake") {
             } else if(props.type === "Lake") {
+            } else if( type === "Lake") {
                 navigate("/lake");
             } else if( answer.type === "Natural") {
             } else if(props.type === "Natural") {
+            } else if( type === "Natural") {
                 navigate("/natural");
             } else if( answer.type === "Siren") {
             } else if(props.type === "Siren") {
+            } else if( type === "Siren") {
                 navigate("/siren");
             } else if( answer.type === "Star") {
             } else if(props.type === "Star") {
+            } else if( type === "Star") {
                 navigate("/star");
             } else {
                 navigate("/err");
