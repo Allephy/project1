@@ -37,20 +37,20 @@ function App() {
   
 
   return (
-    <>
+    <div>
       {isLoading ? <LoadingScreen /> : (
         <BrowserRouter>
-          <div className='aspect-auto container mx-auto static inset-x-0 top-100 h-100'>
-              <button className='box-border h-100 w-15 border-2'>
-                <Link to="/">Home</Link>
-              </button>
-              <button className='box-border h-100 w-15 border-2'>
-                <Link to="/testpage">Test</Link>
-              </button>
-              <button className='box-border h-100 w-15 border-2'>
-                <Link to="/typeview">Type</Link>
-              </button>
-          </div>
+        <ul class="flex font-light">
+          <li class="mr-3">
+              <a class="inline-block border  border-white rounded hover:border-gray-200 text-black-500 hover:bg-gray-200 py-1 px-3" href="/">Home</a>
+          </li>
+          <li class="mr-3">
+              <a class="inline-block border border-white rounded hover:border-gray-200 text-black-500 hover:bg-gray-200 py-1 px-3" href="/testpage">Test</a>
+          </li>
+          <li class="mr-3">
+              <a class="inline-block border border-white rounded hover:border-gray-200 text-black-500 hover:bg-gray-200 py-1 px-3" href="/typeview">Type</a>
+          </li>
+        </ul>
 
           <Routes>
             <Route path="/" element={<Layout />} />
@@ -75,7 +75,7 @@ function App() {
           </Routes>
         </BrowserRouter>
       )}
-    </>
+    </div>
   );
 }
 

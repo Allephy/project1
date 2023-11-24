@@ -11,8 +11,7 @@ export default function Test3() {
     console.log(CNScore);
     return(
         <div>
-            <h1>This is test 3</h1>
-            <div>
+            <div className='font-light text-center tracking-wide'>
             <QuestionBlock name={CNQuestion[0].question} setAns={setAns} ans={ans}>21</QuestionBlock>
             <QuestionBlock name={CNQuestion[1].question} setAns={setAns} ans={ans}>22</QuestionBlock>
             <QuestionBlock name={CNQuestion[2].question} setAns={setAns} ans={ans}>23</QuestionBlock>

@@ -18,11 +18,6 @@ function Header2() {
     )
 }
 
-function Footer(){
-    return(
-        <h3>This is a temporary footer for the test-page</h3>
-    )
-}
 
 function TestPage (props) {
     console.log('props', props.id)
@@ -71,10 +66,10 @@ function TestPage (props) {
         console.log('props', id)
         let move = null;
         if (id < 5) {
-            move = <button onClick={Next}>Next Page</button>
+            move = <button onClick={Next} className= "text-center inset-x-0 box-border h-10 w-20  -my-5 ">Next Page</button>
         } else if (id === 5) { 
             // id가 5가 된 후 submit을 하면, result-page로 
-            move = <input type='submit' value='Get Your Result' onClick={() => navigate("/resultlogic")}></input>
+            move = <input type='submit' value='Get Your Result' onClick={() => navigate("/resultlogic") } className= " text-align:center text-black font-bold py-2 px-4 rounded-full"></input>
         } else if (id === 6) {
             move = null;
         }
@@ -97,9 +92,9 @@ function TestPage (props) {
         <div>
             <h1>This is the test page.</h1>
             <Header2></Header2>
-            <TestPage id={id}></TestPage>
-            <NextPage id={id}></NextPage>
-            <Footer></Footer>
+            <TestPage id={id} ></TestPage>
+            <NextPage id={id} ></NextPage>
+            
         </div>
 
         );

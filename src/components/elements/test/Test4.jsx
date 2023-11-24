@@ -11,8 +11,7 @@ export default function Test4() {
     console.log(TFScore);
     return(
         <div>
-            <h1>This is test 4</h1>
-            <div>
+            <div className='font-light text-center tracking-wide'>
             <QuestionBlock name={TFQuestion[0].question} setAns={setAns} ans={ans}>31</QuestionBlock>
             <QuestionBlock name={TFQuestion[1].question} setAns={setAns} ans={ans}>32</QuestionBlock>
             <QuestionBlock name={TFQuestion[2].question} setAns={setAns} ans={ans}>33</QuestionBlock>

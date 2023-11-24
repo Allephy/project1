@@ -15,8 +15,7 @@ export default function Test1() {
 
     return(
         <div>
-            <h1>This is test 1</h1>
-            <div>
+            <div className='font-light text-center tracking-wide' >
             <QuestionBlock name={DPQuestion[0].question} setAns={setAns} ans={ans}>1</QuestionBlock>
             <QuestionBlock name={DPQuestion[1].question} setAns={setAns} ans={ans}>2</QuestionBlock>
             <QuestionBlock name={DPQuestion[2].question} setAns={setAns} ans={ans}>3</QuestionBlock>

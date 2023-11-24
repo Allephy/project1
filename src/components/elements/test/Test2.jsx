@@ -11,8 +11,7 @@ export default function Test2() {
     console.log(FCScore);
     return(
         <div>
-            <h1>This is test 2</h1>
-            <div>
+            <div className='font-light text-center tracking-wide'>
             <QuestionBlock name={FCQuestion[0].question} setAns={setAns} ans={ans}>11</QuestionBlock>
             <QuestionBlock name={FCQuestion[1].question} setAns={setAns} ans={ans}>12</QuestionBlock>
             <QuestionBlock name={FCQuestion[2].question} setAns={setAns} ans={ans}>13</QuestionBlock>

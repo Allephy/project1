@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 export default function TypeView() {
     return (
         <div className='Typeview'>
-            <div className="grid grid-cols-3 gap-4">
+            <div className="grid grid-cols-3 gap-4 font-light">
               <button>
                 <Link to="/Charisma">Charisma</Link>
               </button>

@@ -11,8 +11,7 @@ export default function Test5() {
     console.log(PMScore)
     return(
         <div>
-            <h1>This is test 5</h1>
-            <div>
+            <div className='font-light text-center tracking-wide'>
             <QuestionBlock name={PMQuestion[0].question} setAns={setAns} ans={ans}>41</QuestionBlock>
             <QuestionBlock name={PMQuestion[1].question} setAns={setAns} ans={ans}>42</QuestionBlock>
             <QuestionBlock name={PMQuestion[2].question} setAns={setAns} ans={ans}>43</QuestionBlock>
