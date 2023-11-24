@@ -3,14 +3,16 @@ import React, { useState } from 'react';
 import {DPQuestion} from '@components/elements/question/question';
 import QuestionBlock from '@components/elements/question/question-block';
 
-let DPScore = null;
+let DPScore = 0;
 
 export default function Test1() {
-    console.log('dfdfdf', DPQuestion[0])
     const [ans, setAns] = useState(0)
-    console.log('**', ans)
+
+    
+    
     DPScore = ans
-    console.log("==", DPScore)
+    console.log(DPScore)
+
     return(
         <div>
             <h1>This is test 1</h1>

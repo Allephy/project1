@@ -3,12 +3,12 @@ import React, { useState }from 'react';
 import {FCQuestion} from '@components/elements/question/question';
 import QuestionBlock from '@components/elements/question/question-block';
 
-let FCScore = null;
+let FCScore = 0;
 
 export default function Test2() {
     const [ans, setAns] = useState(0);
-    console.log('**', ans);
     FCScore = ans;
+    console.log(FCScore);
     return(
         <div>
             <h1>This is test 2</h1>

@@ -71,7 +71,7 @@ function TestPage (props) {
         console.log('props', id)
         let move = null;
         if (id < 5) {
-            move = <button onClick={Next}>Move to the Next Page</button>
+            move = <button onClick={Next}>Next Page</button>
         } else if (id === 5) { 
             // id가 5가 된 후 submit을 하면, result-page로 
             move = <input type='submit' value='Get Your Result' onClick={() => navigate("/resultlogic")}></input>
@@ -86,7 +86,9 @@ function TestPage (props) {
                 {move}
             </div>
         );
-    }
+    } 
+
+
     
         console.log('id', id);
     

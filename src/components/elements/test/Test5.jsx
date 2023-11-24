@@ -3,12 +3,12 @@ import React, { useState } from 'react';
 import {PMQuestion} from '@components/elements/question/question';
 import QuestionBlock from '@components/elements/question/question-block';
 
-let PMScore;
+let PMScore = 0;
 
 export default function Test5() {
     const [ans, setAns] = useState(0);
-    console.log('**', ans);
     PMScore = ans;
+    console.log(PMScore)
     return(
         <div>
             <h1>This is test 5</h1>

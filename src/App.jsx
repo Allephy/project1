@@ -21,6 +21,7 @@ import Natural from "@components/elements/type/natural";
 import Siren from "@components/elements/type/siren";
 import Star from "@components/elements/type/star";
 
+import './input.css'
 
 
 function App() {
@@ -39,19 +40,16 @@ function App() {
     <>
       {isLoading ? <LoadingScreen /> : (
         <BrowserRouter>
-          <div className='App'>
-            <div className='nav-btn'>
-              <button>
+          <div className='aspect-auto container mx-auto static inset-x-0 top-100 h-100'>
+              <button className='box-border h-100 w-15 border-2'>
                 <Link to="/">Home</Link>
               </button>
-              <button>
+              <button className='box-border h-100 w-15 border-2'>
                 <Link to="/testpage">Test</Link>
               </button>
-              <button>
+              <button className='box-border h-100 w-15 border-2'>
                 <Link to="/typeview">Type</Link>
               </button>
-              
-            </div>
           </div>
 
           <Routes>
@@ -62,15 +60,15 @@ function App() {
                 <Route path='/resultpage' element={<ResultPage />} />  
 
               <Route path="typeview" element={<TypeView />} />
-                <Route path='/charisma' element={<Charisma />} />
-                <Route path='/charmer' element={<Charmer />} />
-                <Route path='/coquet' element={<Coquet/>} />
-                <Route path='/dandy' element={<Dandy />} />
-                <Route path='/ideallover' element={<Ideallover />} />
-                <Route path='/lake' element={<Lake />} />
-                <Route path='/natural' element={<Natural />} />
-                <Route path='/siren' element={<Siren/>} />
-                <Route path='/star' element={<Star/>} />
+                <Route path='/Charisma' element={<Charisma />} />
+                <Route path='/Charmer' element={<Charmer />} />
+                <Route path='/Coquet' element={<Coquet/>} />
+                <Route path='/Dandy' element={<Dandy />} />
+                <Route path='/Ideallover' element={<Ideallover />} />
+                <Route path='/Lake' element={<Lake />} />
+                <Route path='/Natural' element={<Natural />} />
+                <Route path='/Siren' element={<Siren/>} />
+                <Route path='/Star' element={<Star/>} />
 
               
 

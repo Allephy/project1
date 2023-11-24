@@ -3,30 +3,33 @@ import { Link } from 'react-router-dom';
 export default function TypeView() {
     return (
         <div className='Typeview'>
-            <div className='type-btn'>
+            <div className="grid grid-cols-3 gap-4">
               <button>
-                <Link to="/charisma">Charisma</Link>
+                <Link to="/Charisma">Charisma</Link>
               </button>
               <button>
-                <Link to="/charmer">Charmer</Link>
+                <Link to="/Charmer">Charmer</Link>
               </button>
               <button>
-                <Link to="/coquet">Coquet</Link>
+                <Link to="/Coquet">Coquet</Link>
               </button>
               <button>
-                <Link to="/dandy">Dandy</Link>
+                <Link to="/Dandy">Dandy</Link>
               </button>
               <button>
-                <Link to="/ideallover">IdealLover</Link>
+                <Link to="/Ideallover">IdealLover</Link>
               </button>
               <button>
-                <Link to="/natural">Natural</Link>
+                <Link to="/Lake">Lake</Link>
               </button>
               <button>
-                <Link to="/siren">Siren</Link>
+                <Link to="/Natural">Natural</Link>
               </button>
               <button>
-                <Link to="/star">Star</Link>
+                <Link to="/Siren">Siren</Link>
+              </button>
+              <button>
+                <Link to="/Star">Star</Link>
               </button>
             </div>
         </div>

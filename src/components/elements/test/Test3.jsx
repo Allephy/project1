@@ -3,12 +3,12 @@ import React, {useState} from 'react';
 import {CNQuestion} from '@components/elements/question/question';
 import QuestionBlock from '@components/elements/question/question-block';
 
-let CNScore;
+let CNScore = 0;
 
 export default function Test3() {
     const [ans, setAns] = useState(0);
-    console.log('**', ans);
     CNScore = ans;
+    console.log(CNScore);
     return(
         <div>
             <h1>This is test 3</h1>

@@ -1,4 +1,3 @@
-import { useState } from "react";
 import ResultPage from "@routes/result-page";
 
 import {DPScore} from '@components/elements/test/Test1';
@@ -135,7 +134,6 @@ function chooseType(arr) {
     const Dandy = ["DCNFP","DCNFM","DFNFP","DFNFM"];
     const IdealLover = ["PFCTM","PFCFM","PFCTP","PFCTP"];
     const Lake = ["PCCTP","PCCFP","PCNTP","PCNFP"];
-
     const Natural = ["DCNTP","DCNTM","DFNTP","DFNTM"];
     const Siren = ["DFCTP","DFCFP"];
     const Star = ["DCCTP","DCCFP","DCCTM","DCCFM"];

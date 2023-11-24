@@ -3,12 +3,12 @@ import React, { useState } from 'react';
 import {TFQuestion} from '@components/elements/question/question';
 import QuestionBlock from '@components/elements/question/question-block';
 
-let TFScore;
+let TFScore = 0;
 
 export default function Test4() {
     const [ans, setAns] = useState(0);
-    console.log('**', ans);
     TFScore = ans;
+    console.log(TFScore);
     return(
         <div>
             <h1>This is test 4</h1>
