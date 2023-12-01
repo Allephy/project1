@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 
 import Test1 from '@components/elements/test/Test1';
 import Test2 from '@components/elements/test/Test2';
@@ -11,6 +12,16 @@ import ResultLogic from './result-logic';
 //import ResultLogic from '@routes/result-logic';
 
 //testpage->result-logic->result-page;
+
+
+const ScrollToTop = () => {
+    const { pathname } = useLocation();
+  
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, [pathname]);
+  };
+
 
 function Header2() {
     return(
@@ -93,8 +104,7 @@ function TestPage (props) {
             <h1>This is the test page.</h1>
             <Header2></Header2>
             <TestPage id={id} ></TestPage>
-            <NextPage id={id} ></NextPage>
-            
+            <NextPage id={id} ></NextPage>   
         </div>
 
         );

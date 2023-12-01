@@ -34,6 +34,14 @@ function App() {
   useEffect(() => {
     init();
   }, []);
+
+  useEffect(() => { 
+    window.onbeforeunload = function pushRefresh() {
+      window.scrollTo(0, 0);
+    };
+  }, []);
+  
+  출처: https://orbit-orbit.tistory.com/entry/React-브라우저-새로고침Refresh시-스크롤-최상단-이동 [Orbit:티스토리]
   
 
   return (
