@@ -1,40 +1,120 @@
-import React, { useState } from 'react';
+import React, { useRef } from 'react';
 
 export default function QuestionBlock(props){
-  
+    
+
     return(
-        <div className = "aspect-ratio: auto container box-border rounded-md shadow-inner shadow-lg h-80 w-auto px-10 py-10 mx-3 my-10 outline outline-1  outline-offset-1" >
+        <div className = "aspect-ratio: auto container box-border rounded-md shadow-lg h-80 w-auto px-10 py-10 mx-3 my-10 outline outline-1  outline-offset-1" >
             <form>
                 <fieldset>
                 <legend>{props.name}</legend>
-                    <ul class="w-48 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg dark:bg-gray-700 dark:border-gray-600 dark:text-white">
-                        <div class="flex items-center ps-3">
-                            <input type="radio" name="choice" id="strongly disagree" value='+2' onClick={(event)=>{props.setAns(Number(props.ans) + Number(event.target.value))}} 
-                            className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"></input>
+                    <div className="mb-[0.125rem] block min-h-[1.5rem] pl-[1.5rem]" >
+                    <input
+                    className="relative float-left -ml-[1.5rem] mr-1 mt-1 h-5 w-5 rounded-full border-5 border-solid border-neutral-300 
+                    before:pointer-events-none before:absolute before:h-4 before:w-4 before:scale-0 before:rounded-full before:bg-transparent 
+                    before:opacity-0 before:shadow-[0px_0px_0px_13px_transparent] before:content-[''] 
+                    after:absolute after:z-[1] after:block after:h-4 after:w-4 after:rounded-full after:content-[''] 
+                    checked:border-primary checked:before:opacity-[0.16] checked:after:absolute checked:after:left-1/2 checked:after:top-1/2 
+                    checked:after:h-[0.625rem] checked:after:w-[0.625rem] checked:after:rounded-full checked:after:border-primary checked:after:bg-primary 
+                    checked:after:content-[''] checked:after:[transform:translate(-50%,-50%)] 
+                    hover:cursor-pointer hover:before:opacity-[0.04] hover:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] 
+                    focus:shadow-none focus:outline-none focus:ring-0 focus:before:scale-100 focus:before:opacity-[0.12] focus:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] focus:before:transition-[box-shadow_0.2s,transform_0.2s] checked:focus:border-primary checked:focus:before:scale-100 checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca] checked:focus:before:transition-[box-shadow_0.2s,transform_0.2s] dark:border-neutral-600 dark:checked:border-primary dark:checked:after:border-primary dark:checked:after:bg-primary dark:focus:before:shadow-[0px_0px_0px_13px_rgba(255,255,255,0.4)] dark:checked:focus:border-primary dark:checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca]"
+                    type="radio"
+                    name="name"
+                    id="strongly agree"
+                    value='+2'
+                    onClick={(event)=>{  window.scrollTo({ top: 400, behavior: "smooth" }); props.setAns(Number(props.ans) + Number(event.target.value)); } }
+                    />
+                    <label
+                    className="mt-px inline-block pl-[0.15rem] hover:cursor-pointer"
+                    htmlFor="strongly agree"
+                    >
+                    매우긍정
+                    </label>
+                    </div>
 
-                            <label htmlFor = "strongly disagree" className='"ms-2 text-sm font-medium text-gray-900 dark:text-gray-300"'> 매우긍정 </label>
+                    <div className="mb-[0.125rem] block min-h-[1.5rem] pl-[1.5rem]" >
+                    <input
+                    className="relative float-left -ml-[1.5rem] mr-1 mt-1 h-5 w-5 rounded-full border-5 border-solid border-neutral-300 
+                    before:pointer-events-none before:absolute before:h-4 before:w-4 before:scale-0 before:rounded-full before:bg-transparent 
+                    before:opacity-0 before:shadow-[0px_0px_0px_13px_transparent] before:content-[''] 
+                    after:absolute after:z-[1] after:block after:h-4 after:w-4 after:rounded-full after:content-[''] 
+                    checked:border-primary checked:before:opacity-[0.16] checked:after:absolute checked:after:left-1/2 checked:after:top-1/2 
+                    checked:after:h-[0.625rem] checked:after:w-[0.625rem] checked:after:rounded-full checked:after:border-primary checked:after:bg-primary 
+                    checked:after:content-[''] checked:after:[transform:translate(-50%,-50%)] 
+                    hover:cursor-pointer hover:before:opacity-[0.04] hover:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] 
+                    focus:shadow-none focus:outline-none focus:ring-0 focus:before:scale-100 focus:before:opacity-[0.12] focus:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] focus:before:transition-[box-shadow_0.2s,transform_0.2s] checked:focus:border-primary checked:focus:before:scale-100 checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca] checked:focus:before:transition-[box-shadow_0.2s,transform_0.2s] dark:border-neutral-600 dark:checked:border-primary dark:checked:after:border-primary dark:checked:after:bg-primary dark:focus:before:shadow-[0px_0px_0px_13px_rgba(255,255,255,0.4)] dark:checked:focus:border-primary dark:checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca]"
+                    type="radio"
+                    name="name"
+                    id="agree"
+                    value='+1'
+                    onClick={(event)=>{ window.scrollTo({ top: 400, behavior: "smooth" }); props.setAns(Number(props.ans) + Number(event.target.value));  } }
+                    />
+                    <label
+                    className="mt-px inline-block pl-[0.15rem] hover:cursor-pointer"
+                    htmlFor="agree"
+                    >
+                    긍정
+                    </label>
+                    </div>
 
-                            <input type="radio" name="choice" id="strongly disagree" value='+1' onClick={(event)=>{props.setAns(Number(props.ans) + Number(event.target.value))}} 
-                            className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"></input>
-                            
-                            <label htmlFor = "strongly disagree" className='"ms-2 text-sm font-medium text-gray-900 dark:text-gray-300"'> 긍정 </label>
+                    <div className="mb-[0.125rem] block min-h-[1.5rem] pl-[1.5rem]" >
+                    <input
+                    className="relative float-left -ml-[1.5rem] mr-1 mt-1 h-5 w-5 rounded-full border-5 border-solid border-neutral-300 
+                    before:pointer-events-none before:absolute before:h-4 before:w-4 before:scale-0 before:rounded-full before:bg-transparent 
+                    before:opacity-0 before:shadow-[0px_0px_0px_13px_transparent] before:content-[''] 
+                    after:absolute after:z-[1] after:block after:h-4 after:w-4 after:rounded-full after:content-[''] 
+                    checked:border-primary checked:before:opacity-[0.16] checked:after:absolute checked:after:left-1/2 checked:after:top-1/2 
+                    checked:after:h-[0.625rem] checked:after:w-[0.625rem] checked:after:rounded-full checked:after:border-primary checked:after:bg-primary 
+                    checked:after:content-[''] checked:after:[transform:translate(-50%,-50%)] 
+                    hover:cursor-pointer hover:before:opacity-[0.04] hover:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] 
+                    focus:shadow-none focus:outline-none focus:ring-0 focus:before:scale-100 focus:before:opacity-[0.12] focus:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] focus:before:transition-[box-shadow_0.2s,transform_0.2s] checked:focus:border-primary checked:focus:before:scale-100 checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca] checked:focus:before:transition-[box-shadow_0.2s,transform_0.2s] dark:border-neutral-600 dark:checked:border-primary dark:checked:after:border-primary dark:checked:after:bg-primary dark:focus:before:shadow-[0px_0px_0px_13px_rgba(255,255,255,0.4)] dark:checked:focus:border-primary dark:checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca]"
+                    type="radio"
+                    name="name"
+                    id="disagree"
+                    value='-1'
+                    onClick={(event)=>{ window.scrollTo({ top: 400, behavior: "smooth" }); props.setAns(Number(props.ans) + Number(event.target.value));} }
+                    />
+                    <label
+                    className="mt-px inline-block pl-[0.15rem] hover:cursor-pointer"
+                    htmlFor="disagree"
+                    >
+                    부정
+                    </label>
+                    </div>
 
-                            <input type="radio" name="choice" id="strongly disagree" value='-1' onClick={(event)=>{props.setAns(Number(props.ans) + Number(event.target.value))}} 
-                            className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"></input>
-                            
-                            <label htmlFor = "strongly disagree" className='"ms-2 text-sm font-medium text-gray-900 dark:text-gray-300"'> 부정 </label>
+                    <div className="mb-[0.125rem] block min-h-[1.5rem] pl-[1.5rem]" >
+                    <input
+                    className="relative float-left -ml-[1.5rem] mr-1 mt-1 h-5 w-5 rounded-full border-5 border-solid border-neutral-300 
+                    before:pointer-events-none before:absolute before:h-4 before:w-4 before:scale-0 before:rounded-full before:bg-transparent 
+                    before:opacity-0 before:shadow-[0px_0px_0px_13px_transparent] before:content-[''] 
+                    after:absolute after:z-[1] after:block after:h-4 after:w-4 after:rounded-full after:content-[''] 
+                    checked:border-primary checked:before:opacity-[0.16] checked:after:absolute checked:after:left-1/2 checked:after:top-1/2 
+                    checked:after:h-[0.625rem] checked:after:w-[0.625rem] checked:after:rounded-full checked:after:border-primary checked:after:bg-primary 
+                    checked:after:content-[''] checked:after:[transform:translate(-50%,-50%)] 
+                    hover:cursor-pointer hover:before:opacity-[0.04] hover:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] 
+                    focus:shadow-none focus:outline-none focus:ring-0 focus:before:scale-100 focus:before:opacity-[0.12] focus:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] focus:before:transition-[box-shadow_0.2s,transform_0.2s] checked:focus:border-primary checked:focus:before:scale-100 checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca] checked:focus:before:transition-[box-shadow_0.2s,transform_0.2s] dark:border-neutral-600 dark:checked:border-primary dark:checked:after:border-primary dark:checked:after:bg-primary dark:focus:before:shadow-[0px_0px_0px_13px_rgba(255,255,255,0.4)] dark:checked:focus:border-primary dark:checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca]"
+                    type="radio"
+                    name="name"
+                    id="strongly disagree"
+                    value='-2'
+                    onClick={(event)=>{ window.scrollTo({ top: 400, behavior: "smooth" }); props.setAns(Number(props.ans) + Number(event.target.value));} }
+                    />
+                    <label
+                    className="mt-px inline-block pl-[0.15rem] hover:cursor-pointer"
+                    htmlFor="strongly disagree"
+                    >
+                    매우부정
+                    </label>
+                    </div>
 
-                            <input type="radio" name="choice" id="strongly disagree" value='-2' onClick={(event)=>{props.setAns(Number(props.ans) + Number(event.target.value))}} 
-                            className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"></input>
-                            
-                            <label htmlFor = "strongly disagree" className='"ms-2 text-sm font-medium text-gray-900 dark:text-gray-300"'> 매우부정 </label>
 
 
 
+                    
 
-                
-                        </div>
-                    </ul>
+
+                    
             </fieldset>
             </form>
             
