@@ -145,14 +145,8 @@ function chooseType(arr) {
         }
     }
     for(let i=0;i<Coquet.length;i++){
-        if( typeArr.join('') === Coquet[i]) {
+        if( typeArr.join('') === Coquette[i]) {
             type = "Coquette";
-            return type;
-        }
-    }
-    for(let i=0;i<Dandy.length;i++){
-        if( typeArr.join('') === Dandy[i]) {
-            type = "Charisma";
             return type;
         }
     }

@@ -24,7 +24,9 @@ const ScrollToTop = () => {
 
 function Header2() {
     return(
-        <h1>This is a new header for the test-page</h1>
+        <div>
+            1.시험은 총 40문제입니다.
+        </div>
     )
 }
 
@@ -73,7 +75,7 @@ function TestPage (props) {
         console.log('props', id)
         let move = null;
         if (id < 5) {
-            move = <button onClick={Next} className= "text-center inset-x-0 box-border h-10 w-20  -my-5 ">Next Page</button>
+            move = <button onClick={Next} className= "">다음 페이지</button>
         } else if (id === 5) { 
             // id가 5가 된 후 submit을 하면, result-page로 
             move = <input type='submit' value='Get Your Result' onClick={() => navigate("/resultlogic") } className= " text-align:center text-black font-bold py-2 px-4 rounded-full"></input>
@@ -97,7 +99,6 @@ function TestPage (props) {
     
         return(
         <div>
-            <h1>This is the test page.</h1>
             <Header2></Header2>
             <TestPage id={id} ></TestPage>
             <NextPage id={id} ></NextPage>   

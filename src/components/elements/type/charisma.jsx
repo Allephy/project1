@@ -3,9 +3,24 @@
 
 export default function Charisma() {
     return (
-        <div className="font-light">
-            <h5 className="text-2xl font-medium">Charisma</h5>
+        <div className="mx-3 my-10 font-light">
+            <span className="text-2xl font-medium">Charisma</span>
             <div>
+
+            <br/>
+            <span className="text-lg ">
+            "우리의 삶이 끝날 때 중요한 것은 우리가 인생에서 무엇을 소유했는가가 아니라, 우리가 다른 사람들의 삶에 어떤 차이를 만들었는가이다."
+            </span>
+
+            <br/>
+            <span className="text-lg">
+           -마틴 루터 킹 주니어(Martin Luther King Jr.)
+            </span>
+            <br/>
+
+            
+
+
             <br/><span className="text-xl font-medium">확신과 신성함을 지닌 리더</span><br/>
             <span className="text-lg">
             이 유형은 확고한 믿음과 행동을 통해 일상의 모든 순간을 성스럽게 만듭니다. 

@@ -40,13 +40,13 @@ export default function ResultPage(props) {
         };
         
         if (Number(id) === 1) {
-            result_page_show = ("D: "+ percentage1 + "P: "+ (100-percentage1))
+            result_page_show = ("Draw: "+ percentage1 + "\n"+"Push: "+ (100-percentage1))
         } else if (Number(id) === 2) {
-            result_page_show = ("F: "+ percentage2 + " C: "+ (100-percentage2))
+            result_page_show = ("Change: "+ percentage2 + "\n"+" Keep: "+ (100-percentage2))
         } else if (Number(id) === 3) {
-            result_page_show = ("C: "+ percentage3 + "N: "+ (100-percentage3))
+            result_page_show = ("Appeal: "+ percentage3 + "\n"+"Natural: "+ (100-percentage3))
         } else if (Number(id) === 4) {
-            result_page_show = ("P: "+ percentage4 + "M: "+ (100-percentage5))
+            result_page_show = ("Flesh: "+ percentage4 + "\n"+"Spirit: "+ (100-percentage4))
         }
         /* else if (Number(id) === 6) {
             result_page_show = props.percentage[4].value
@@ -101,8 +101,11 @@ export default function ResultPage(props) {
     
         return(
         <div>
-            <h1>This is TypePage</h1>
+            <div>This is TypePage</div>
+            <div>
             {result_page_show}
+            </div>
+            
             <NextPage id={id}></NextPage>
 
         </div>
