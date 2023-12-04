@@ -1,30 +1,30 @@
 import React, { useState } from 'react';
 
-import {TFQuestion} from '@components/elements/question/question';
+import {FSQuestion} from '@components/elements/question/question';
 import QuestionBlock from '@components/elements/question/question-block';
 
-let TFScore = 0;
+let FSScore = 0;
 
-export default function Test4() {
+export default function Test5() {
     const [ans, setAns] = useState(0);
-    TFScore = ans;
-    console.log(TFScore);
+    FSScore = ans;
+    console.log(FSScore)
     return(
         <div>
             <div className='font-light text-center tracking-wide'>
-            <QuestionBlock name={TFQuestion[0].question} setAns={setAns} ans={ans}>31</QuestionBlock>
-            <QuestionBlock name={TFQuestion[1].question} setAns={setAns} ans={ans}>32</QuestionBlock>
-            <QuestionBlock name={TFQuestion[2].question} setAns={setAns} ans={ans}>33</QuestionBlock>
-            <QuestionBlock name={TFQuestion[3].question} setAns={setAns} ans={ans}>34</QuestionBlock>
-            <QuestionBlock name={TFQuestion[4].question} setAns={setAns} ans={ans}>35</QuestionBlock>
-            <QuestionBlock name={TFQuestion[5].question} setAns={setAns} ans={ans}>36</QuestionBlock>
-            <QuestionBlock name={TFQuestion[6].question} setAns={setAns} ans={ans}>37</QuestionBlock>
-            <QuestionBlock name={TFQuestion[7].question} setAns={setAns} ans={ans}>38</QuestionBlock>
-            <QuestionBlock name={TFQuestion[8].question} setAns={setAns} ans={ans}>39</QuestionBlock>
-            <QuestionBlock name={TFQuestion[9].question} setAns={setAns} ans={ans}>40</QuestionBlock>
+            <QuestionBlock name={FSQuestion[0].question} setAns={setAns} ans={ans}>41</QuestionBlock>
+            <QuestionBlock name={FSQuestion[1].question} setAns={setAns} ans={ans}>42</QuestionBlock>
+            <QuestionBlock name={FSQuestion[2].question} setAns={setAns} ans={ans}>43</QuestionBlock>
+            <QuestionBlock name={FSQuestion[3].question} setAns={setAns} ans={ans}>44</QuestionBlock>
+            <QuestionBlock name={FSQuestion[4].question} setAns={setAns} ans={ans}>45</QuestionBlock>
+            <QuestionBlock name={FSQuestion[5].question} setAns={setAns} ans={ans}>46</QuestionBlock>
+            <QuestionBlock name={FSQuestion[6].question} setAns={setAns} ans={ans}>47</QuestionBlock>
+            <QuestionBlock name={FSQuestion[7].question} setAns={setAns} ans={ans}>48</QuestionBlock>
+            <QuestionBlock name={FSQuestion[8].question} setAns={setAns} ans={ans}>49</QuestionBlock>
+            <QuestionBlock name={FSQuestion[9].question} setAns={setAns} ans={ans}>50</QuestionBlock>
             </div>
         </div>
     );
 }
 
-export { TFScore }
+export { FSScore }

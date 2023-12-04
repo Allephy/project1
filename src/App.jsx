@@ -13,8 +13,7 @@ import Layout from "@components/layout";
 
 import Charisma from "@components/elements/type/charisma";
 import Charmer from "@components/elements/type/charmer";
-import Coquet from "@components/elements/type/coquet";
-import Dandy from "@components/elements/type/dandy";
+import Coquette from "@components/elements/type/coquette";
 import Ideallover from "@components/elements/type/ideallover";
 import Lake from "@components/elements/type/lake";
 import Natural from "@components/elements/type/natural";
@@ -35,12 +34,8 @@ function App() {
     init();
   }, []);
 
-  useEffect(() => { 
-    window.onbeforeunload = function pushRefresh() {
-      window.scrollTo(0, 0);
-    };
-  }, []);
-  
+
+
   출처: https://orbit-orbit.tistory.com/entry/React-브라우저-새로고침Refresh시-스크롤-최상단-이동 [Orbit:티스토리]
   
 
@@ -70,8 +65,7 @@ function App() {
               <Route path="typeview" element={<TypeView />} />
                 <Route path='/Charisma' element={<Charisma />} />
                 <Route path='/Charmer' element={<Charmer />} />
-                <Route path='/Coquet' element={<Coquet/>} />
-                <Route path='/Dandy' element={<Dandy />} />
+                <Route path='/Coquette' element={<Coquette/>} />
                 <Route path='/Ideallover' element={<Ideallover />} />
                 <Route path='/Lake' element={<Lake />} />
                 <Route path='/Natural' element={<Natural />} />

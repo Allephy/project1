@@ -1,10 +1,9 @@
 import ResultPage from "@routes/result-page";
 
 import {DPScore} from '@components/elements/test/Test1';
-import {FCScore} from '@components/elements/test/Test2';
-import {CNScore} from '@components/elements/test/Test3';
-import {TFScore} from '@components/elements/test/Test4';
-import {PMScore} from '@components/elements/test/Test5';
+import {CKScore} from '@components/elements/test/Test2';
+import {ANScore} from '@components/elements/test/Test3';
+import {FSScore} from '@components/elements/test/Test4';
 
 //import { dbService } from "../firebase";
 //import { addDoc, collection } from "../firebase/firestore";
@@ -17,18 +16,16 @@ import {PMScore} from '@components/elements/test/Test5';
 export default function ResultLogic() {
     
     let DP;
-    let FC;
-    let CN;
-    let TF;
-    let PM;
+    let CK;
+    let AN;
+    let FS;
 
     //속성을 하나로 정한다.
     
     if( DPScore < 0) { DP = ("D");} else { DP = ("P");}
-    if( FCScore < 0) { FC = ("F");} else { FC = ("C");}
-    if( CNScore < 0) { CN = ("C");} else { CN = ("N");}
-    if( TFScore < 0) { TF = ("T");} else { TF = ("F");}
-    if( PMScore < 0) { PM = ("P");} else { PM = ("M");}
+    if( CKScore < 0) { CK = ("C");} else { CK = ("K");}
+    if( ANScore < 0) { AN = ("A");} else { AN = ("N");}
+    if( FSScore < 0) { FS = ("F");} else { FS = ("S");}
 
     const scoreArr = [
         {
@@ -38,23 +35,18 @@ export default function ResultLogic() {
         },
         {
             id:2,
-            name:FC,
-            score:FCScore,
+            name:CK,
+            score:CKScore,
         },
         {
             id:3,
-            name:CN,
-            score:CNScore,
+            name:AN,
+            score:ANScore,
         },
         {
             id:4,
-            name:TF,
-            score:TFScore,
-        },
-        {
-            id:5,
-            name:PM,
-            score:PMScore,
+            name:FS,
+            score:FSScore,
         },
 
     ]
@@ -107,20 +99,16 @@ function resultCalculation(arr) {
 
 
     v = scoreArr[1].score / 20 * 100;
-    if(scoreArr[1].name === "F") { v = -v; $percentage.push({id: 2, value: v}); }
+    if(scoreArr[1].name === "C") { v = -v; $percentage.push({id: 2, value: v}); }
     else { $percentage.push({id: 2, value: v}); }
 
     v = scoreArr[2].score / 20 * 100;
-    if(scoreArr[2].name === "C") { v = -v; $percentage.push({id: 3, value: v}); }
+    if(scoreArr[2].name === "A") { v = -v; $percentage.push({id: 3, value: v}); }
     else { $percentage.push({id: 3, value: v}); }
 
+
     v = scoreArr[3].score / 20 * 100;
-    if(scoreArr[3].name === "T") { v = -v; $percentage.push({id: 4, value: v}); }
-    else { $percentage.push({id: 4, value: v}); }
-
-
-    v = scoreArr[4].score / 20 * 100;
-    if(scoreArr[4].name === "P") { v = -v; $percentage.push({id: 5, value: v}); }
+    if(scoreArr[4].name === "F") { v = -v; $percentage.push({id: 5, value: v}); }
     else { $percentage.push({id: 5, value: v}); }
 
     
@@ -130,15 +118,14 @@ function resultCalculation(arr) {
 function chooseType(arr) {
     const Charisma = ["PCCTM","PCCFM","PCNTM","PCNFM"];
     const Charmer = ["PFNTM","PFNFM","PFNTP","PFNFP"];
-    const Coquet = ["DFCTM","DFCFM"];
-    const Dandy = ["DCNFP","DCNFM","DFNFP","DFNFM"];
+    const Coquette = ["DFCTM","DFCFM"];
     const IdealLover = ["PFCTM","PFCFM","PFCTP","PFCTP"];
     const Lake = ["PCCTP","PCCFP","PCNTP","PCNFP"];
     const Natural = ["DCNTP","DCNTM","DFNTP","DFNTM"];
     const Siren = ["DFCTP","DFCFP"];
     const Star = ["DCCTP","DCCFP","DCCTM","DCCFM"];
     
-    const typeArr = [arr[0].name,arr[1].name,arr[2].name,arr[3].name,arr[4].name]
+    const typeArr = [arr[0].name,arr[1].name,arr[2].name,arr[3].name]
     
     //const typeArr= $typeArr.prototype.join("");
     let type;
@@ -159,7 +146,7 @@ function chooseType(arr) {
     }
     for(let i=0;i<Coquet.length;i++){
         if( typeArr.join('') === Coquet[i]) {
-            type = "Coquet";
+            type = "Coquette";
             return type;
         }
     }

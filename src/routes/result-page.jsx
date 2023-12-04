@@ -15,7 +15,6 @@ export default function ResultPage(props) {
         const percentage2 = Number(props.percentage[1].value) + 50;
         const percentage3 = Number(props.percentage[2].value) + 50;
         const percentage4 = Number(props.percentage[3].value) + 50;
-        const percentage5 = Number(props.percentage[4].value) + 50;
 
     
         function NextPage() {
@@ -25,11 +24,11 @@ export default function ResultPage(props) {
         }  
         console.log('props', id)
         let move = null;
-        if (id < 5) {
+        if (id < 4) {
             move = <button onClick={Next}>Next Page</button>
-        } else if (id === 5) {
+        } else if (id === 4) {
             move = <input type='submit' value='Get Your Result Type' onClick={TypeNavigation}></input>
-        } else if (id === 6) {
+        } else if (id === 5) {
             move = null;
         }
     
@@ -47,9 +46,7 @@ export default function ResultPage(props) {
         } else if (Number(id) === 3) {
             result_page_show = ("C: "+ percentage3 + "N: "+ (100-percentage3))
         } else if (Number(id) === 4) {
-            result_page_show = ("T: "+ percentage4 + "F: "+ (100-percentage4))
-        } else if (Number(id) === 5) {
-            result_page_show = ("P: "+ percentage5 + "M: "+ (100-percentage5))
+            result_page_show = ("P: "+ percentage4 + "M: "+ (100-percentage5))
         }
         /* else if (Number(id) === 6) {
             result_page_show = props.percentage[4].value
@@ -68,13 +65,10 @@ export default function ResultPage(props) {
                 navigate("/Charmer");
             }
 
-            else if( props.type === "Coquet") {
-                navigate("/Coquet");
+            else if( props.type === "Coquette") {
+                navigate("/Coquette");
             }
 
-            else if( props.type === "Dandy") {
-                navigate("/Dandy");
-            }
 
             else if( props.type === "IdealLover") {
                 navigate("/IdealLover");

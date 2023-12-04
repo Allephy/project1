@@ -2,8 +2,8 @@
 //DFCFM,DFCTM,DFCFP,DFCTP
 //Coquet 	4. DFCTM, DFCFM,*
 
-export default function Coquet() {
+export default function Coquette() {
     return (
-        <h1>coquet</h1>
+        <h1>coquette</h1>
     );
 }

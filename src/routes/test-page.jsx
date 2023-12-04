@@ -6,7 +6,6 @@ import Test1 from '@components/elements/test/Test1';
 import Test2 from '@components/elements/test/Test2';
 import Test3 from '@components/elements/test/Test3';
 import Test4 from '@components/elements/test/Test4';
-import Test5 from '@components/elements/test/Test5';
 import ResultLogic from './result-logic';
 
 //import ResultLogic from '@routes/result-logic';
@@ -47,10 +46,7 @@ function TestPage (props) {
     } else if (Number(props.id) === 4) {
         content = <Test4></Test4>
         console.log('test4')
-    } else if (Number(props.id) === 5) {
-        content = <Test5></Test5>
-        console.log('test5')
-    } else if (Number(props.id) === 6){
+    } else if (Number(props.id) === 5){
         content = <ResultLogic></ResultLogic>
     }
 

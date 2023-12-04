@@ -65,9 +65,9 @@ const DPQuestion = [
     
 ]
 
-// Section 2: Fluctuates: 0/ Consistent: 1
+// Section 2: Change: 0/ Keep: 1
 // Section 2 질문 추가 요청 바람.
-const FCQuestion = [
+const CKQuestion = [
     {
         id:1,
         statement: 0,
@@ -121,9 +121,9 @@ const FCQuestion = [
     
 ]
 
-//Section 3: Charming: 0/ Natural: 1
+//Section 3: Appeal: 0/ Natural: 1
 // 5:5
-const CNQuestion = [
+const ANQuestion = [
     {
         id:1,
         statement: 1,
@@ -179,62 +179,9 @@ const CNQuestion = [
 
 //Section 4: Traditional Gender: 0 / Floating Gender: 1
 // 5:5
-const TFQuestion= [
-    {
-        id:1,
-        statement: 1,
-        question:"중성적인 매력에 끌린다"
-    },
-    {
-        id:2,
-        statement: 1,
-        question:"어느 특정한 성역할에 구애받지 않는 모습이 멋지다"
-    },
-    {
-        id:3,
-        statement: 0,
-        question:"이성친구보다 동성친구가 나와 잘 맞는다"
-    },
-    {
-        id:4,
-        statement: 1,
-        question:"연인이 무엇을 원하는지 쉽게 알아낼 수 있을 것 같다"
-    },
-    {
-        id:5,
-        statement: 0,
-        question:"연인의 마음을 잘 알아차리지 못해 속상하게 한 적이 있다"
-    },
-    {
-        id:6,
-        statement: 1,
-        question:"명확한 것보다 모호한 것이 끌린다"
-    },
-    {
-        id:7,
-        statement: 0,
-        question:"개인의 관심사보다 사회의 관심사가 먼저다"
-    },
-    {
-        id:8,
-        statement: 0,
-        question:"이상적인 가정 환경은 정해진 역할들을 충실히 이행하였을 때 실현된다"
-    },
-    {
-        id:9,
-        statement: 0,
-        question:"정체성의 유연함보다 정체성의 확립이 중요하다"
-    },
-    {
-        id:10,
-        statement: 1,
-        question:"평화로운 일상보다는 모험적인 삶을 살고 싶다"
-    },
-    
-]
 
-//Section 5: Physical: 0 / Mental: 1
-const PMQuestion = [
+//Section 5: Flesh: 0 / Spirit: 1
+const FSQuestion = [
     {
         id:1,
         statement: 1,
@@ -289,5 +236,5 @@ const PMQuestion = [
 ]
 
 export {
-    DPQuestion, FCQuestion, CNQuestion, TFQuestion, PMQuestion
+    DPQuestion, CKQuestion, ANQuestion, FSQuestion
 };
