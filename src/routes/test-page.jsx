@@ -48,7 +48,7 @@ function TestPage (props) {
     } else if (Number(props.id) === 4) {
         content = <Test4></Test4>
         console.log('test4')
-    } else if (Number(props.id) === 5){
+    } else if (Number(props.id)===5) {
         content = <ResultLogic></ResultLogic>
     }
 
@@ -74,12 +74,12 @@ function TestPage (props) {
         
         console.log('props', id)
         let move = null;
-        if (id < 5) {
+        if (id <= 3) {
             move = <button onClick={Next} className= "">다음 페이지</button>
-        } else if (id === 5) { 
-            // id가 5가 된 후 submit을 하면, result-page로 
+        } else if (id === 4) { 
+            // id가 4가 된 후 submit을 하면, result-page로 
             move = <input type='submit' value='Get Your Result' onClick={() => navigate("/resultlogic") } className= " text-align:center text-black font-bold py-2 px-4 rounded-full"></input>
-        } else if (id === 6) {
+        } else if (id === 5) {
             move = null;
         }
     

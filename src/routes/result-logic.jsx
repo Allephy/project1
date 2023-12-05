@@ -51,10 +51,6 @@ export default function ResultLogic() {
 
     ]
     const percentage = resultCalculation(scoreArr);
-    
-    //점수의 절대값 비교는 만약 필요하다면 하겠음
-    //const sortedArr = handleArr(scoreArr); 
-
     const type = chooseType(scoreArr);
 
     console.log('type: ', type)
@@ -76,17 +72,6 @@ export default function ResultLogic() {
     )
 }
 
-/*function handleArr(arr) {
-    for (let i = 1; i < arr.length; i++) {
-        let currentVal = arr[i];
-        let j;
-        for (j = i - 1; j >= 0 && Math.abs(arr[j].score) > Math.abs(currentVal.score); j--) {
-            arr[j + 1] = arr[j];
-        }
-        arr[j + 1] = currentVal;
-    }
-    return arr;
-}*/
 
 function resultCalculation(arr) {
     const scoreArr = arr;
@@ -108,7 +93,7 @@ function resultCalculation(arr) {
 
 
     v = scoreArr[3].score / 20 * 100;
-    if(scoreArr[4].name === "F") { v = -v; $percentage.push({id: 4, value: v}); }
+    if(scoreArr[3].name === "F") { v = -v; $percentage.push({id: 4, value: v}); }
     else { $percentage.push({id: 4, value: v}); }
 
     
@@ -126,11 +111,7 @@ function chooseType(arr) {
     const Star = ["DKAF","DKNF"];
     
     const typeArr = [arr[0].name,arr[1].name,arr[2].name,arr[3].name]
-    
-    //const typeArr= $typeArr.prototype.join("");
     let type;
-
-    console.log(typeArr.join(''))
 
     for(let i=0;i<Charisma.length;i++){
         if( typeArr.join('') === Charisma[i]) {
@@ -144,7 +125,7 @@ function chooseType(arr) {
             return type;
         }
     }
-    for(let i=0;i<Coquet.length;i++){
+    for(let i=0;i<Coquette.length;i++){
         if( typeArr.join('') === Coquette[i]) {
             type = "Coquette";
             return type;
