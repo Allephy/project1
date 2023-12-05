@@ -116,14 +116,14 @@ function resultCalculation(arr) {
 }
 
 function chooseType(arr) {
-    const Charisma = [];
-    const Charmer = [];
-    const Coquette = [];
-    const IdealLover = [];
-    const Lake = [];
-    const Natural = [];
-    const Siren = [];
-    const Star = [];
+    const Charisma = ["PCAS","PCNS"];
+    const Charmer = ["PKAS","PKNS"];
+    const Coquette = ["DCAS","DCNS"];
+    const IdealLover = ["PKAF","PKNF"];
+    const Lake = ["PCAF","PCNF"];
+    const Natural = ["DKAS","DKNS"];
+    const Siren = ["DCAF","DCNF"];
+    const Star = ["DKAF","DKNF"];
     
     const typeArr = [arr[0].name,arr[1].name,arr[2].name,arr[3].name]
     
