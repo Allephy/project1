@@ -108,22 +108,22 @@ function resultCalculation(arr) {
 
 
     v = scoreArr[3].score / 20 * 100;
-    if(scoreArr[4].name === "F") { v = -v; $percentage.push({id: 5, value: v}); }
-    else { $percentage.push({id: 5, value: v}); }
+    if(scoreArr[4].name === "F") { v = -v; $percentage.push({id: 4, value: v}); }
+    else { $percentage.push({id: 4, value: v}); }
 
     
     return $percentage;
 }
 
 function chooseType(arr) {
-    const Charisma = ["PCCTM","PCCFM","PCNTM","PCNFM"];
-    const Charmer = ["PFNTM","PFNFM","PFNTP","PFNFP"];
-    const Coquette = ["DFCTM","DFCFM"];
-    const IdealLover = ["PFCTM","PFCFM","PFCTP","PFCTP"];
-    const Lake = ["PCCTP","PCCFP","PCNTP","PCNFP"];
-    const Natural = ["DCNTP","DCNTM","DFNTP","DFNTM"];
-    const Siren = ["DFCTP","DFCFP"];
-    const Star = ["DCCTP","DCCFP","DCCTM","DCCFM"];
+    const Charisma = [];
+    const Charmer = [];
+    const Coquette = [];
+    const IdealLover = [];
+    const Lake = [];
+    const Natural = [];
+    const Siren = [];
+    const Star = [];
     
     const typeArr = [arr[0].name,arr[1].name,arr[2].name,arr[3].name]
     
