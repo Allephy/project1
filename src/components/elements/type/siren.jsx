@@ -6,10 +6,11 @@
 export default function Siren() {
     return (
         <div className="mx-3 my-10 font-light">
-            <span className="text-2xl font-medium">Coqutte</span>
+            <span className="text-2xl font-medium">Siren</span>
             <div>
 
-            <br/>
+            <img alt="Siren" src="src/images/Siren.png" width="100%" height="100%"></img>
+
             <span className="text-lg ">
             "가장 아름다운 속임수는 우리 자신을 속이는 것이다."
             </span>

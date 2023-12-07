@@ -4,7 +4,7 @@ export default function QuestionBlock(props){
     
 
     return(
-        <div className = "aspect-ratio: auto container box-border rounded-md shadow-lg h-80 w-auto px-10 py-10 mx-3 my-10 outline outline-1  outline-offset-1" >
+        <div className = "aspect-ratio: auto container box-border rounded-md shadow-lg h-70 w-auto px-10 py-10 mx-5 my-10 outline outline-1  outline-offset-1 text-sm" >
             <form>
                 <fieldset>
                 <legend>{props.name}</legend>
@@ -26,7 +26,7 @@ export default function QuestionBlock(props){
                     onClick={(event)=>{  window.scrollTo({ top: 400, behavior: "smooth" }); props.setAns(Number(props.ans) + Number(event.target.value)); } }
                     />
                     <label
-                    className="mt-px inline-block pl-[0.15rem] hover:cursor-pointer"
+                    className="mt-px inline-block pl-[0.15rem] hover:cursor-pointer "
                     htmlFor="strongly agree"
                     >
                     매우긍정

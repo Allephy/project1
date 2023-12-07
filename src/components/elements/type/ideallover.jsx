@@ -9,9 +9,10 @@ export default function Ideallover() {
             <span className="text-2xl font-medium">Charmer</span>
             <div>
 
-            <br/>
+            <img alt="IdealLover" src="src/images/IdealLover.png" width="100%" height="100%"></img>
+
             <span className="text-lg ">
-            "진정한 사랑은 영원히 불만족하는 것이며,<br/> 그것이 그 미학의 이유다."
+            "진정한 사랑은 영원히 불만족하는 것이며,그것이 그 미학의 이유다."
             </span>
 
             <br/>

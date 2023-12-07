@@ -7,9 +7,10 @@ export default function Charmer() {
             <span className="text-2xl font-medium">Charmer</span>
             <div>
 
-            <br/>
+            <img alt="Charmer" src="src/images/Charmer.png" width="100%" height="100%"></img>
+
             <span className="text-lg ">
-            "온화한 말 한마디가 <br/>삼 겹의 울타리보다 강하다."
+            "온화한 말 한마디가 삼 겹의 울타리보다  강하다."
             </span>
 
             <br/>

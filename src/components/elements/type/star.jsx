@@ -7,7 +7,8 @@ export default function Star() {
             <span className="text-2xl font-medium">Star</span>
             <div>
 
-            <br/>
+            <img alt="Star" src="src/images/Star.png" width="100%" height="100%"></img>
+
             <span className="text-lg ">
             "가장 중요한 것은 내가 누구인지, 무엇을 믿는지, 그리고 그것을 얼마나 잘 표현하고 있는지다."
             </span>

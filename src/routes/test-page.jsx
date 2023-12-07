@@ -75,7 +75,7 @@ function TestPage (props) {
         console.log('props', id)
         let move = null;
         if (id <= 3) {
-            move = <button onClick={Next} className= "">다음 페이지</button>
+            move = <button onClick={Next} className= "mx-auto">다음 페이지</button>
         } else if (id === 4) { 
             // id가 4가 된 후 submit을 하면, result-page로 
             move = <input type='submit' value='Get Your Result' onClick={() => navigate("/resultlogic") } className= " text-align:center text-black font-bold py-2 px-4 rounded-full"></input>

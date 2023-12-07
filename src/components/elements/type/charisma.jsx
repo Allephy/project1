@@ -6,6 +6,8 @@ export default function Charisma() {
         <div className="mx-3 my-10 font-light">
             <span className="text-2xl font-medium">Charisma</span>
             <div>
+            
+            <img alt="Charisma" src="src/images/Charisma.png" width="100%" height="100%"></img>
 
             <br/>
             <span className="text-lg ">

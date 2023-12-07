@@ -8,7 +8,8 @@ export default function Lake() {
             <span className="text-2xl font-medium">Lake</span>
             <div>
 
-            <br/>
+            <img alt="Lake" src="src/images/Lake.png" width="100%" height="100%"></img>
+
             <span className="text-lg ">
             "인간의 삶에서 가장 큰 재앙은 죽음이 아니라, 우리 안에 죽은 욕망이다."
             </span>

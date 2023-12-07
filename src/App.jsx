@@ -43,15 +43,15 @@ function App() {
     <div>
       {isLoading ? <LoadingScreen /> : (
         <BrowserRouter>
-        <ul class="flex font-light">
-          <li class="mr-3">
-              <a class="inline-block border  border-white rounded hover:border-gray-200 text-black-500 hover:bg-gray-200 py-1 px-3" href="/">Home</a>
+        <ul className="flex font-light mt-1 mb-3 border-d-black">
+          <li className="mr-3">
+              <a className="inline-block border  border-white rounded hover:border-gray-200 text-black-500 hover:bg-gray-200 py-1 px-3" href="/">Home</a>
           </li>
-          <li class="mr-3">
-              <a class="inline-block border border-white rounded hover:border-gray-200 text-black-500 hover:bg-gray-200 py-1 px-3" href="/testpage">Test</a>
+          <li className="mr-3">
+              <a className="inline-block border border-white rounded hover:border-gray-200 text-black-500 hover:bg-gray-200 py-1 px-3" href="/testpage">Test</a>
           </li>
-          <li class="mr-3">
-              <a class="inline-block border border-white rounded hover:border-gray-200 text-black-500 hover:bg-gray-200 py-1 px-3" href="/typeview">Type</a>
+          <li className="mr-3">
+              <a className="inline-block border border-white rounded hover:border-gray-200 text-black-500 hover:bg-gray-200 py-1 px-3" href="/typeview">Type</a>
           </li>
         </ul>
 
