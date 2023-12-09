@@ -6,8 +6,9 @@ import QuestionBlock from '@components/elements/question/question-block';
 let FSScore = 0;
 
 export default function Test5() {
-    const [ans, setAns] = useState(0);
-    FSScore = ans;
+    const [ans, setAns] = useState(0)
+   
+    FSScore =  ans;
     console.log(FSScore)
     return(
         <div>

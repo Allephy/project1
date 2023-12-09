@@ -1,8 +1,19 @@
-import React, { useRef } from 'react';
+import React, { useRef, useEffect } from 'react';
 
 export default function QuestionBlock(props){
-    
+    //const clicking = (event) => useEffect(()=>{props.setAns(event.target.value)})
+    console.log('*****6767', props.ans);
+    /*function clicked(x, ) {
+        const newTopics = []
+        for(let i=0; i<10; i++){
+            if()
+        }
 
+    }*/
+    const clicked = (event) => {
+        console.log(event.target.value);
+        props.setAns(Number(props.ans)+Number(event.target.value))
+    }
     return(
         <div className = "aspect-ratio: auto container box-border rounded-md shadow-lg h-70 w-auto px-10 py-10 mx-5 my-10 outline outline-1  outline-offset-1 text-sm" >
             <form>
@@ -23,7 +34,8 @@ export default function QuestionBlock(props){
                     name="name"
                     id="strongly agree"
                     value='+2'
-                    onClick={(event)=>{  window.scrollTo({ top: 400, behavior: "smooth" }); props.setAns(Number(props.ans) + Number(event.target.value)); } }
+                    onChange={clicked}
+                    //onClick={(event)=>{  window.scrollTo({ top: 400, behavior: "smooth" }); props.ans[]; console.log('dldlldldldl', props.ans) } }
                     />
                     <label
                     className="mt-px inline-block pl-[0.15rem] hover:cursor-pointer "
@@ -48,7 +60,8 @@ export default function QuestionBlock(props){
                     name="name"
                     id="agree"
                     value='+1'
-                    onClick={(event)=>{ window.scrollTo({ top: 400, behavior: "smooth" }); props.setAns(Number(props.ans) + Number(event.target.value));  } }
+                    onChange={clicked}
+                    //onClick={(event)=>{ window.scrollTo({ top: 400, behavior: "smooth" }); ;  } }
                     />
                     <label
                     className="mt-px inline-block pl-[0.15rem] hover:cursor-pointer"
@@ -73,7 +86,8 @@ export default function QuestionBlock(props){
                     name="name"
                     id="disagree"
                     value='-1'
-                    onClick={(event)=>{ window.scrollTo({ top: 400, behavior: "smooth" }); props.setAns(Number(props.ans) + Number(event.target.value));} }
+                    onChange={clicked}
+                    //onClick={(event)=>{ window.scrollTo({ top: 400, behavior: "smooth" }); clicking;} }
                     />
                     <label
                     className="mt-px inline-block pl-[0.15rem] hover:cursor-pointer"
@@ -98,7 +112,8 @@ export default function QuestionBlock(props){
                     name="name"
                     id="strongly disagree"
                     value='-2'
-                    onClick={(event)=>{ window.scrollTo({ top: 400, behavior: "smooth" }); props.setAns(Number(props.ans) + Number(event.target.value));} }
+                    onChange={clicked}
+                    //onClick={(event)=>{ window.scrollTo({ top: 400, behavior: "smooth" }); clicking;} }
                     />
                     <label
                     className="mt-px inline-block pl-[0.15rem] hover:cursor-pointer"

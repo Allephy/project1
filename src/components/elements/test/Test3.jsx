@@ -6,7 +6,8 @@ import QuestionBlock from '@components/elements/question/question-block';
 let ANScore = 0;
 
 export default function Test3() {
-    const [ans, setAns] = useState(0);
+    const [ans, setAns] = useState(0)
+    
     ANScore = ans;
     console.log(ANScore);
     return(
