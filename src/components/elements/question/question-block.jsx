@@ -2,7 +2,7 @@ import React, { useRef, useEffect } from 'react';
 
 export default function QuestionBlock(props){
     //const clicking = (event) => useEffect(()=>{props.setAns(event.target.value)})
-    console.log('*****6767', props.ans);
+    console.log('props.ans is successfully transmitted', props.ans);
     /*function clicked(x, ) {
         const newTopics = []
         for(let i=0; i<10; i++){
@@ -11,8 +11,16 @@ export default function QuestionBlock(props){
 
     }*/
     const clicked = (event) => {
+        const newAns = []
+        for(let i=0; i<10; i++){
+            if (i === Number(props.id)){
+                newAns.push({id: props.id, value: event.target.value});
+            } else {
+                newAns.push(props.ans[i]);
+            }
+        }
         console.log(event.target.value);
-        props.setAns(Number(props.ans)+Number(event.target.value))
+        props.setAns(newAns)
     }
     return(
         <div className = "aspect-ratio: auto container box-border rounded-md shadow-lg h-70 w-auto px-10 py-10 mx-5 my-10 outline outline-1  outline-offset-1 text-sm" >

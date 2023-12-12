@@ -1,9 +1,21 @@
 import ResultPage from "@routes/result-page";
 
-import {DPScore} from '@components/elements/test/Test1';
-import {CKScore} from '@components/elements/test/Test2';
-import {ANScore} from '@components/elements/test/Test3';
-import {FSScore} from '@components/elements/test/Test4';
+
+import {DPScoreList} from '@components/elements/test/Test1';
+import {CKScoreList} from '@components/elements/test/Test2';
+import {ANScoreList} from '@components/elements/test/Test3';
+import {FSScoreList} from '@components/elements/test/Test4';
+
+let DPScore = 0;
+let CKScore = 0;
+let ANScore = 0;
+let FSScore = 0;
+
+
+
+//const CKScore = Number(CKScoreList[0].value) + Number(CKScoreList[1].value) + Number(CKScoreList[2].value) + Number(CKScoreList[3].value) + Number(CKScoreList[4].value) + Number(CKScoreList[5].value) + Number(CKScoreList[6].value) + Number(CkScoreList[7].value) + Number(CkScoreList[8].value) + Number(CKScoreList[9].value);
+//const ANScore = Number(ANScoreList[0].value) + Number(ANScoreList[1].value) + Number(ANScoreList[2].value) + Number(ANScoreList[3].value) + Number(ANScoreList[4].value) + Number(ANScoreList[5].value) + Number(ANScoreList[6].value) + Number(ANScoreList[7].value) + Number(ANScoreList[8].value) + Number(ANScoreList[9].value);
+//const FSScore = Number(FSScoreList[0].value) + Number(FSScoreList[1].value) + Number(FSScoreList[2].value) + Number(FSScoreList[3].value) + Number(FSScoreList[4].value) + Number(FSScoreList[5].value) + Number(FSScoreList[6].value) + Number(FSScoreList[7].value) + Number(FSScoreList[8].value) + Number(FSScoreList[9].value);
 
 //import { dbService } from "../firebase";
 //import { addDoc, collection } from "../firebase/firestore";
@@ -15,6 +27,16 @@ import {FSScore} from '@components/elements/test/Test4';
 
 export default function ResultLogic() {
     
+    DPScore = Number(DPScoreList[0].value) + Number(DPScoreList[1].value) + Number(DPScoreList[2].value) + Number(DPScoreList[3].value) + Number(DPScoreList[4].value) + Number(DPScoreList[5].value) + Number(DPScoreList[6].value) + Number(DPScoreList[7].value) + Number(DPScoreList[8].value) + Number(DPScoreList[9].value);
+    CKScore = Number(CKScoreList[0].value) + Number(CKScoreList[1].value) + Number(CKScoreList[2].value) + Number(CKScoreList[3].value) + Number(CKScoreList[4].value) + Number(CKScoreList[5].value) + Number(CKScoreList[6].value) + Number(CKScoreList[7].value) + Number(CKScoreList[8].value) + Number(CKScoreList[9].value);
+    ANScore = Number(ANScoreList[0].value) + Number(ANScoreList[1].value) + Number(ANScoreList[2].value) + Number(ANScoreList[3].value) + Number(ANScoreList[4].value) + Number(ANScoreList[5].value) + Number(ANScoreList[6].value) + Number(ANScoreList[7].value) + Number(ANScoreList[8].value) + Number(ANScoreList[9].value);
+    FSScore = Number(FSScoreList[0].value) + Number(FSScoreList[1].value) + Number(FSScoreList[2].value) + Number(FSScoreList[3].value) + Number(FSScoreList[4].value) + Number(FSScoreList[5].value) + Number(FSScoreList[6].value) + Number(FSScoreList[7].value) + Number(FSScoreList[8].value) + Number(FSScoreList[9].value);
+
+    console.log('sending Out: DPScoreList in result-logic', DPScoreList)
+    console.log('DPScore', DPScore)
+    
+
+
     let DP;
     let CK;
     let AN;
@@ -52,7 +74,7 @@ export default function ResultLogic() {
     ]
     const percentage = resultCalculation(scoreArr);
     const type = chooseType(scoreArr);
-
+    
     console.log('type: ', type)
     /*
     const onSubmit = async (e) => {
@@ -66,7 +88,7 @@ export default function ResultLogic() {
             console.log(e);
         }
     }
-    */
+*/
     return (
         <ResultPage percentage={percentage} id="1" type={type}/>     
     )

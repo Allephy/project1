@@ -3,29 +3,29 @@ import React, { useState } from 'react';
 import {FSQuestion} from '@components/elements/question/question';
 import QuestionBlock from '@components/elements/question/question-block';
 
-let FSScore = 0;
+let FSScoreList;
 
 export default function Test5() {
-    const [ans, setAns] = useState(0)
+    const [ans, setAns] = useState([{id: '1', value: '0'}, {id: '2', value: '0'}, {id: '3', value: '0'}, {id: '4', value: '0'}, {id: '5', value: '0'}, {id: '6', value: '0'}, {id: '7', value: '0'},{id: '8', value: '0'}, {id: '9', value: '0'}, {id: '10', value: '0'}])
    
-    FSScore =  ans;
-    console.log(FSScore)
+    FSScoreList =  [...ans];
+    console.log('FSScoreList', FSScoreList)
     return(
         <div>
             <div className='font-light text-center tracking-wide'>
-            <QuestionBlock name={FSQuestion[0].question} setAns={setAns} ans={ans}>41</QuestionBlock>
-            <QuestionBlock name={FSQuestion[1].question} setAns={setAns} ans={ans}>42</QuestionBlock>
-            <QuestionBlock name={FSQuestion[2].question} setAns={setAns} ans={ans}>43</QuestionBlock>
-            <QuestionBlock name={FSQuestion[3].question} setAns={setAns} ans={ans}>44</QuestionBlock>
-            <QuestionBlock name={FSQuestion[4].question} setAns={setAns} ans={ans}>45</QuestionBlock>
-            <QuestionBlock name={FSQuestion[5].question} setAns={setAns} ans={ans}>46</QuestionBlock>
-            <QuestionBlock name={FSQuestion[6].question} setAns={setAns} ans={ans}>47</QuestionBlock>
-            <QuestionBlock name={FSQuestion[7].question} setAns={setAns} ans={ans}>48</QuestionBlock>
-            <QuestionBlock name={FSQuestion[8].question} setAns={setAns} ans={ans}>49</QuestionBlock>
-            <QuestionBlock name={FSQuestion[9].question} setAns={setAns} ans={ans}>50</QuestionBlock>
+            <QuestionBlock name={FSQuestion[0].question} setAns={setAns} ans={ans} id='1'>41</QuestionBlock>
+            <QuestionBlock name={FSQuestion[1].question} setAns={setAns} ans={ans} id='2'>42</QuestionBlock>
+            <QuestionBlock name={FSQuestion[2].question} setAns={setAns} ans={ans} id='3'>43</QuestionBlock>
+            <QuestionBlock name={FSQuestion[3].question} setAns={setAns} ans={ans} id='4'>44</QuestionBlock>
+            <QuestionBlock name={FSQuestion[4].question} setAns={setAns} ans={ans} id='5'>45</QuestionBlock>
+            <QuestionBlock name={FSQuestion[5].question} setAns={setAns} ans={ans} id='6'>46</QuestionBlock>
+            <QuestionBlock name={FSQuestion[6].question} setAns={setAns} ans={ans} id='7'>47</QuestionBlock>
+            <QuestionBlock name={FSQuestion[7].question} setAns={setAns} ans={ans} id='8'>48</QuestionBlock>
+            <QuestionBlock name={FSQuestion[8].question} setAns={setAns} ans={ans} id='9'>49</QuestionBlock>
+            <QuestionBlock name={FSQuestion[9].question} setAns={setAns} ans={ans} id='10'>50</QuestionBlock>
             </div>
         </div>
     );
 }
 
-export { FSScore }
+export { FSScoreList }
