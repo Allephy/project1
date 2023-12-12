@@ -32,8 +32,15 @@ export default function ResultLogic() {
     ANScore = Number(ANScoreList[0].value) + Number(ANScoreList[1].value) + Number(ANScoreList[2].value) + Number(ANScoreList[3].value) + Number(ANScoreList[4].value) + Number(ANScoreList[5].value) + Number(ANScoreList[6].value) + Number(ANScoreList[7].value) + Number(ANScoreList[8].value) + Number(ANScoreList[9].value);
     FSScore = Number(FSScoreList[0].value) + Number(FSScoreList[1].value) + Number(FSScoreList[2].value) + Number(FSScoreList[3].value) + Number(FSScoreList[4].value) + Number(FSScoreList[5].value) + Number(FSScoreList[6].value) + Number(FSScoreList[7].value) + Number(FSScoreList[8].value) + Number(FSScoreList[9].value);
 
-    console.log('sending Out: DPScoreList in result-logic', DPScoreList)
-    console.log('DPScore', DPScore)
+    console.log('sending Out: DPScoreList in result-logic', DPScoreList);
+    console.log('CKScoreList is ready', CKScoreList);
+    console.log('ANScoreList is ready', ANScoreList);
+    console.log('FSScoreList is ready', FSScoreList);
+
+    console.log('DPScore', DPScore);
+    console.log('CKScore', CKScore);
+    console.log('ANScore', ANScore);
+    console.log('FSScore', FSScore);
     
 
 
