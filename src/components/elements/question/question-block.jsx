@@ -23,13 +23,13 @@ export default function QuestionBlock(props){
         props.setAns(newAns)
     }
     return(
-        <div className = "aspect-ratio: auto container box-border rounded-md shadow-lg h-70 w-auto px-10 py-10 mx-5 my-10 outline outline-1  outline-offset-1 text-sm" >
+        <div className = "aspect-ratio: auto container box-border  shadow-lg h-70 w-auto px-10 py-10 mx-5 my-10 outline outline-1  outline-offset-1 text-sm" >
             <form>
                 <fieldset>
-                <legend>{props.name}</legend>
-                    <div className="mb-[0.125rem] block min-h-[1.5rem] pl-[1.5rem]" >
+                <legend><span className='mb-10'>{props.name}</span></legend>
+                    <div className="mb-2 block min-h-24 pl-[1.5rem]" >
                     <input
-                    className="relative float-left -ml-[1.5rem] mr-1 mt-1 h-5 w-5 rounded-full border-5 border-solid border-neutral-300 
+                    className="relative float-left -ml-[1.5rem] mr-1 mt-2 h-5 w-5 rounded-full border-5 border-solid border-neutral-300 
                     before:pointer-events-none before:absolute before:h-4 before:w-4 before:scale-0 before:rounded-full before:bg-transparent 
                     before:opacity-0 before:shadow-[0px_0px_0px_13px_transparent] before:content-[''] 
                     after:absolute after:z-[1] after:block after:h-4 after:w-4 after:rounded-full after:content-[''] 
@@ -47,7 +47,7 @@ export default function QuestionBlock(props){
                     />
                     <label
                     className="mt-px inline-block pl-[0.15rem] hover:cursor-pointer "
-                    htmlFor="strongly agree"
+                    htmlFor=""
                     >
                     매우긍정
                     </label>
@@ -55,7 +55,7 @@ export default function QuestionBlock(props){
 
                     <div className="mb-[0.125rem] block min-h-[1.5rem] pl-[1.5rem]" >
                     <input
-                    className="relative float-left -ml-[1.5rem] mr-1 mt-1 h-5 w-5 rounded-full border-5 border-solid border-neutral-300 
+                    className="relative float-left -ml-[1.5rem] mr-1 mt-2 h-5 w-5 rounded-full border-5 border-solid border-neutral-300 
                     before:pointer-events-none before:absolute before:h-4 before:w-4 before:scale-0 before:rounded-full before:bg-transparent 
                     before:opacity-0 before:shadow-[0px_0px_0px_13px_transparent] before:content-[''] 
                     after:absolute after:z-[1] after:block after:h-4 after:w-4 after:rounded-full after:content-[''] 
@@ -73,7 +73,7 @@ export default function QuestionBlock(props){
                     />
                     <label
                     className="mt-px inline-block pl-[0.15rem] hover:cursor-pointer"
-                    htmlFor="agree"
+                    htmlFor=""
                     >
                     긍정
                     </label>
@@ -81,7 +81,7 @@ export default function QuestionBlock(props){
 
                     <div className="mb-[0.125rem] block min-h-[1.5rem] pl-[1.5rem]" >
                     <input
-                    className="relative float-left -ml-[1.5rem] mr-1 mt-1 h-5 w-5 rounded-full border-5 border-solid border-neutral-300 
+                    className="relative float-left -ml-[1.5rem] mr-1 mt-2 h-5 w-5 rounded-full border-5 border-solid border-neutral-300 
                     before:pointer-events-none before:absolute before:h-4 before:w-4 before:scale-0 before:rounded-full before:bg-transparent 
                     before:opacity-0 before:shadow-[0px_0px_0px_13px_transparent] before:content-[''] 
                     after:absolute after:z-[1] after:block after:h-4 after:w-4 after:rounded-full after:content-[''] 
@@ -99,7 +99,7 @@ export default function QuestionBlock(props){
                     />
                     <label
                     className="mt-px inline-block pl-[0.15rem] hover:cursor-pointer"
-                    htmlFor="disagree"
+                    htmlFor=""
                     >
                     부정
                     </label>
@@ -107,7 +107,7 @@ export default function QuestionBlock(props){
 
                     <div className="mb-[0.125rem] block min-h-[1.5rem] pl-[1.5rem]" >
                     <input
-                    className="relative float-left -ml-[1.5rem] mr-1 mt-1 h-5 w-5 rounded-full border-5 border-solid border-neutral-300 
+                    className="relative float-left -ml-[1.5rem] mr-1 mt-2 h-5 w-5 rounded-full border-5 border-solid border-neutral-300 
                     before:pointer-events-none before:absolute before:h-4 before:w-4 before:scale-0 before:rounded-full before:bg-transparent 
                     before:opacity-0 before:shadow-[0px_0px_0px_13px_transparent] before:content-[''] 
                     after:absolute after:z-[1] after:block after:h-4 after:w-4 after:rounded-full after:content-[''] 
@@ -125,7 +125,7 @@ export default function QuestionBlock(props){
                     />
                     <label
                     className="mt-px inline-block pl-[0.15rem] hover:cursor-pointer"
-                    htmlFor="strongly disagree"
+                    htmlFor=""
                     >
                     매우부정
                     </label>

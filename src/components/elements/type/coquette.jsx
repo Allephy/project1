@@ -8,7 +8,7 @@ export default function Coquette() {
             <span className="text-2xl font-medium">Coqutte</span>
             <div>
 
-            <img alt="Coqutte" src="src/images/Coqutte.png" width="100%" height="100%"></img>
+            <img alt="Coqutte" src="/images/Coqutte.png" width="100%" height="100%"></img>
 
             <span className="text-lg ">
             "우리는 다른 사람들을 속이는 것처럼, 때때로 자신을 속인다."

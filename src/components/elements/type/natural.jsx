@@ -8,7 +8,7 @@ export default function Natural() {
             <span className="text-2xl font-medium">Natural</span>
             <div>
 
-            <img alt="Natural" src="src/images/Natural.png" width="100%" height="100%"></img>
+            <img alt="Natural" src="/images/Natural.png" width="100%" height="100%"></img>
 
             <span className="text-lg ">
             "나는 내 자신의 한계를 알지 못한다. 내가 알고 있는 것은, 내 마음이 어디로 가고 싶은지뿐이다."
