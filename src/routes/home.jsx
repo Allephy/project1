@@ -1,6 +1,6 @@
 export default function Home(){
     return (
-        <div>
+        <div className="mb:flex font-light mx-3">
             <img src="/images/Book.jpg" alt="The Art of Seduction" height="100%" width="100%"></img>
             <h1>
                 오픈소스프로젝트수업이 기회가 되어서 만든 간단한 심리테스트 입니다
