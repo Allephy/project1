@@ -23,7 +23,7 @@ export default function ResultPage(props) {
         const percentage3 = Number(props.percentage[2].value) + 50;
         const percentage4 = Number(props.percentage[3].value) + 50;
 
-
+    
         
 
     

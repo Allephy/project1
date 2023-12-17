@@ -6,19 +6,15 @@ import {CKScoreList} from '@components/elements/test/Test2';
 import {ANScoreList} from '@components/elements/test/Test3';
 import {FSScoreList} from '@components/elements/test/Test4';
 
+import { db, analytics } from "../fbase";
+import { ref, set } from "firebase/database";
+import { logEvent } from "firebase/analytics";
+
 let DPScore = 0;
 let CKScore = 0;
 let ANScore = 0;
 let FSScore = 0;
 
-
-
-//const CKScore = Number(CKScoreList[0].value) + Number(CKScoreList[1].value) + Number(CKScoreList[2].value) + Number(CKScoreList[3].value) + Number(CKScoreList[4].value) + Number(CKScoreList[5].value) + Number(CKScoreList[6].value) + Number(CkScoreList[7].value) + Number(CkScoreList[8].value) + Number(CKScoreList[9].value);
-//const ANScore = Number(ANScoreList[0].value) + Number(ANScoreList[1].value) + Number(ANScoreList[2].value) + Number(ANScoreList[3].value) + Number(ANScoreList[4].value) + Number(ANScoreList[5].value) + Number(ANScoreList[6].value) + Number(ANScoreList[7].value) + Number(ANScoreList[8].value) + Number(ANScoreList[9].value);
-//const FSScore = Number(FSScoreList[0].value) + Number(FSScoreList[1].value) + Number(FSScoreList[2].value) + Number(FSScoreList[3].value) + Number(FSScoreList[4].value) + Number(FSScoreList[5].value) + Number(FSScoreList[6].value) + Number(FSScoreList[7].value) + Number(FSScoreList[8].value) + Number(FSScoreList[9].value);
-
-//import { dbService } from "../firebase";
-//import { addDoc, collection } from "../firebase/firestore";
 
 //testpage->result-logic->result-page
 //Logic 구현
@@ -83,19 +79,28 @@ export default function ResultLogic() {
     const type = chooseType(scoreArr);
     
     console.log('type: ', type)
-    /*
-    const onSubmit = async (e) => {
-        e.preventDefault();
-        try {
-            await addDoc(collection(dbService,"user"),{
-                percentage,
-                type,
-            })
-        } catch(e) {
-            console.log(e);
-        }
-    }
-*/
+
+
+
+    function writeUserData(percentage,type) {
+        set(ref(db), {
+          type:type,
+          score1:percentage[0],
+          score2:percentage[1],
+          score3:percentage[2],
+          score4:percentage[3],
+        });
+      }
+      
+      writeUserData(percentage,type);
+      logEvent(analytics,'select_content',{
+        type:type,
+        DPscore:percentage[0],
+        CKscore:percentage[1],
+        ANscore:percentage[2],
+        FSscore:percentage[3],
+      });
+
     return (
         <ResultPage percentage={percentage} id="1" type={type}/>     
     )
