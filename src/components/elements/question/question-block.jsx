@@ -23,7 +23,7 @@ export default function QuestionBlock(props){
         props.setAns(newAns)
     }
     return(
-        <div className = "aspect-ratio: auto container box-border  shadow-lg h-70 w-auto px-10 py-10 mx-5 my-10 outline outline-1  outline-offset-1 text-sm" >
+        <div className = "aspect-ratio: auto container box-border  shadow-lg h-70 w-auto px-5 py-10 mx-5 my-10 outline outline-1  outline-offset-2 text-sm" >
             <form>
                 <fieldset>
                 <legend><span className='mb-10'>{props.name}</span></legend>

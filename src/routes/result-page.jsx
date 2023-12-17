@@ -94,7 +94,7 @@ export default function ResultPage(props) {
         }
         
         else if (Number(id) === 2) {
-            result_page_show = ("Draw: "+ percentage1 + "\n"+"Push: "+ (100-percentage1))
+            result_page_show = ("Draw: "+ percentage1 +"%" + "\n"+" Push: "+ (100-percentage1)+"%")
             if(percentage1>50) {
                 your_result = ("Draw")
                 result_element_show = ("이성관계에서 관심을 받는 수동적인 입장이며, 마음을 여는 속도가 느린 편입니다.")
@@ -104,7 +104,7 @@ export default function ResultPage(props) {
                 result_element_show = ("이성관계에서 관심을 주는 능동적인 입장이며,마음을 여는 속도가 빠른 편입니다")
             }
         } else if (Number(id) === 3) {
-            result_page_show = ("Change: "+ percentage2 + "\n"+" Keep: "+ (100-percentage2))
+            result_page_show = ("Change: "+ percentage2+"%" + "\n"+" Keep: "+ (100-percentage2)+"%")
             if(percentage2>50) {
                 your_result = ("Change")
                 result_element_show = ("변화를 추구하며 감정적인 사람의 매력은 그들의 역동성에서 비롯됩니다. "+"\n"+ " 이런 유형의 사람들은 새로운 경험과 변화를 적극적으로 탐색하며, 그 과정에서 다양한 감정적 깊이를 드러냅니다. "+"\n"+ " 그들의 감정적인 성향은 인간 관계에서 깊은 연결감과 공감 능력을 제공합니다.")
@@ -114,7 +114,7 @@ export default function ResultPage(props) {
                
             }
         } else if (Number(id) === 4) {
-            result_page_show = ("Appeal: "+ percentage3 + "\n"+"Honest: "+ (100-percentage3))
+            result_page_show = ("Appeal: "+ percentage3+"%" + "\n"+"Honest: "+ (100-percentage3)+"%")
             if(percentage3>50) {
                 your_result = ("Appeal")
                 result_element_show = ("화려한 외모나 행동으로 주목을 받으며, 동시에 자신의 내면을 숨김으로써 신비로움을 유지합니다." +"\n"+ "그들의 복잡하고 다면적인 성격은 깊은 매력과 관심을 불러일으킵니다.")
@@ -123,7 +123,7 @@ export default function ResultPage(props) {
                 result_element_show = ("간소한 외모와 행동으로 솔직하고 진실된 성격을 지니고 있습니다." +"\n"+ "이들은 복잡한 세상 속에서 단순함과 진실함을 추구하며, 그들의 순수한 마음과 평온한 태도는 주변 사람들에게 따뜻함과 안식을 제공합니다.")
             }
         } else if (Number(id) === 5) {
-            result_page_show = ("Flesh: "+ percentage4 + "\n"+"Spirit: "+ (100-percentage4))
+            result_page_show = ("Flesh: "+ percentage4+"%" + "\n"+"Spirit: "+ (100-percentage4)+"%")
             if(percentage4>50) {
                 your_result = ("Flesh")
                 result_element_show = ("인생을 즉흥적으로 즐기고 현재의 순간에 집중하는 태도는 삶에 대한 열정과 즐거움을 지니고 있습니다."+"\n"+"직관을 중시하는 사람들은 감각적이고 본능적인 접근을 보여줍니다."+"\n"+"활동적이고 에너지 넘치는 성격은 다른 사람들에게 활력과 긍정적인 에너지를 전달합니다. ")
@@ -182,19 +182,20 @@ export default function ResultPage(props) {
     
         return(
         <div>
-            <div>This is TypePage</div>
-            <div className="text-2xl font-light">
-            {result_page_show}
-            </div>
 
-            <div className="text-xl">
+            <div className="text-2xl mx-5">
             당신의 특징은 {your_result} 입니다
             </div>
             <div className="mx-5 my-5 ">
             <img src = {RenderImage(your_result)} width="100%" height="100%" /> 
             </div>
+
+            <div className="text-2xl font-light mx-5">
+            {result_page_show}
+            </div>
+
             
-            <div className="mx-5 mt-3 font-light">
+            <div className="mx-5 mt-3 font-light leading-loose">
             {result_element_show}
             </div>
             

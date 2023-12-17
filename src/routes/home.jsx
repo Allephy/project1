@@ -2,8 +2,9 @@ export default function Home(){
     return (
         <div className="mb:flex font-light mx-3 tracking-wide leading-loose">
             <h5 className="text-2xl text-justify my-5 ">Project1_Test</h5>
+            <img src="/test.png" alt="The Art of Seduction" height="100%" width="100%" className="mx-auto mb-5" />
             <h1>
-                오픈소스프로젝트수업이 기회가 되어서 만든 간단한 심리테스트입니다.
+                오픈소스프로젝트 수업이 기회가 되어서 만든 간단한 심리테스트입니다.
                 Robert Greene의 "The Art of Seduction"라는 책의 내용을 아이디어로 하여 만들어봤습니다.
                 이 책에서는 <span className="font-semibold">인간이 인간을 어떻게 대하는지에 대한 재미있는 분류법</span>이 있습니다.
                 세상에는 다양한 인간군상들이 있습니다. 당연하게도, 인간관계에 대처하는 방식또한 여러가지 일것입니다.
@@ -20,7 +21,7 @@ export default function Home(){
             </h1>
             <br/>
             <br/>
-            <div className="mx-auto">
+            <div className="mx-10 mb-10">
             <img src="/images/Book.jpg" alt="The Art of Seduction" height="100%" width="100%" />
             </div>
             

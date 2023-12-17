@@ -12,12 +12,12 @@ const DPQuestion = [
     {
         id:1,
         statement: -1,
-        question:"내가 관심이 있는 상대와 둘이 약속을 잡기보다 상대가 참석하는 자리에 참석한다"
+        question:"내가 관심이 있는 상대와 둘이 약속을 잡는 것보다는 상대가 참석하는 자리에 참석한다"
     },
     {
         id:2,
         statement: 1,
-        question:"상대가 나와 같이 있는 시간을 부담스럽게 여긴다"
+        question:"상대가 나와 같이 있는 시간을  부담스럽게 여긴다"
     },
     {
         id:3,
@@ -27,12 +27,12 @@ const DPQuestion = [
     {
         id:4,
         statement: -1,
-        question:"상대에게 관심이 있다는 사실이 알려졌을 때 주로 상대가 나에게 관심을 잃었다"
+        question:"상대에게 관심이 있다는 사실이 알려질 때 주로 상대가 나에게 관심을 잃었다"
     },
     {
         id:5,
         statement: -1,
-        question:"관심이 있는 상대를 일부러 차갑게 대한다"
+        question:"관심 있는 상대를 일부러 차갑게 대한다"
     },
     {
         id:6,
@@ -84,7 +84,7 @@ const CKQuestion = [
     {
         id:4,
         statement: 1,
-        question:"한결 같아서 좋다는 말을 듣는다"
+        question:"늘 한결 같아서 좋다는 말을 듣는다"
     },
     {
         id:5,
