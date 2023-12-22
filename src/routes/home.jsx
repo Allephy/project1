@@ -4,7 +4,7 @@ export default function Home(){
         <div className="mb:flex font-light mx-3 tracking-wide leading-loose">
             <h5 className="text-2xl text-justify mb-5">연인역할유형검사 <br/> <span className="text-xl">Lovers' Role Type Test (LoReT Test)</span></h5>
             <Link to='/testpage'>
-            <img src="/test.png" alt="The Art of Seduction" height="100%" width="100%" className="mx-auto mb-5" />
+            <img src="/icon.png" alt="The Art of Seduction" height="100%" width="100%" className="mx-auto mb-5" />
             </Link>
             <a className="text-2xl font-light underline decoration-1" href="/testpage">검사 실시</a>
             <h1 className="text-xl">

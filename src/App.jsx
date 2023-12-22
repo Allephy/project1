@@ -39,7 +39,7 @@ function App() {
   
 
   return (
-    <div className="sm:max-lg:mx-[0.01rem] lg:mx-[40rem] text-xl">
+    <div className="sm:max-lg:mx-[0.01rem] lg:mx-[30rem] text-xl">
       {isLoading ? <LoadingScreen /> : (
         <BrowserRouter>
         <ul className="sm:max-lg flex font-light mt-1 mb-3 border-d-black">
