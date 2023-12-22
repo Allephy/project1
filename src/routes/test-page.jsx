@@ -25,7 +25,7 @@ const ScrollToTop = () => {
 function Header2() {
     return(
         <div className='font-light text-sm mx-5 underline decoration-1'>
-            1. 시험은 총 40문제입니다.<br/>
+            1. 시험은 총 32문제입니다.<br/>
             2. 진솔하게 답변하는 것이 좋습니다.<br/>
             3. 답변하기 위해 깊은 생각을 하는 것을 추천합니다.
         </div>
