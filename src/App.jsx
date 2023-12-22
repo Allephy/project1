@@ -42,7 +42,7 @@ function App() {
     <div>
       {isLoading ? <LoadingScreen /> : (
         <BrowserRouter>
-        <ul className="sm:max-lg flex font-light mt-1 mb-3 border-d-black">
+        <ul className="sm:max-lg flex font-light mt-1 mb-3 border-b-black">
           <li className="mr-3">
               <a className="inline-block border  border-white rounded hover:border-gray-200 text-black-500 hover:bg-gray-200 py-1 px-3" href="/">Home</a>
           </li>
@@ -70,8 +70,6 @@ function App() {
                 <Route path='/Natural' element={<Natural />} />
                 <Route path='/Siren' element={<Siren/>} />
                 <Route path='/Star' element={<Star/>} />
-
-              
 
           </Routes>
         </BrowserRouter>
