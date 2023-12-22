@@ -23,10 +23,10 @@ export default function QuestionBlock(props){
         props.setAns(newAns)
     }
     return(
-        <div className = "aspect-ratio: auto container box-border  shadow-lg h-70 w-auto px-5 py-10 mx-5 my-10 outline outline-1  outline-offset-2 text-sm" >
+        <div className = "aspect-ratio: auto container box-border shadow-lg h-70 w-auto px-5 py-10 mx-5 my-10 outline outline-1  outline-offset-2 text-sm lg:text-lg" >
             <form>
                 <fieldset>
-                <legend><span className='mb-10'>{props.name}</span></legend>
+                <legend className='mb-5' ><span>{props.name}</span></legend>
                     <div className="mb-2 block min-h-24 pl-[1.5rem]" >
                     <input
                     className="relative float-left -ml-[1.5rem] mr-1 mt-2 h-5 w-5 rounded-full border-5 border-solid border-neutral-300 
@@ -43,7 +43,6 @@ export default function QuestionBlock(props){
                     id="strongly agree"
                     value='+2'
                     onChange={clicked}
-                    //onClick={(event)=>{  window.scrollTo({ top: 400, behavior: "smooth" }); props.ans[]; console.log('dldlldldldl', props.ans) } }
                     />
                     <label
                     className="mt-px inline-block pl-[0.15rem] hover:cursor-pointer "
@@ -69,7 +68,6 @@ export default function QuestionBlock(props){
                     id="agree"
                     value='+1'
                     onChange={clicked}
-                    //onClick={(event)=>{ window.scrollTo({ top: 400, behavior: "smooth" }); ;  } }
                     />
                     <label
                     className="mt-px inline-block pl-[0.15rem] hover:cursor-pointer"
@@ -95,7 +93,6 @@ export default function QuestionBlock(props){
                     id="disagree"
                     value='-1'
                     onChange={clicked}
-                    //onClick={(event)=>{ window.scrollTo({ top: 400, behavior: "smooth" }); clicking;} }
                     />
                     <label
                     className="mt-px inline-block pl-[0.15rem] hover:cursor-pointer"
@@ -121,7 +118,6 @@ export default function QuestionBlock(props){
                     id="strongly disagree"
                     value='-2'
                     onChange={clicked}
-                    //onClick={(event)=>{ window.scrollTo({ top: 400, behavior: "smooth" }); clicking;} }
                     />
                     <label
                     className="mt-px inline-block pl-[0.15rem] hover:cursor-pointer"

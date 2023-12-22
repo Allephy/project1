@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useLocation } from 'react-router-dom';
 
 import Test1 from '@components/elements/test/Test1';
 import Test2 from '@components/elements/test/Test2';
@@ -13,18 +12,10 @@ import ResultLogic from './result-logic';
 //testpage->result-logic->result-page;
 
 
-const ScrollToTop = () => {
-    const { pathname } = useLocation();
-  
-    useEffect(() => {
-      window.scrollTo(0, 0);
-    }, [pathname]);
-  };
-
 
 function Header2() {
     return(
-        <div className='font-light text-sm mx-5 underline decoration-1'>
+        <div className='font-light text-sm mx-5 underline decoration-1 lg:text-lg'>
             1. 시험은 총 32문제입니다.<br/>
             2. 진솔하게 답변하는 것이 좋습니다.<br/>
             3. 답변하기 위해 깊은 생각을 하는 것을 추천합니다.
@@ -69,18 +60,23 @@ function TestPage (props) {
         const Next = (event) => {
         event.preventDefault();
         setId(Number(id)+1);
+
+        window.scroll(top);
                 
         };
     
+
+        
+
     const navigate = useNavigate();
         
         console.log('props', id)
         let move = null;
         if (id <= 3) {
-            move = <button onClick={Next} className= "mx-auto">다음 페이지</button>
+            move = <button onClick={Next} className= "mx-auto underline decoration-1">다음 페이지</button>
         } else if (id === 4) { 
             // id가 4가 된 후 submit을 하면, result-page로 
-            move = <input type='submit' value='Get Your Result' onClick={() => navigate("/resultlogic") } ></input>
+            move = <input type='submit' value='Get Your Result' className= "mx-auto underline decoration-1" onClick={() => navigate("/resultlogic") } ></input>
         } else if (id === 5) {
             move = null;
         }
