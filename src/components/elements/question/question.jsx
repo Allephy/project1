@@ -17,7 +17,7 @@ const DPQuestion = [
     {
         id:2,
         statement: 1,
-        question:"상대가 나와 같이 있는 시간을  부담스럽게 여긴다"
+        question:""
     },
     {
         id:3,

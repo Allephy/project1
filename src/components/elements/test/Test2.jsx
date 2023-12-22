@@ -6,7 +6,7 @@ import QuestionBlock from '@components/elements/question/question-block';
 let CKScoreList;
 
 export default function Test2() {
-    const [ans, setAns] = useState([{id: '1', value: '0'}, {id: '2', value: '0'}, {id: '3', value: '0'}, {id: '4', value: '0'}, {id: '5', value: '0'}, {id: '6', value: '0'}, {id: '7', value: '0'},{id: '8', value: '0'}, {id: '9', value: '0'}, {id: '10', value: '0'}])
+    const [ans, setAns] = useState([{id: '1', value: '0'}, {id: '2', value: '0'}, {id: '3', value: '0'}, {id: '4', value: '0'}, {id: '5', value: '0'}, {id: '6', value: '0'}, {id: '7', value: '0'},{id: '8', value: '0'}])
     
     CKScoreList =  [...ans];
     console.log('CkScoreList', CKScoreList);
@@ -21,8 +21,6 @@ export default function Test2() {
             <QuestionBlock name={CKQuestion[5].question} setAns={setAns} ans={ans} id='6'>16</QuestionBlock>
             <QuestionBlock name={CKQuestion[6].question} setAns={setAns} ans={ans} id='7'>17</QuestionBlock>
             <QuestionBlock name={CKQuestion[7].question} setAns={setAns} ans={ans} id='8'>18</QuestionBlock>
-            <QuestionBlock name={CKQuestion[8].question} setAns={setAns} ans={ans} id='9'>19</QuestionBlock>
-            <QuestionBlock name={CKQuestion[9].question} setAns={setAns} ans={ans} id='10'>20</QuestionBlock>
             </div>
         </div>
     );

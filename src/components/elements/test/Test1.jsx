@@ -6,7 +6,7 @@ import QuestionBlock from '@components/elements/question/question-block';
 let DPScoreList;
 
 export default function Test1() {
-    const [ans, setAns] = useState([{id: '1', value: '0'}, {id: '2', value: '0'}, {id: '3', value: '0'}, {id: '4', value: '0'}, {id: '5', value: '0'}, {id: '6', value: '0'}, {id: '7', value: '0'},{id: '8', value: '0'}, {id: '9', value: '0'}, {id: '10', value: '0'}])
+    const [ans, setAns] = useState([{id: '1', value: '0'}, {id: '2', value: '0'}, {id: '3', value: '0'}, {id: '4', value: '0'}, {id: '5', value: '0'}, {id: '6', value: '0'}, {id: '7', value: '0'},{id: '8', value: '0'}])
 // We gonna save the answer in the form of a list. DPScoreList is the
     console.log('DPScoreList', DPScoreList);
     DPScoreList = [...ans];
@@ -21,8 +21,6 @@ export default function Test1() {
             <QuestionBlock name={DPQuestion[5].question} setAns={setAns} ans={ans} id='6'>6</QuestionBlock>
             <QuestionBlock name={DPQuestion[6].question} setAns={setAns} ans={ans} id='7'>7</QuestionBlock>
             <QuestionBlock name={DPQuestion[7].question} setAns={setAns} ans={ans} id='8'>8</QuestionBlock>
-            <QuestionBlock name={DPQuestion[8].question} setAns={setAns} ans={ans} id='9'>9</QuestionBlock>
-            <QuestionBlock name={DPQuestion[9].question} setAns={setAns} ans={ans} id='10'>10</QuestionBlock>
             </div>
         </div>
     );

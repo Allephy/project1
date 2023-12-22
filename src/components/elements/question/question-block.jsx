@@ -12,7 +12,7 @@ export default function QuestionBlock(props){
     }*/
     const clicked = (event) => {
         const newAns = []
-        for(let i=0; i<10; i++){
+        for(let i=0; i<8; i++){
             if (i === Number(props.id)){
                 newAns.push({id: props.id, value: event.target.value});
             } else {

@@ -6,7 +6,7 @@ import QuestionBlock from '@components/elements/question/question-block';
 let ANScoreList;
 
 export default function Test3() {
-    const [ans, setAns] = useState([{id: '1', value: '0'}, {id: '2', value: '0'}, {id: '3', value: '0'}, {id: '4', value: '0'}, {id: '5', value: '0'}, {id: '6', value: '0'}, {id: '7', value: '0'},{id: '8', value: '0'}, {id: '9', value: '0'}, {id: '10', value: '0'}])
+    const [ans, setAns] = useState([{id: '1', value: '0'}, {id: '2', value: '0'}, {id: '3', value: '0'}, {id: '4', value: '0'}, {id: '5', value: '0'}, {id: '6', value: '0'}, {id: '7', value: '0'},{id: '8', value: '0'}])
     
     ANScoreList = [...ans];
     console.log('ANScoreList', ANScoreList);
@@ -21,8 +21,7 @@ export default function Test3() {
             <QuestionBlock name={ANQuestion[5].question} setAns={setAns} ans={ans} id='6'>26</QuestionBlock>
             <QuestionBlock name={ANQuestion[6].question} setAns={setAns} ans={ans} id='7'>27</QuestionBlock>
             <QuestionBlock name={ANQuestion[7].question} setAns={setAns} ans={ans} id='8'>28</QuestionBlock>
-            <QuestionBlock name={ANQuestion[8].question} setAns={setAns} ans={ans} id='9'>29</QuestionBlock>
-            <QuestionBlock name={ANQuestion[9].question} setAns={setAns} ans={ans} id='10'>30</QuestionBlock>
+
             </div>
         </div>
     );
