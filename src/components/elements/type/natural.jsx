@@ -4,7 +4,7 @@
 
 export default function Natural() {
     return (
-        <div className="mx-3 my-10 font-light">
+        <div className="mx-5 my-10 font-light">
             <span className="text-2xl font-medium">Natural</span>
             <div>
 

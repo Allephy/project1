@@ -93,6 +93,7 @@ export default function ResultLogic() {
           score4:percentage[3],
         });
       }
+ 
       
       writeUserData(percentage,type);
       logEvent(analytics,'select_content',{
@@ -102,6 +103,7 @@ export default function ResultLogic() {
         ANscore:percentage[2],
         FSscore:percentage[3],
       });
+
 
     return (
         <ResultPage percentage={percentage} id="1" type={type}/>     

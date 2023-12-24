@@ -3,7 +3,7 @@
 
 export default function Charisma() {
     return (
-        <div className="mx-3 my-10 font-light">
+        <div className="mx-5 my-10 font-light">
             <span className="text-2xl font-medium">Charisma</span>
             <div>
             
@@ -20,43 +20,52 @@ export default function Charisma() {
             </span>
             <br/>
 
+            <br/>
+            <span className="text-lg">
+            핵심 요소: 리더쉽과 자신감, 명확하고 비전 있는 사랑, 강한 정신적 지원
+            </span>
+            <br/>
+            <br/>
             
 
 
-            <br/><span className="text-xl font-medium">확신과 신성함을 지닌 리더</span><br/>
+            <br/><span className="text-xl font-medium">리더십과 자신감</span><br/>
             <span className="text-lg">
-            이 유형은 확고한 믿음과 행동을 통해 일상의 모든 순간을 성스럽게 만듭니다. 
-            그들은 흔들리지 않는 눈빛과 위기 상황에서도 강한 모습을 보이며, 이러한 일관성은 그들의 매력을 더합니다. 
-            Charisma는 남다른 통찰력으로 확고한 믿음을 가지고 있으며, 책임을 회피하지 않고 왕관의 무게를 견딥니다. 
-            뛰어난 통찰력과 책임감을 가진 이들은 일상의 단순한 행동조차도 의미 있는 행위로 전환시킵니다. 
+            Charisma의 리더십은 가장 두드러지는 특성 중 하나입니다.
+            Charisma는 본능적으로 리더의 역할을 수행하며, 이는 자신감과 결단력에서 비롯됩니다. 
+            Charisma는 연인과의 관계에서 명확한 방향성과 목적을 제시하며, 공통의 목표를 향해 나아갑니다. 
+            Charisma는 탁월한 문제 해결 능력을 보여주며, 어려운 상황에서도 침착하고 신중한 결정을 내리는 능력이 있습니다.
+            <br/> <br/>
+            그리고, Charisma의 자신감은 리더십을 뒷받침하는 핵심 요소입니다. 
+            Charisma는 자신의 능력과 판단력에 대해 깊은 믿음을 가지고 있으며, 이는 Charisma의 말과 행동에 분명하게 드러납니다. 
+            자신감 있는 사람들은 상황에 대한 통제력과 자기 확신을 가지고 있으며, 이는 관계에서 안정감과 보호감을 제공합니다.
             </span>
             <br/>
 
-            <br/><span className="text-xl font-medium">카리스마 넘치는 군주</span><br/>
+            <br/><span className="text-xl font-medium">명확하고 비전 있는 사랑</span><br/>
             <span className="text-lg">
-            이 유형은 명확한 목표를 가지고 있으며, 사람들을 그들의 뜻대로 움직이게 하는 능력을 지니고 있습니다. 
-            평화로운 시기보다는 위기 상황에서 그들의 진가가 드러나며, 자기 자신에게 엄격한 만큼 타인에게도 엄격합니다. 
-            이러한 성향은 때로 오해를 사기도 하지만, 그들은 대중의 존경과 관심을 받으며, 분위기를 연출하고 웅변술로 사람들을 매료시킵니다. 
-            Charisma는 독립적인 성격을 지니고 있지만, 사람들에 의해 그 가치가 더욱 빛납니다. 
+            Charisma는 연인관계에서 방향을 설정하는 데 중요한 역할을 합니다. 
+            Charisma는 자신과 연인이 함께 나아갈 수 있는 명확한 길을 제시하며, 이는 사랑에 깊이와 의미를 부여합니다. 
+            Charisma는 사랑에 있어서도 계획적이고 전략적인 접근을 선호하며, 이를 통해 관계를 더욱 견고하고 안정적으로 만듭니다.
+            <br/> <br/>
+            또한, Charisma는 누군가를 사귀고 있을때조차, 개인적인 성장과 상호 발전을 중시합니다. 
+            Charisma는 연인과 함께 성장하는 것을 중요하게 여기며, 이는 서로를 위한 격려와 지원으로 이어집니다. 
+            Charisma는 사랑을 통해 서로를 더욱 발전시키고, 함께 성취할 수 있는 가능성을 탐색합니다.
             </span>
             <br/>
 
-            <br/><span className="text-xl font-medium">충성과 믿음을 이끌어내는 존재</span><br/>
+            <br/><span className="text-xl font-medium">강한 정신적 지원</span><br/>
             <span className="text-lg">
-            이 유형의 사람들은 강한 절제력을 가지고 있으며, 유혹에 쉽게 흔들리지 않습니다. 
-            그들은 사람들로 하여금 충성을 바치게 만들며, 헌신, 믿음, 사랑과 같은 고귀한 가치를 실현합니다. 
-            Charisma는 모험적인 성향을 가지고 있으며, 기존의 원칙을 파괴하고 더 나은 방향으로 나아가려는 용기를 가지고 있습니다.
+            Charisma는 감정적인 지원을 제공하는 데 능숙합니다. 
+            Charisma는 연인의 감정을 잘 이해하고 공감할 수 있으며, 이는 관계에서 안정감을 제공합니다. 
+            Charisma는 파트너의 감정적 요구에 민감하게 반응하며, 필요한 지원과 위로를 제공할 수 있습니다.
+            <br/> <br/>
+            이렇게 강한 정신적 지원을 할 수 있는 이유는, Charisma는 겉으로 보이는 강인한 모습 뒤에 깊고 복잡한 감정의 세계를 가지고 있기 때문입니다. 
+            Charisma는 다양한 감정적 경험을 깊이 있게 체험하며, 이러한 감정의 다층성은 Charisma는의 인간적인 매력과 깊이를 더해줍니다. 
+            Charisma는 기쁨, 슬픔, 열정, 분노와 같은 감정을 풍부하게 경험하며, 이를 통해 자신과 세계에 대한 더 깊은 이해를 얻습니다.
             </span>
             <br/>
-
-            <br/><span className="text-xl font-medium">결론: Charisma의 강력한 영향력</span><br/>
-            <span className="text-lg">
-            Charisma는 그들의 확고한 믿음과 강력한 리더십으로 사람들을 매혹합니다. 
-            그들은 자신의 가치와 신념을 통해 타인에게 깊은 영향을 미치며, 이는 사람들이 그들을 믿고 따르게 만듭니다. 
-            Charisma의 존재는 리더십과 영향력의 중요성을 상기시키며, 이는 우리 모두가 경험할 수 있는 보편적인 경험입니다.
-            </span>
-            <br/>
-
+            
             </div>
 
         </div>

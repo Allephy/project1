@@ -5,7 +5,7 @@
 
 export default function Siren() {
     return (
-        <div className="mx-3 my-10 font-light">
+        <div className="mx-5 my-10 font-light">
             <span className="text-2xl font-medium">Siren</span>
             <div>
 

@@ -4,8 +4,8 @@
 
 export default function Coquette() {
     return (
-        <div className="mx-3 my-10 font-light">
-            <span className="text-2xl font-medium">Coqutte</span>
+        <div className="mx-5 my-10 font-light">
+            <span className="text-2xl font-medium">Coquette</span>
             <div>
 
             <img alt="Coqutte" src="/images/Coqutte.png" width="100%" height="100%"></img>
@@ -23,44 +23,42 @@ export default function Coquette() {
             
 
 
-            <br/><span className="text-xl font-medium">차가운 인상을 지닌 사람</span><br/>
+            <br/><span className="text-xl font-medium">차가운 태도와 신비주의</span><br/>
             <span className="text-lg">
-            Coquette는 차가운 인상을 지니고 있으며, 타인과의 선을 명확히 그으는 경향이 있습니다. 
-            그들은 자신의 감정과 생각을 숨기고, 반응을 적게 보이며, 감정을 잘 드러내지 않습니다. 
-            이러한 행동은 그들의 강한 자아와 예의를 통해 거리감을 만들어내는 것으로 나타납니다. 
-            Coquette는 쉽게 놀라지 않으며, 타인에게 무서워 보이기도 합니다. 
-            그들은 감정과 생각을 깊이 숨기며, 그들의 반응은 종종 냉담하고 예측 불가능합니다.
+            Coquette의 차가운 매력은 로맨틱한 관계에서 독특한 긴장감과 매력을 생성합니다. 
+            그들은 타인과의 감정적 거리를 의도적으로 유지하므로써 Coquette의 매력에 대한 호기심과 미스터리를 증가시킵니다. 
+            이러한 태도는 상대방에게 손에 잡히지 않는 느낌을 의도적으로 줌으로써, Coquette에 대한 끊임없는 관심과 매혹을 유발합니다.
+            <br/><br/>
+            또한, Coquette는 상대방과의 거리를 유지하는 데 능숙합니다. 
+            Coquette는 자신에 대해 너무 많은 것을 드러내지 않으며, 이는 Coquette와의 교류에서 항상 일정한 수준의 거리감을 유지하게 합니다. 
+            이러한 거리 유지는 Coquette의 매력을 더욱 향상시키며, 상대방에게 계속해서 도전적이고 흥미로운 관계를 제공합니다.
             </span>
             <br/>
 
-            <br/><span className="text-xl font-medium">마음을 조종하는 나르시스트</span><br/>
-            <span className="text-lg">
-            Coquette는 상대방의 마음을 조종하는 나르시스트적 성향을 가지고 있습니다.  
-            이 성격 유형은 그들은 상대방을 관찰하고 상대의 심리를 파악하고 이용하는 것에 능숙합니다. 
-            그들은 마음의 고무줄 놀이, 즉 밀고 당기기를 잘 해내며, 자신이 원하는 방향으로 상황을 유도하는 데 탁월합니다. 
-            상대방에게 영향을 미치는 것을 즐기며, 때로는 이를 통해 상대방의 기대를 깨뜨리는 것에서 쾌감을 느낍니다. 
-            이들은 상대방에게 영향을 미치고 조종하는 것을 즐기며, 때로는 정신적 사디스트로서의 행동을 보이기도 합니다.
-            Coquette는 자신의 목표를 달성하기 위해 계획적이고 치밀하게 행동합니다.
+            <br/><span className="text-xl font-medium">능숙한 주도권 장악</span><br/>
+            <span className="text-lg">  
+            Coquette의 주도권 장악 능력은 관계에서 심리적 우위를 확보하는 데 도움이 됩니다. 
+            그들은 상대방의 감정과 행동을 예측하고, 이를 기반으로 자신의 행동을 계획합니다. 
+            이러한 심리적 우위는 그들이 관계에서 주도권을 가지고, 상황을 자신의 통제하에 두는 것을 가능하게 합니다.
+            <br/><br/>
+            또한, Coquette는 상대방의 마음을 조종하는 나르시시스트적 성향을 가지고 있습니다.
+            Coquette는 능숙하게 상대방을 조종합니다. 
+            그들은 상대의 감정과 반응을 섬세하게 파악하고, 이를 자신의 유리한 방향으로 유도합니다. 
+            Coquette는 상대방의 심리를 교묘하게 이용하여, 그들이 원하는 결과를 얻기 위해 다양한 전략을 사용합니다.
             </span>
             <br/>
 
             <br/><span className="text-xl font-medium">의문을 자아내는 존재</span><br/>
             <span className="text-lg">
-            이들은 항상 불확실한 상태를 유지하며, 행동과 말의 진정한 의도를 숨깁니다. 
-            그들은 뜨겁고 차가운 태도를 번갈아 보이며, 변덕스러운 태도로 주변 사람들을 혼란스럽게 만듭니다.  
-            이러한 행동은 상대방에게 혼란과 의문을 불러일으키며, 일방적인 의사소통을 선호합니다이들은 일방적인 의사소통을 선호하며, 
-            때때로 그들의 행동은 악의적으로 보일 수 있습니다. 
-            그들은 타인에게 죄책감과 호기심을 불러일으키는 존재로, 그들의 의도와 행동은 항상 예측하기 어렵습니다.
+            Coquette는 항상 불확실한 상태를 유지하며, 행동과 말의 진정한 의도를 숨깁니다. 
+            Coquette는 상대의 기대를 형성하고 이를 깨뜨리는 데 능숙하며, 상대가 예측할 수 없는 행동을 함으로써 강렬한 감정을 선사합니다.
+            <br/><br/>
+            Coquette는 뜨겁고 차가운 태도를 번갈아 보이며, 변덕스러운 태도로 상대를 혼란스럽게 만듭니다.  
+            이러한 행동은 상대방에게 혼란과 의문을 불러일으키며, 때때로  Coquette의 행동은 악의적으로 보일 수 있습니다. 
+            Coquette는 상대의 죄책감과 호기심을 불러일으키는 존재로, Coquette의 의도와 행동은 항상 예측하기 어렵습니다.
             </span>
             <br/>
 
-            <br/><span className="text-xl font-medium">결론:Coquette의 복잡한 심리</span><br/>
-            <span className="text-lg">
-            Coquette는 복잡하고 조종적인 심리의 소유자로, 그들의 행동과 태도는 인간 관계에서의 어려움과 갈등을 반영합니다. 
-            그들은 상대방과의 관계에서 조종과 영향력을 행사하려 하며, 이는 상대방에게 혼란과 갈등을 야기합니다. 
-            Coquette의 존재는 우리가 인간 관계에서 직면할 수 있는 어려움과 복잡한 심리를 상기시키며, 이는 우리 모두가 경험할 수 있는 보편적인 현상입니다.
-            </span>
-            <br/>
 
             </div>
 
