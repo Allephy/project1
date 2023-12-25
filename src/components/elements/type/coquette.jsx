@@ -20,6 +20,12 @@ export default function Coquette() {
             </span>
             <br/>
 
+            <br/>
+            <span className="text-lg">
+            핵심 요소: 차가운 태도와 신비주의, 능숙한 주도권 장악, 의문을 자아내는 존재
+            </span>
+            <br/>
+
             
 
 
@@ -35,7 +41,7 @@ export default function Coquette() {
             </span>
             <br/>
 
-            <br/><span className="text-xl font-medium">능숙한 주도권 장악</span><br/>
+            <br/><span className="text-xl font-medium">불공평하고 일방적인 사랑</span><br/>
             <span className="text-lg">  
             Coquette의 주도권 장악 능력은 관계에서 심리적 우위를 확보하는 데 도움이 됩니다. 
             그들은 상대방의 감정과 행동을 예측하고, 이를 기반으로 자신의 행동을 계획합니다. 
