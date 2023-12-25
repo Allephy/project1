@@ -6,29 +6,29 @@
 export default function Siren() {
     return (
         <div className="mx-5 my-10 font-light">
-            <span className="text-2xl font-medium">Siren</span>
+            <span className="text-2xl font-medium lg:text-6xl">Siren<br/></span>
             <div>
 
             <img alt="Siren" src="/images/Siren.png" width="100%" height="100%"></img>
 
-            <span className="text-lg ">
+            <span className="text-lg lg:text-3xl">
             "가장 아름다운 속임수는 우리 자신을 속이는 것이다."
             </span>
 
             <br/>
-            <span className="text-lg">
+            <span className="text-lg lg:text-3xl">
            -샤를 보들레르(Charles Baudelaire)
             </span>
             <br/>
 
             <br/>
-            <span className="text-lg">
+            <span className="text-lg lg:text-2xl">
             핵심 요소: 유혹의 중심지, 도발적이고 위험한 사랑 , 능숙한 연출가
             </span>
             <br/>
 
-            <br/><span className="text-xl font-medium">유혹의 중심지</span><br/>
-            <span className="text-lg">
+            <br/><span className="text-xl font-bold lg:text-4xl">유혹의 중심지</span><br/><br/>
+            <span className="text-lg lg:text-xl">
             Siren은 로맨틱한 관계에서 유혹의 중심 역할을 합니다. 
             Siren은 자신의 매력을 의식적으로 사용하여 상대를 끌어들입니다.
             이는 단순히 물리적인 매력에만 국한되지 않고, 감정적, 지적, 그리고 문화적인 매력을 포함합니다. 
@@ -45,8 +45,8 @@ export default function Siren() {
             </span>
             <br/>
 
-            <br/><span className="text-xl font-medium">도발적이고 위험한 사랑</span><br/>
-            <span className="text-lg">
+            <br/><span className="text-xl font-bold lg:text-4xl">도발적이고 위험한 사랑</span><br/><br/>
+            <span className="text-lg lg:text-xl">
             Siren은 상대방에게 도발적인 특성을 지니고 있습니다. 
             Siren은 전통적이거나 보수적인 사랑의 규범을 거부하고, 파트너를 자극적인 방식으로 유혹합니다. 
             이러한 도발적인 접근은 상대방에게 새로운 감각적 경험과 감정적 탐험을 제공합니다. 
@@ -64,8 +64,8 @@ export default function Siren() {
             <br/>
 
 
-            <br/><span className="text-xl font-medium">능숙한 연출가</span><br/>
-            <span className="text-lg">
+            <br/><span className="text-xl font-bold lg:text-4xl">능숙한 연출가</span><br/><br/>
+            <span className="text-lg lg:text-xl">
             Siren은 충동적으로 보일지 모르지만, 실제로는 치밀한 계획을 세우는 능숙한 연출가입니다.
             Siren은 자신의 유혹적인 능력에 대해 깊게 생각하며, 이를 통해 타인을 매혹하는 방법을 탐구합니다. 
             Siren은 상상력이 풍부하며, 이를 통해 자신들의 매력을 극대화하는 다양한 방법을 창조합니다.

@@ -5,31 +5,31 @@
 export default function Natural() {
     return (
         <div className="mx-5 my-10 font-light">
-            <span className="text-2xl font-medium">Natural</span>
+            <span className="text-2xl font-medium lg:text-6xl">Natural<br/></span>
             <div>
 
             <img alt="Natural" src="/images/Natural.png" width="100%" height="100%"></img>
 
-            <span className="text-lg ">
+            <span className="text-lg lg:text-3xl">
             "나는 내 자신의 한계를 알지 못한다. 내가 알고 있는 것은, 내 마음이 어디로 가고 싶은지뿐이다."
             </span>
 
             <br/>
-            <span className="text-lg">
+            <span className="text-lg lg:text-3xl">
            -앙리 미쇼(Anri Michaux)
             </span>
             <br/>
 
             <br/>
-            <span className="text-lg">
+            <span className="text-lg lg:text-2xl">
             핵심 요소: 천진난만하고 자유로운 영혼, 순수하고 솔직한 사랑 , 재능이 뛰어난 괴짜
             </span>
             <br/>
 
 
 
-            <br/><span className="text-xl font-medium">천진난만하고 자유로운 영혼</span><br/>
-            <span className="text-lg">
+            <br/><span className="text-xl font-bold my-5 lg:text-4xl">천진난만하고 자유로운 영혼</span><br/><br/>
+            <span className="text-lg lg:text-xl">
             Natural은 연인 관계에서 천진난만하고 자연스러운 매력을 발산합니다. 
             Natural은 자신의 감정을 솔직하고 순수하게 표현하며, 이는 상대방에게 신선함과 진정성을 전달합니다. 
             Natural의 순수함은 어린 시절의 향수와 자유로움을 불러일으키며, 일상의 복잡함에서 벗어난 단순하고 진실된 사랑을 제공합니다.
@@ -44,8 +44,8 @@ export default function Natural() {
             </span>
             <br/>
             
-            <br/><span className="text-xl font-medium">순수하고 솔직한 사랑</span><br/>
-            <span className="text-lg">
+            <br/><span className="text-xl font-bold lg:text-4xl">순수하고 솔직한 사랑</span><br/><br/>
+            <span className="text-lg lg:text-xl">
             Natural은 연인 관계에서 내면의 순수함을 바탕으로 한 솔직하고 직관적인 사랑을 표현합니다. 
             그들은 사회적인 가면이나 복잡한 전략 없이 자신의 감정을 있는 그대로 표현합니다. 
             이러한 순수하고 솔직한 사랑의 방식은 상대에게 진실되고 깊은 감정적 연결을 제공합니다.
@@ -60,8 +60,8 @@ export default function Natural() {
             </span>
             <br/>
 
-            <br/><span className="text-xl font-medium">재능이 뛰어난 괴짜</span><br/>
-            <span className="text-lg">
+            <br/><span className="text-xl font-bold lg:text-4xl">재능이 뛰어난 괴짜</span><br/><br/>
+            <span className="text-lg lg:text-xl">
             Natural은 천부적인 재능을 지닌 괴짜로, 뛰어난 창의력과 독특한 사고방식을 가지고 있습니다.
             Natural은  깊은 호기심과 다양한 발상으로 일상을 넘어서는 아이디어를 창조하며, 때로는 신동처럼 보일 정도로 놀라운 재능을 발휘합니다. 
             <br/><br/>

@@ -4,32 +4,32 @@
 export default function Charisma() {
     return (
         <div className="mx-5 my-10 font-light">
-            <span className="text-2xl font-medium">Charisma</span>
+            <span className="text-2xl font-medium lg:text-6xl">Charisma<br/></span>
             <div>
             
             <img alt="Charisma" src="/images/Charisma.png" width="100%" height="100%"></img>
 
             <br/>
-            <span className="text-lg ">
+            <span className="text-lg lg:text-3xl">
             "우리의 삶이 끝날 때 중요한 것은 우리가 인생에서 무엇을 소유했는가가 아니라, 우리가 다른 사람들의 삶에 어떤 차이를 만들었는가이다."
             </span>
 
             <br/>
-            <span className="text-lg">
+            <span className="text-lg lg:text-3xl">
            -마틴 루터 킹 주니어(Martin Luther King Jr.)
             </span>
             <br/>
 
             <br/>
-            <span className="text-lg">
+            <span className="text-lg lg:text-2xl">
             핵심 요소: 리더쉽과 자신감, 명확하고 비전 있는 사랑, 강한 정신적 지원
             </span>
             <br/>
             
 
 
-            <br/><span className="text-xl font-medium">리더십과 자신감</span><br/>
-            <span className="text-lg">
+            <br/><span className="text-xl font-bold lg:text-4xl">리더십과 자신감</span><br/><br/>
+            <span className="text-lg lg:text-xl">
             Charisma의 리더십은 가장 두드러지는 특성 중 하나입니다.
             Charisma는 본능적으로 리더의 역할을 수행하며, 이는 자신감과 결단력에서 비롯됩니다. 
             Charisma는 상대방과의 관계에서 명확한 방향성과 목적을 제시하며, 공통의 목표를 향해 나아갑니다. 
@@ -41,8 +41,8 @@ export default function Charisma() {
             </span>
             <br/>
 
-            <br/><span className="text-xl font-medium">명확하고 비전 있는 사랑</span><br/>
-            <span className="text-lg">
+            <br/><span className="text-xl font-bold lg:text-4xl">명확하고 비전 있는 사랑</span><br/><br/>
+            <span className="text-lg lg:text-xl">
             Charisma는 연인관계에서 방향을 설정하는 데 중요한 역할을 합니다. 
             Charisma는 자신과 상대가 함께 나아갈 수 있는 명확한 길을 제시하며, 이는 사랑에 깊이와 의미를 부여합니다. 
             Charisma는 사랑에 있어서도 계획적이고 전략적인 접근을 선호하며, 이를 통해 관계를 더욱 견고하고 안정적으로 만듭니다.
@@ -53,8 +53,8 @@ export default function Charisma() {
             </span>
             <br/>
 
-            <br/><span className="text-xl font-medium">강한 정신적 지원</span><br/>
-            <span className="text-lg">
+            <br/><span className="text-xl font-bold lg:text-4xl">강한 정신적 지원</span><br/><br/>
+            <span className="text-lg lg:text-xl">
             Charisma는 감정적인 지원을 제공하는 데 능숙합니다. 
             Charisma는 상대의 감정을 잘 이해하고 공감할 수 있으며, 이는 관계에서 안정감을 제공합니다. 
             <br/> <br/>

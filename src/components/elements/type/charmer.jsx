@@ -4,30 +4,30 @@
 export default function Charmer() {
     return (
         <div className="mx-5 my-10 font-light">
-            <span className="text-2xl font-medium">Charmer</span>
+            <span className="text-2xl font-medium lg:text-6xl">Charmer<br/></span>
             <div>
 
             <img alt="Charmer" src="/images/Charmer.png" width="100%" height="100%"></img>
 
-            <span className="text-lg ">
+            <span className="text-lg lg:text-3xl">
             "온화한 말 한마디가 삼 겹의 울타리보다 강하다."
             </span>
 
             <br/>
-            <span className="text-lg">
+            <span className="text-lg lg:text-3xl">
            -윌리엄 셰익스피어(William Shakespeare)
             </span>
             <br/>
 
             <br/>
-            <span className="text-lg">
+            <span className="text-lg lg:text-2xl">
             핵심 요소: 공감능력과 적응력, 포근하고 따스한 사랑, 진심어린 칭찬과 격려
             </span>
             <br/>
             
 
-            <br/><span className="text-xl font-medium">공감능력과 적응력</span><br/>
-            <span className="text-lg">
+            <br/><span className="text-xl font-bold lg:text-4xl">공감능력과 적응력</span><br/><br/>
+            <span className="text-lg lg:text-xl">
             Charmer는 상대방의 감정을 깊이 이해하고 공감하는 능력이 탁월합니다. 
             Charmer는 상대방의 감정적 요구와 감정의 미묘한 변화를 인지하며 이를 공감합니다. 
             이러한 공감능력은 상대가 스스로의 감정을 자유롭게 표현하고 이해받고 있다고 느끼게 합니다. 
@@ -43,8 +43,8 @@ export default function Charmer() {
             </span>
             <br/>
 
-            <br/><span className="text-xl font-medium">포근하고 따스한 사랑</span><br/>
-            <span className="text-lg">
+            <br/><span className="text-xl font-bold lg:text-4xl">포근하고 따스한 사랑</span><br/><br/>
+            <span className="text-lg lg:text-xl">
             Charmer는 연인관계에서 안정감과 편안함을 제공하는 역할을 합니다. 
             Charmer의 따뜻하고 친근한 태도는 상대방이 안심하고 긴장을 풀 수 있는 환경을 만들어줍니다. 
             이러한 특성은 특히 스트레스가 많거나 혼란스러운 상황에서 상대방에게 큰 위안이 될 수 있습니다. 
@@ -61,8 +61,8 @@ export default function Charmer() {
             </span>
             <br/>
 
-            <br/><span className="text-xl font-medium">진심어린 칭찬과 격려</span><br/>
-            <span className="text-lg">
+            <br/><span className="text-xl font-bold lg:text-4xl">진심어린 칭찬과 격려</span><br/><br/>
+            <span className="text-lg lg:text-xl">
             Charmer는 상대에게 진심 어린 칭찬을 자주 하며, 이는 상대방의 자신감을 크게 향상시킵니다. 
             Charmer는 상대의 긍정적인 특성과 성취를 인식하고, 이를 강조함으로써 연인에게 가치를 느끼게 합니다. 
             이러한 칭찬은 상대방 스스로가 자신에 대해 긍정적으로 생각하도록 도와주며, 그들의 자존감을 높입니다. 

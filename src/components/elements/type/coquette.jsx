@@ -5,23 +5,23 @@
 export default function Coquette() {
     return (
         <div className="mx-5 my-10 font-light">
-            <span className="text-2xl font-medium">Coquette</span>
+            <span className="text-2xl font-medium lg:text-6xl">Coquette<br/></span>
             <div>
 
             <img alt="Coqutte" src="/images/Coqutte.png" width="100%" height="100%"></img>
 
-            <span className="text-lg ">
+            <span className="text-lg lg:text-3xl">
             "우리는 다른 사람들을 속이는 것처럼, 때때로 자신을 속인다."
             </span>
 
             <br/>
-            <span className="text-lg">
+            <span className="text-lg lg:text-3xl">
            -프랑수아 드 라 로슈푸코(François de La Rochefoucauld)
             </span>
             <br/>
 
             <br/>
-            <span className="text-lg">
+            <span className="text-lg lg:text-2xl">
             핵심 요소: 차가운 태도와 신비주의, 능숙한 주도권 장악, 의문을 자아내는 존재
             </span>
             <br/>
@@ -29,8 +29,8 @@ export default function Coquette() {
             
 
 
-            <br/><span className="text-xl font-medium">차가운 태도와 신비주의</span><br/>
-            <span className="text-lg">
+            <br/><span className="text-xl font-bold lg:text-4xl">차가운 태도와 신비주의</span><br/><br/>
+            <span className="text-lg lg:text-xl">
             Coquette의 차가운 매력은 로맨틱한 관계에서 독특한 긴장감과 매력을 생성합니다. 
             그들은 타인과의 감정적 거리를 의도적으로 유지하므로써 Coquette의 매력에 대한 호기심과 미스터리를 증가시킵니다. 
             이러한 태도는 상대방에게 손에 잡히지 않는 느낌을 의도적으로 줌으로써, Coquette에 대한 끊임없는 관심과 매혹을 유발합니다.
@@ -41,8 +41,8 @@ export default function Coquette() {
             </span>
             <br/>
 
-            <br/><span className="text-xl font-medium">불공평하고 일방적인 사랑</span><br/>
-            <span className="text-lg">  
+            <br/><span className="text-xl font-bold lg:text-4xl">불공평하고 일방적인 사랑</span><br/><br/>
+            <span className="text-lg lg:text-xl">  
             Coquette의 주도권 장악 능력은 관계에서 심리적 우위를 확보하는 데 도움이 됩니다. 
             그들은 상대방의 감정과 행동을 예측하고, 이를 기반으로 자신의 행동을 계획합니다. 
             이러한 심리적 우위는 그들이 관계에서 주도권을 가지고, 상황을 자신의 통제하에 두는 것을 가능하게 합니다.
@@ -54,8 +54,8 @@ export default function Coquette() {
             </span>
             <br/>
 
-            <br/><span className="text-xl font-medium">의문을 자아내는 존재</span><br/>
-            <span className="text-lg">
+            <br/><span className="text-xl font-bold lg:text-4xl">의문을 자아내는 존재</span><br/><br/>
+            <span className="text-lg lg:text-xl">
             Coquette는 항상 불확실한 상태를 유지하며, 행동과 말의 진정한 의도를 숨깁니다. 
             Coquette는 상대의 기대를 형성하고 이를 깨뜨리는 데 능숙하며, 상대가 예측할 수 없는 행동을 함으로써 강렬한 감정을 선사합니다.
             <br/><br/>

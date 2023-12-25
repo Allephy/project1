@@ -8,8 +8,7 @@ export default function Home(){
             </Link>
             <a className="text-2xl font-light underline decoration-1 mx-5" href="/testpage">검사 실시</a>
             <h1 className="text-lg mx-5">
-            LoReT Test란? 연인끼리 무슨 역할을 수행하는지 확인할 수 있는 테스트입니다.
-            무슨 역할을 수행하는지에 따라, 연인을 대하는 성향이나 행동이 다릅니다. <br/>
+            무슨 역할을 수행하는지 알 수 있다면, 상대방을 대하는 성향이나 행동을 확인 할 수 있습니다. <br/>
 
             <div className="mx-5 my-10">
             <img src="/images/Book.jpg" alt="The Art of Seduction" height="100%" width="100%" />
@@ -25,10 +24,9 @@ export default function Home(){
             결국에 상대방을 강한 부정적인 감정은 연인에게도, 스스로에게도 크나큰 상처를 남기게 됩니다. 
             <br/> <br/>
              좋아하고 사랑하기에, 연인을 위해서도 나를 위해서도 우리는 서로가 서로를 알아가야 합니다. 
-            서로가 서로를 알아가는 방식은 어쩌면 '이해', '공감'일지도 모릅니다. 
+            서로가 서로를 알아가는 방식은 사람마다 '이해' 혹은 '공감'일겁니다. 
             하지만, 어쩌면 가장 중요한 건 '있는 그 자체를 받아들인다'는 걸지도 모르겠습니다.
             </h1>
-            <br/>
             <br/>
             
             <h1 className="text-sm font-light mx-5 mb-8">Contract Us: <br/> iforgoten@naver.com  &  lightwalk12@gmail.com</h1>

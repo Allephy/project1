@@ -4,29 +4,29 @@
 export default function Star() {
     return (
         <div className="mx-5 my-10 font-light">
-            <span className="text-2xl font-medium">Star</span>
+            <span className="text-2xl font-medium lg:text-6xl">Star<br/></span>
             <div>
 
             <img alt="Star" src="/images/Star.png" width="100%" height="100%"></img>
 
-            <span className="text-lg ">
+            <span className="text-lg lg:text-3xl">
             "가장 중요한 것은 내가 누구인지, 무엇을 믿는지, 그리고 그것을 얼마나 잘 표현하고 있는지다."
             </span>
 
             <br/>
-            <span className="text-lg">
+            <span className="text-lg lg:text-3xl">
            -오드리 헵번(Audrey Hepburn)
             </span>
             <br/>
 
             <br/>
-            <span className="text-lg">
+            <span className="text-lg lg:text-2xl">
             핵심 요소: 끊임없는 관심의 대상, 차분하고 안정적인 사랑, 소수에게만 드러나는 특별함
             </span>
             <br/>
 
-            <br/><span className="text-xl font-medium">끊임없는 관심의 대상</span><br/>
-            <span className="text-lg">
+            <br/><span className="text-xl font-bold lg:text-4xl">끊임없는 관심의 대상</span><br/><br/>
+            <span className="text-lg lg:text-xl">
             Star는 로맨틱한 관계에서 자연스럽게 주목받는 존재입니다. 
             Star의 매력과 개성은 상대의 관심을 자연스럽게 끌어당깁니다. 
             Star의 존재 자체가 매력적이고 빛나기 때문에, Star는 노력하지 않아도 상대방의 지속적인 관심을 받습니다. 
@@ -45,8 +45,8 @@ export default function Star() {
             </span>
             <br/>
 
-            <br/><span className="text-xl font-medium">차분하고 안정적인 사랑</span><br/>
-            <span className="text-lg">
+            <br/><span className="text-xl font-bold lg:text-4xl">차분하고 안정적인 사랑</span><br/><br/>
+            <span className="text-lg lg:text-xl">
             Star는 로맨틱한 관계에서 평온하고 안정적인 태도로 일관합니다. 
             Star는 감정적으로 안정되어 있으며, 이는 관계에 차분하고 평화로운 분위기를 조성하는 데 도움이 됩니다. 
             Star의 이러한 태도는 상대에게도 긍정적인 영향을 미치며, 관계에서 안정감과 평화를 느낄 수 있도록 합니다.
@@ -61,8 +61,8 @@ export default function Star() {
             </span>
             <br/>
 
-            <br/><span className="text-xl font-medium">소수에게만 드러나는 특별함</span><br/>
-            <span className="text-lg">
+            <br/><span className="text-xl font-bold lg:text-4xl">소수에게만 드러나는 특별함</span><br/><br/>
+            <span className="text-lg lg:text-xl">
             비록 Star가 대중적인 매력을 지니고 있지만, 그들의 진정한 매력은 소수의 사람들에게만 드러납니다.
             Star와 깊이 있는 관계를 맺는 사람은 그들의 보다 개인적이고 심오한 면모를 경험할 수 있습니다. 
             이러한 관계에서 Star는 보다 진솔하고 깊이 있는 자신의 모습을 보여줍니다. 

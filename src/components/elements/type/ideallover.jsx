@@ -6,30 +6,30 @@
 export default function Ideallover() {
     return (
         <div className="mx-5 my-10 font-light">
-            <span className="text-2xl font-medium">Charmer</span>
+            <span className="text-2xl font-medium lg:text-6xl">Ideal Lover<br/></span>
             <div>
 
             <img alt="IdealLover" src="/images/IdealLover.png" width="100%" height="100%"></img>
 
-            <span className="text-lg ">
+            <span className="text-lg lg:text-3xl">
             "진정한 사랑은 영원히 불만족하는 것이며,그것이 그 미학의 이유다."
             </span>
 
             <br/>
-            <span className="text-lg">
+            <span className="text-lg lg:text-3xl">
            -알베르 카뮈(Albert Camus)
             </span>
             <br/>
 
             <br/>
-            <span className="text-lg">
+            <span className="text-lg lg:text-2xl">
             핵심 요소: 예술적인 사랑의 표현, 다정하고 낭만적인 사랑 , 헌신적인 지지와 배려
             </span>
             <br/>
 
 
-            <br/><span className="text-xl font-medium">예술적인 사랑의 표현</span><br/>
-            <span className="text-lg">
+            <br/><span className="text-xl font-bold lg:text-4xl">예술적인 사랑의 표현</span><br/><br/>
+            <span className="text-lg lg:text-xl">
             Ideal Lover는 시와 문학을 활용하여 자신의 감정을 표현합니다. 
             그들은 사랑의 감정을 담은 시를 쓰거나, 상대에게 헌정하는 편지와 이야기를 작성합니다. 
             이러한 문학적 표현은 그들의 감정을 깊이 있고 섬세하게 전달하며, 상대에게 큰 감동을 줍니다.
@@ -44,8 +44,8 @@ export default function Ideallover() {
             </span>
             <br/>
 
-            <br/><span className="text-xl font-medium">다정하고 낭만적인 사랑</span><br/>
-            <span className="text-lg">
+            <br/><span className="text-xl font-bold lg:text-4xl">다정하고 낭만적인 사랑</span><br/><br/>
+            <span className="text-lg lg:text-xl">
             낭만을 쫓는 Ideal Lover는 상대를 위해 특별하고 생각이 깊은 선물을 준비하는 데 능숙합니다.
             Ideal Lover는 일상적인 순간들에 낭만적인 요소를 더함으로써, 상대방에게 기쁨과 놀라움을 선사합니다.
             Ideal Lover는 상대의 취향과 선호를 깊이 이해하고, 이를 반영한 개인화된 경험을 제공합니다.
@@ -61,8 +61,8 @@ export default function Ideallover() {
             </span>
             <br/>
 
-            <br/><span className="text-xl font-medium">헌신적인 지지와 배려</span><br/>
-            <span className="text-lg">
+            <br/><span className="text-xl font-bold lg:text-4xl">헌신적인 지지와 배려</span><br/><br/>
+            <span className="text-lg lg:text-xl">
             Ideal Lover는 상대의 행복을 자신의 행복으로 여깁니다. 
             그들은 상대가 기쁘고 행복할 수 있는 방법을 찾아 행동하며, 
             이는 관계에서 긍정적인 분위기를 조성합니다. 이러한 태도는 상대방 사랑받고 소중히 여겨진다는 느낌을 갖게 합니다.

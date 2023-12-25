@@ -5,30 +5,30 @@
 export default function Lake() {
     return (
         <div className="mx-5 my-10 font-light">
-            <span className="text-2xl font-medium">Lake</span>
+            <span className="text-2xl font-medium lg:text-6xl">Lake<br/></span>
             <div>
 
             <img alt="Lake" src="/images/Lake.png" width="100%" height="100%"></img>
 
-            <span className="text-lg ">
+            <span className="text-lg lg:text-3xl">
             "인간의 삶에서 가장 큰 재앙은 죽음이 아니라, 우리 안에 죽은 욕망이다."
             </span>
 
             <br/>
-            <span className="text-lg">
+            <span className="text-lg lg:text-3xl">
            -세네카(Seneca)
             </span>
             <br/>
 
             <br/>
-            <span className="text-lg">
+            <span className="text-lg lg:text-2xl">
             핵심 요소: 강렬한 열정과 성적 매력, 즉흥적이고 모험적인 사랑 , 억압된 욕망의 해방
             </span>
             <br/>
 
 
-            <br/><span className="text-xl font-medium">강렬한 열정과 성적 매력</span><br/>
-            <span className="text-lg"> 
+            <br/><span className="text-xl font-bold lg:text-4xl">강렬한 열정과 성적 매력</span><br/><br/>
+            <span className="text-lg lg:text-xl"> 
             Lake는 강렬한 열정을 가진 인물로서, 이러한 열정은 그들의 매력과 사랑의 방식에 깊이 반영됩니다. 
             그들은 관계에서 강한 감정적, 성적인 끌림을 경험하며, 이를 통해 상대빙과의 연결을 강화합니다. 
             Lake의 열정은 강렬하고 뜨거운 순간을 만들어내며, 이는 생기와 에너지를 느끼게 합니다.
@@ -43,8 +43,8 @@ export default function Lake() {
             </span>
             <br/>
 
-            <br/><span className="text-xl font-medium">즉흥적이고 모험적인 사랑</span><br/>
-            <span className="text-lg">
+            <br/><span className="text-xl font-bold lg:text-4xl">즉흥적이고 모험적인 사랑</span><br/><br/>
+            <span className="text-lg lg:text-xl">
             Lake는 즉흥적이고 자유로운 삶의 태도를 가지고 있습니다.
             그들은 계획에 얽매이지 않고 순간의 감정과 욕구에 따라 행동하는 경향이 있으며, 이는 새롭고 흥미로운 경험을 창출합니다.
             <br/><br/>
@@ -62,8 +62,8 @@ export default function Lake() {
             </span>
             <br/>
 
-            <br/><span className="text-xl font-medium">억압된 욕망의 해방</span><br/>
-            <span className="text-lg">
+            <br/><span className="text-xl font-bold lg:text-4xl">억압된 욕망의 해방</span><br/><br/>
+            <span className="text-lg lg:text-xl">
             Lake는 억압된 욕망을 자극하고 해방시키는 데 능숙합니다. 
             그들은 상대방이 일상에서 경험하지 못한 감정과 욕구를 탐색하게 하며, 이는 상대방에게 새로운 자아 발견의 기회를 제공합니다. 
             Lake의 이러한 능력은 관계에서 숨겨진 감정과 욕망의 층을 드러내며, 이는 상대방에게 강렬한 정서적 경험을 선사합니다.
