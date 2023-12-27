@@ -186,7 +186,7 @@ export default function ResultPage(props) {
             <div className="text-2xl px-[1.25rem] py-[2.5rem]">
             당신의 LoReT: {your_result} 
             </div>
-            <div className="mx-5 my-5 ">
+            <div className="mx-[1.25rem] my-[1.25rem] ">
             <img src = {RenderImage(your_result)} width="100%" height="100%" /> 
             </div>
 
@@ -200,9 +200,9 @@ export default function ResultPage(props) {
             </div>
             
             <div className="text-center font-semibold py-[0.5rem] px-[1.0rem] mx-[5.0rem]  mt-[2.5rem]">
-            <div className='py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold 
-            border border-transparent bg-gray-800 text-white
-            disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600'>
+            <div className='py-3 px-4 inline-flex items-center gap-x-2 font-light text-sm rounded-full
+            border-2  bg-black text-white shadow-md
+            disabled:opacity-50 disabled:pointer-events-none '>
             <NextPage id={id} ></NextPage>  
             </div>
             </div>

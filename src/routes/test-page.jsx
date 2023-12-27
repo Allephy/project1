@@ -100,9 +100,9 @@ function TestPage (props) {
             <Header2></Header2>
             <TestPage id={id} ></TestPage>
             <div className="text-center font-semibold py-[0.5rem] px-[1.0rem] mx-[5.0rem]  mt-[2.5rem]">
-            <div className='py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold 
-            border border-transparent bg-gray-800 text-white
-            disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600'>
+            <div className='py-3 px-4 inline-flex items-center gap-x-2 font-light text-sm rounded-full
+            border-2  bg-black text-white shadow-md
+            disabled:opacity-50 disabled:pointer-events-none '>
             <NextPage id={id} ></NextPage>  
             </div>
             </div>

@@ -39,10 +39,10 @@ function App() {
   
 
   return (
-    <div className="bg-gray-600 text-white sm:max-lg:mx-[0.01rem] lg:px-[30rem] text-xl ">
+    <div className="bg-white  text-black sm:max-lg:mx-[0.01rem] lg:px-[30rem] text-xl ">
       {isLoading ? <LoadingScreen /> : (
         <BrowserRouter>
-        <div className="fixed top-0 left-0 right-0 sm:max-lg grid grid-cols-3 gap-4  bg-black  text-white shadow-lg text-sm py-[0.25rem] z-40  ">
+        <div className="fixed top-0 left-0 right-0 sm:max-lg grid grid-cols-3 gap-4  bg-white text-black shadow-lg text-sm py-[0.75rem] z-40  ">
               <a className="px-[0.75rem]" href="/">LoReT Test</a>
               <a className="px-[0.75rem]" href="/testpage">검사 하기</a>     
               <a className="px-[0.75rem]" href="/typeview">유형</a>
