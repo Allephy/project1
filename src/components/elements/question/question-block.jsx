@@ -1,15 +1,6 @@
 import React, { useRef, useEffect } from 'react';
 
 export default function QuestionBlock(props){
-    //const clicking = (event) => useEffect(()=>{props.setAns(event.target.value)})
-    console.log('props.ans is successfully transmitted', props.ans);
-    /*function clicked(x, ) {
-        const newTopics = []
-        for(let i=0; i<10; i++){
-            if()
-        }
-
-    }*/
     const clicked = (event) => {
         const newAns = []
         for(let i=0; i<8; i++){
@@ -19,7 +10,6 @@ export default function QuestionBlock(props){
                 newAns.push(props.ans[i]);
             }
         }
-        console.log(event.target.value);
         props.setAns(newAns)
     }
     return(
@@ -32,7 +22,7 @@ export default function QuestionBlock(props){
                     <input
                     className=""
                     type="radio"
-                    name="option"
+                    name="name"
                     id="strongly agree"
                     value='+2'
                     onChange={clicked}
@@ -109,7 +99,6 @@ export default function QuestionBlock(props){
         </div>
         
 
-        
     );
 }
 

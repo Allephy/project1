@@ -25,12 +25,12 @@ let FSScore = 0;
 
 export default function ResultLogic() {
     
-    DPScore = Number(DPScoreList[0].value) * Number(DPQuestion[0].statement) + Number(DPScoreList[1].value) * Number(DPQuestion[1].statement) + Number(DPScoreList[2].value) * Number(DPQuestion[2].statement) + Number(DPScoreList[3].value) * Number(DPQuestion[3].statement) + Number(DPScoreList[4].value) * Number(DPQuestion[4].statement) + Number(DPScoreList[5].value) * Number(DPQuestion[5].statement) + Number(DPScoreList[6].value) * Number(DPQuestion[6].statement) + Number(DPScoreList[7].value) * Number(DPQuestion[7].statement);
-    CKScore = Number(CKScoreList[0].value) * Number(CKQuestion[0].statement) + Number(CKScoreList[1].value) * Number(CKQuestion[1].statement) + Number(CKScoreList[2].value) * Number(CKQuestion[2].statement) + Number(CKScoreList[3].value) * Number(CKQuestion[3].statement) + Number(CKScoreList[4].value) * Number(CKQuestion[4].statement) + Number(CKScoreList[5].value) * Number(CKQuestion[5].statement) + Number(CKScoreList[6].value) * Number(CKQuestion[6].statement) + Number(CKScoreList[7].value) * Number(CKQuestion[7].statement);
-    ANScore = Number(ANScoreList[0].value) * Number(ANQuestion[0].statement) + Number(ANScoreList[1].value) * Number(ANQuestion[1].statement) + Number(ANScoreList[2].value) * Number(ANQuestion[2].statement) + Number(ANScoreList[3].value) * Number(ANQuestion[3].statement) + Number(ANScoreList[4].value) * Number(ANQuestion[4].statement) + Number(ANScoreList[5].value) * Number(ANQuestion[5].statement) + Number(ANScoreList[6].value) * Number(ANQuestion[6].statement) + Number(ANScoreList[7].value) * Number(ANQuestion[7].statement);
-    FSScore = Number(FSScoreList[0].value) * Number(FSQuestion[0].statement) + Number(FSScoreList[1].value) * Number(FSQuestion[1].statement) + Number(FSScoreList[2].value) * Number(FSQuestion[2].statement) + Number(FSScoreList[3].value) * Number(FSQuestion[3].statement) + Number(FSScoreList[4].value) * Number(FSQuestion[4].statement) + Number(FSScoreList[5].value) * Number(FSQuestion[5].statement) + Number(FSScoreList[6].value) * Number(FSQuestion[6].statement) + Number(FSScoreList[7].value) * Number(FSQuestion[7].statement);
+    DPScore = (Number(DPScoreList[0].value) * Number(DPQuestion[0].statement)) + (Number(DPScoreList[1].value) * Number(DPQuestion[1].statement)) + (Number(DPScoreList[2].value) * Number(DPQuestion[2].statement)) + (Number(DPScoreList[3].value) * Number(DPQuestion[3].statement)) + (Number(DPScoreList[4].value) * Number(DPQuestion[4].statement)) + (Number(DPScoreList[5].value) * Number(DPQuestion[5].statement)) + (Number(DPScoreList[6].value) * Number(DPQuestion[6].statement)) + (Number(DPScoreList[7].value) * Number(DPQuestion[7].statement));
+    CKScore = (Number(CKScoreList[0].value) * Number(CKQuestion[0].statement)) + (Number(CKScoreList[1].value) * Number(CKQuestion[1].statement)) + (Number(CKScoreList[2].value) * Number(CKQuestion[2].statement)) + (Number(CKScoreList[3].value) * Number(CKQuestion[3].statement)) + (Number(CKScoreList[4].value) * Number(CKQuestion[4].statement)) + (Number(CKScoreList[5].value) * Number(CKQuestion[5].statement)) + (Number(CKScoreList[6].value) * Number(CKQuestion[6].statement)) + (Number(CKScoreList[7].value) * Number(CKQuestion[7].statement));
+    ANScore = (Number(ANScoreList[0].value) * Number(ANQuestion[0].statement)) + (Number(ANScoreList[1].value) * Number(ANQuestion[1].statement)) + (Number(ANScoreList[2].value) * Number(ANQuestion[2].statement)) + (Number(ANScoreList[3].value) * Number(ANQuestion[3].statement)) + (Number(ANScoreList[4].value) * Number(ANQuestion[4].statement)) + (Number(ANScoreList[5].value) * Number(ANQuestion[5].statement)) + (Number(ANScoreList[6].value) * Number(ANQuestion[6].statement)) + (Number(ANScoreList[7].value) * Number(ANQuestion[7].statement));
+    FSScore = (Number(FSScoreList[0].value) * Number(FSQuestion[0].statement)) + (Number(FSScoreList[1].value) * Number(FSQuestion[1].statement)) + (Number(FSScoreList[2].value) * Number(FSQuestion[2].statement)) + (Number(FSScoreList[3].value) * Number(FSQuestion[3].statement)) + (Number(FSScoreList[4].value) * Number(FSQuestion[4].statement)) + (Number(FSScoreList[5].value) * Number(FSQuestion[5].statement)) + (Number(FSScoreList[6].value) * Number(FSQuestion[6].statement)) + (Number(FSScoreList[7].value) * Number(FSQuestion[7].statement));
 
-    console.log('sending Out: DPScoreList in result-logic', DPScoreList);
+    console.log('DPScoreList in result-logic', DPScoreList);
     console.log('CKScoreList is ready', CKScoreList);
     console.log('ANScoreList is ready', ANScoreList);
     console.log('FSScoreList is ready', FSScoreList);
@@ -39,6 +39,19 @@ export default function ResultLogic() {
     console.log('CKScore', CKScore);
     console.log('ANScore', ANScore);
     console.log('FSScore', FSScore);
+
+
+    console.log('DPScore[0]_statement', DPQuestion[0].statement);
+    console.log('DPScore[1]_statement', DPQuestion[1].statement);
+    console.log('DPScore[2]_statement', DPQuestion[2].statement);
+    console.log('DPScore[3]_statement', DPQuestion[3].statement);
+    console.log('DPScore[4]_statement', DPQuestion[4].statement);
+    console.log('DPScore[5]_statement', DPQuestion[5].statement);
+    console.log('DPScore[6]_statement', DPQuestion[6].statement);
+    console.log('DPScore[7]_statement', DPQuestion[7].statement);
+
+
+
     
 
 
@@ -80,8 +93,6 @@ export default function ResultLogic() {
     const percentage = resultCalculation(scoreArr);
     const type = chooseType(scoreArr);
     
-    console.log('type: ', type)
-
 
 
     function writeUserData(percentage,type) {
@@ -116,21 +127,21 @@ function resultCalculation(arr) {
     let $percentage = [];
     let v;
 
-    v = scoreArr[0].score / 16 * 100;
+    v = scoreArr[0].score / 32 * 100;
     if(scoreArr[0].name === "D") { v = -v; $percentage.push({id: 1, value: v}); }
     else { $percentage.push({id: 1, value: v});}
 
 
-    v = scoreArr[1].score / 16 * 100;
+    v = scoreArr[1].score / 32 * 100;
     if(scoreArr[1].name === "C") { v = -v; $percentage.push({id: 2, value: v}); }
     else { $percentage.push({id: 2, value: v}); }
 
-    v = scoreArr[2].score / 16 * 100;
+    v = scoreArr[2].score / 32 * 100;
     if(scoreArr[2].name === "A") { v = -v; $percentage.push({id: 3, value: v}); }
     else { $percentage.push({id: 3, value: v}); }
 
 
-    v = scoreArr[3].score / 16 * 100;
+    v = scoreArr[3].score / 32 * 100;
     if(scoreArr[3].name === "F") { v = -v; $percentage.push({id: 4, value: v}); }
     else { $percentage.push({id: 4, value: v}); }
 
