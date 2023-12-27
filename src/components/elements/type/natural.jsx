@@ -5,7 +5,7 @@
 export default function Natural() {
     window.scroll(top);
     return (
-        <div className="mx-5 my-10 font-light">
+        <div className="mx-5 font-light"><br/><br/>
             <span className="text-2xl font-medium lg:text-6xl">Natural<br/></span>
             <div>
 
@@ -73,10 +73,8 @@ export default function Natural() {
             Natural은 자신의 창의적인 아이디어와 몽상에 몰두하며, 이를 통해 주변 세계에 새로운 시각과 영감을 제공하지만, 
             때로는 사회적 상호작용과 깊은 인간 관계 형성에 있어서 어려움을 겪습니다.
             </span>
-            <br/>
-
+            <br/><br/><br/>   
             </div>
-
         </div>
     );
 }

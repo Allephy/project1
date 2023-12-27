@@ -39,20 +39,14 @@ function App() {
   
 
   return (
-    <div className="sm:max-lg:mx-[0.01rem] lg:mx-[40rem] text-xl">
+    <div className="bg-gray-600 text-white sm:max-lg:mx-[0.01rem] lg:px-[30rem] text-xl ">
       {isLoading ? <LoadingScreen /> : (
         <BrowserRouter>
-        <ul className="fixed top-0 sm:max-lg flex  ml-5 font-light mt-1 mb-3 border-d-black ">
-          <li className="mr-3">
-              <a className="inline-block border  border-black rounded bg-black text-white hover:border-gray-200 text-black-500 hover:bg-gray-200 py-1 px-3" href="/">Home</a>
-          </li>
-          <li className="mr-3">
-              <a className="inline-block border border-black rounded bg-black text-white hover:border-gray-200 text-black-500 hover:bg-gray-200 py-1 px-3" href="/testpage">Test</a>
-          </li>
-          <li className="mr-3">
-              <a className="inline-block border border-black rounded bg-black text-white hover:border-gray-200 text-black-500 hover:bg-gray-200 py-1 px-3" href="/typeview">Type</a>
-          </li>
-        </ul>
+        <div className="fixed top-0 left-0 right-0 sm:max-lg grid grid-cols-3 gap-4  bg-black  text-white shadow-lg text-sm py-[0.25rem] z-40  ">
+              <a className="px-[0.75rem]" href="/">LoReT Test</a>
+              <a className="px-[0.75rem]" href="/testpage">검사 하기</a>     
+              <a className="px-[0.75rem]" href="/typeview">유형</a>
+        </div> 
 
           <Routes>
             <Route path="/" element={<Layout />} />

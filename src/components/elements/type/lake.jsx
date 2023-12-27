@@ -5,7 +5,7 @@
 export default function Lake() {
     window.scroll(top);
     return (
-        <div className="mx-5 my-10 font-light">
+        <div className="mx-5 font-light"><br/><br/>
             <span className="text-2xl font-medium lg:text-6xl">Lake<br/></span>
             <div>
 
@@ -77,12 +77,8 @@ export default function Lake() {
             그들의 영향력으로 상대는 자신의 내면에 숨겨진 욕망과 감정을 자유롭게 표현하게 되며, 이는 새로운 자기 인식과 자유의 경험을 제공합니다. 
             Lake와의 관계는 상대방 스스로가 정체성을 더 깊이 탐색하고 발전시킬 기회를 제공합니다.
             </span>
-            <br/>
-
-            
-
-            </div>
-
+            <br/><br/><br/>
+            </div>     
         </div>
     );
 }

@@ -6,7 +6,7 @@
 export default function Siren() {
     window.scroll(top);
     return (
-        <div className="mx-5 my-10 font-light">
+        <div className="mx-5 font-light"><br/><br/>
             <span className="text-2xl font-medium lg:text-6xl">Siren<br/></span>
             <div>
 
@@ -76,11 +76,7 @@ export default function Siren() {
             Siren은 자신의 외모와 말솜씨를 이용하여 상대에게 강렬한 인상을 남깁니다.   
             또한, Siren은 자신에 대한 높은 인지력과 자기객관화를 통해 복잡한 상황에서도 자신의 목적을 달성합니다.
             </span>
-            <br/>
-
-            
-
-
+            <br/><br/><br/>
             </div>
 
         </div>

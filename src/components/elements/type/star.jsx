@@ -4,7 +4,7 @@
 export default function Star() {
     window.scroll(top);
     return (
-        <div className="mx-5 my-10 font-light">
+        <div className="mx-5 font-light"> <br/><br/>
             <span className="text-2xl font-medium lg:text-6xl">Star<br/></span>
             <div>
 
@@ -74,9 +74,7 @@ export default function Star() {
             이는 파트너에게 Star와의 관계가 보통의 관계와는 다른 특별한 경험이라는 것을 깨닫게 합니다.
 
             </span>
-            <br/>
-
-
+            <br/><br/><br/>
             </div>
 
         </div>

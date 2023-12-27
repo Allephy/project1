@@ -6,7 +6,7 @@
 export default function Ideallover() {
     window.scroll(top);
     return (
-        <div className="mx-5 my-10 font-light">
+        <div className="mx-5 font-light"><br/><br/>
             <span className="text-2xl font-medium lg:text-6xl">Ideal Lover<br/></span>
             <div>
 
@@ -76,10 +76,8 @@ export default function Ideallover() {
             그들은 상대의 감정을 세심하게 이해하고, 어려움이나 스트레스를 느낄 때 적극적으로 도와줍니다. 
             이러한 감정적인 지원은 상대가 어떠한 상황에서도 안정적인 기반을 느낄 수 있게 합니다.
             </span>
-            <br/>
-
+            <br/><br/><br/>
             </div>
-
         </div>
     );
 }

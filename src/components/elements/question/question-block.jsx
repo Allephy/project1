@@ -23,46 +23,31 @@ export default function QuestionBlock(props){
         props.setAns(newAns)
     }
     return(
-        <div className = "aspect-ratio: auto container box-border shadow-lg h-70 w-auto px-5 py-10 mx-5 my-10 outline outline-1  outline-offset-2 text-sm lg:text-lg" >
+        <div className = "border-b-2  border-t-2 h-70  px-5 py-10 mx-5 my-5  text-sm lg:text-lg" >
             <form>
                 <fieldset>
-                <legend className='mb-5' ><span>{props.name}</span></legend>
-                    <div className="mb-2 block min-h-24 pl-[1.5rem]" >
+                <legend className='mb-5 text-lg lg:text-xl' ><span>{props.name}</span></legend>
+                
+                <div className="" >
                     <input
-                    className="relative float-left -ml-[1.5rem] mr-1 mt-2 h-5 w-5 rounded-full border-5 border-solid border-neutral-300 
-                    before:pointer-events-none before:absolute before:h-4 before:w-4 before:scale-0 before:rounded-full before:bg-transparent 
-                    before:opacity-0 before:shadow-[0px_0px_0px_13px_transparent] before:content-[''] 
-                    after:absolute after:z-[1] after:block after:h-4 after:w-4 after:rounded-full after:content-[''] 
-                    checked:border-primary checked:before:opacity-[0.16] checked:after:absolute checked:after:left-1/2 checked:after:top-1/2 
-                    checked:after:h-[0.625rem] checked:after:w-[0.625rem] checked:after:rounded-full checked:after:border-primary checked:after:bg-primary 
-                    checked:after:content-[''] checked:after:[transform:translate(-50%,-50%)] 
-                    hover:cursor-pointer hover:before:opacity-[0.04] hover:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] 
-                    focus:shadow-none focus:outline-none focus:ring-0 focus:before:scale-100 focus:before:opacity-[0.12] focus:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] focus:before:transition-[box-shadow_0.2s,transform_0.2s] checked:focus:border-primary checked:focus:before:scale-100 checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca] checked:focus:before:transition-[box-shadow_0.2s,transform_0.2s] dark:border-neutral-600 dark:checked:border-primary dark:checked:after:border-primary dark:checked:after:bg-primary dark:focus:before:shadow-[0px_0px_0px_13px_rgba(255,255,255,0.4)] dark:checked:focus:border-primary dark:checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca]"
+                    className=""
                     type="radio"
-                    name="name"
+                    name="option"
                     id="strongly agree"
                     value='+2'
                     onChange={clicked}
                     />
                     <label
-                    className="mt-px inline-block pl-[0.15rem] hover:cursor-pointer "
+                    className=""
                     htmlFor=""
                     >
                     매우긍정
                     </label>
                     </div>
 
-                    <div className="mb-[0.125rem] block min-h-[1.5rem] pl-[1.5rem]" >
+                    <div className="" >
                     <input
-                    className="relative float-left -ml-[1.5rem] mr-1 mt-2 h-5 w-5 rounded-full border-5 border-solid border-neutral-300 
-                    before:pointer-events-none before:absolute before:h-4 before:w-4 before:scale-0 before:rounded-full before:bg-transparent 
-                    before:opacity-0 before:shadow-[0px_0px_0px_13px_transparent] before:content-[''] 
-                    after:absolute after:z-[1] after:block after:h-4 after:w-4 after:rounded-full after:content-[''] 
-                    checked:border-primary checked:before:opacity-[0.16] checked:after:absolute checked:after:left-1/2 checked:after:top-1/2 
-                    checked:after:h-[0.625rem] checked:after:w-[0.625rem] checked:after:rounded-full checked:after:border-primary checked:after:bg-primary 
-                    checked:after:content-[''] checked:after:[transform:translate(-50%,-50%)] 
-                    hover:cursor-pointer hover:before:opacity-[0.04] hover:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] 
-                    focus:shadow-none focus:outline-none focus:ring-0 focus:before:scale-100 focus:before:opacity-[0.12] focus:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] focus:before:transition-[box-shadow_0.2s,transform_0.2s] checked:focus:border-primary checked:focus:before:scale-100 checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca] checked:focus:before:transition-[box-shadow_0.2s,transform_0.2s] dark:border-neutral-600 dark:checked:border-primary dark:checked:after:border-primary dark:checked:after:bg-primary dark:focus:before:shadow-[0px_0px_0px_13px_rgba(255,255,255,0.4)] dark:checked:focus:border-primary dark:checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca]"
+                    className=""
                     type="radio"
                     name="name"
                     id="agree"
@@ -70,24 +55,16 @@ export default function QuestionBlock(props){
                     onChange={clicked}
                     />
                     <label
-                    className="mt-px inline-block pl-[0.15rem] hover:cursor-pointer"
+                    className=""
                     htmlFor=""
                     >
                     긍정
                     </label>
                     </div>
 
-                    <div className="mb-[0.125rem] block min-h-[1.5rem] pl-[1.5rem]" >
+                    <div className="" >
                     <input
-                    className="relative float-left -ml-[1.5rem] mr-1 mt-2 h-5 w-5 rounded-full border-5 border-solid border-neutral-300 
-                    before:pointer-events-none before:absolute before:h-4 before:w-4 before:scale-0 before:rounded-full before:bg-transparent 
-                    before:opacity-0 before:shadow-[0px_0px_0px_13px_transparent] before:content-[''] 
-                    after:absolute after:z-[1] after:block after:h-4 after:w-4 after:rounded-full after:content-[''] 
-                    checked:border-primary checked:before:opacity-[0.16] checked:after:absolute checked:after:left-1/2 checked:after:top-1/2 
-                    checked:after:h-[0.625rem] checked:after:w-[0.625rem] checked:after:rounded-full checked:after:border-primary checked:after:bg-primary 
-                    checked:after:content-[''] checked:after:[transform:translate(-50%,-50%)] 
-                    hover:cursor-pointer hover:before:opacity-[0.04] hover:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] 
-                    focus:shadow-none focus:outline-none focus:ring-0 focus:before:scale-100 focus:before:opacity-[0.12] focus:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] focus:before:transition-[box-shadow_0.2s,transform_0.2s] checked:focus:border-primary checked:focus:before:scale-100 checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca] checked:focus:before:transition-[box-shadow_0.2s,transform_0.2s] dark:border-neutral-600 dark:checked:border-primary dark:checked:after:border-primary dark:checked:after:bg-primary dark:focus:before:shadow-[0px_0px_0px_13px_rgba(255,255,255,0.4)] dark:checked:focus:border-primary dark:checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca]"
+                    className=""
                     type="radio"
                     name="name"
                     id="disagree"
@@ -95,24 +72,16 @@ export default function QuestionBlock(props){
                     onChange={clicked}
                     />
                     <label
-                    className="mt-px inline-block pl-[0.15rem] hover:cursor-pointer"
+                    className=""
                     htmlFor=""
                     >
                     부정
                     </label>
                     </div>
 
-                    <div className="mb-[0.125rem] block min-h-[1.5rem] pl-[1.5rem]" >
+                    <div className="" >
                     <input
-                    className="relative float-left -ml-[1.5rem] mr-1 mt-2 h-5 w-5 rounded-full border-5 border-solid border-neutral-300 
-                    before:pointer-events-none before:absolute before:h-4 before:w-4 before:scale-0 before:rounded-full before:bg-transparent 
-                    before:opacity-0 before:shadow-[0px_0px_0px_13px_transparent] before:content-[''] 
-                    after:absolute after:z-[1] after:block after:h-4 after:w-4 after:rounded-full after:content-[''] 
-                    checked:border-primary checked:before:opacity-[0.16] checked:after:absolute checked:after:left-1/2 checked:after:top-1/2 
-                    checked:after:h-[0.625rem] checked:after:w-[0.625rem] checked:after:rounded-full checked:after:border-primary checked:after:bg-primary 
-                    checked:after:content-[''] checked:after:[transform:translate(-50%,-50%)] 
-                    hover:cursor-pointer hover:before:opacity-[0.04] hover:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] 
-                    focus:shadow-none focus:outline-none focus:ring-0 focus:before:scale-100 focus:before:opacity-[0.12] focus:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] focus:before:transition-[box-shadow_0.2s,transform_0.2s] checked:focus:border-primary checked:focus:before:scale-100 checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca] checked:focus:before:transition-[box-shadow_0.2s,transform_0.2s] dark:border-neutral-600 dark:checked:border-primary dark:checked:after:border-primary dark:checked:after:bg-primary dark:focus:before:shadow-[0px_0px_0px_13px_rgba(255,255,255,0.4)] dark:checked:focus:border-primary dark:checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca]"
+                    className=""
                     type="radio"
                     name="name"
                     id="strongly disagree"
@@ -120,7 +89,7 @@ export default function QuestionBlock(props){
                     onChange={clicked}
                     />
                     <label
-                    className="mt-px inline-block pl-[0.15rem] hover:cursor-pointer"
+                    className=""
                     htmlFor=""
                     >
                     매우부정

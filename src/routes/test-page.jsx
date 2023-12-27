@@ -15,7 +15,7 @@ import ResultLogic from './result-logic';
 
 function Header2() {
     return(
-        <div className='font-light text-sm mx-5 underline decoration-1 lg:text-lg'>
+        <div className='font-light text-sm mx-[1.25rem] underline decoration-1 lg:text-lg'>
             1. 시험은 총 32문제입니다.<br/>
             2. 진솔하게 답변하는 것이 좋습니다.<br/>
             3. 답변하기 위해 깊은 생각을 하는 것을 추천합니다.
@@ -73,10 +73,10 @@ function TestPage (props) {
         console.log('props', id)
         let move = null;
         if (id <= 3) {
-            move = <button onClick={Next} className= "mx-auto underline decoration-1">다음 페이지</button>
+            move = <button onClick={Next} className= "mx-auto">다음 페이지</button>
         } else if (id === 4) { 
             // id가 4가 된 후 submit을 하면, result-page로 
-            move = <input type='submit' value='Get Your Result' className= "mx-auto underline decoration-1" onClick={() => navigate("/resultlogic") } ></input>
+            move = <input type='submit' value='Get Your Result' className= "mx-auto" onClick={() => navigate("/resultlogic") } ></input>
         } else if (id === 5) {
             move = null;
         }
@@ -96,14 +96,17 @@ function TestPage (props) {
     
     
         return(
-        <div className='mt-20'>
+        <div> <br/><br/> 
             <Header2></Header2>
             <TestPage id={id} ></TestPage>
-            <div className="text-center mx-20  mt-10 mb-20">
-            <NextPage id={id} className="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow"></NextPage>   
+            <div className="text-center font-semibold py-[0.5rem] px-[1.0rem] mx-[5.0rem]  mt-[2.5rem]">
+            <div className='py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold 
+            border border-transparent bg-gray-800 text-white
+            disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600'>
+            <NextPage id={id} ></NextPage>  
             </div>
-            
-            
+            </div>
+
         </div>
 
         );

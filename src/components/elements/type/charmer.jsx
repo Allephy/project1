@@ -4,7 +4,7 @@
 export default function Charmer() {
     window.scroll(top);
     return (
-        <div className="mx-5 my-10 font-light">
+        <div className="mx-5 font-light"><br/><br/>
             <span className="text-2xl font-medium lg:text-6xl">Charmer<br/></span>
             <div>
 
@@ -77,11 +77,8 @@ export default function Charmer() {
             Charmer의 긍정적인 에너지와 태도는 연인에게도 영향을 미치며, 
             이는 서로에 대한 긍정적인 감정과 만족도를 증가시킵니다. 
             </span>
-            <br/>
-
-
+            <br/><br/><br/>
             </div>
-
         </div>
     );
 }

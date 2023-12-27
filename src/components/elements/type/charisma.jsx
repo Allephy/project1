@@ -5,7 +5,7 @@ export default function Charisma() {
     window.scroll(top);
     return (
 
-        <div className="mx-5 my-10 font-light">
+        <div className="mx-5 font-light"> <br/><br/>
             <span className="text-2xl font-medium lg:text-6xl">Charisma<br/></span>
             <div>
             
@@ -64,10 +64,8 @@ export default function Charisma() {
             Charisma는 다양한 감정적 경험을 깊이 있게 체험하며, 이러한 감정의 다층성은 Charisma는의 인간적인 매력과 깊이를 더해줍니다. 
             Charisma는 기쁨, 슬픔, 열정, 분노와 같은 감정을 풍부하게 경험하며, 이를 통해 자신과 세계에 대한 더 깊은 이해를 얻습니다.
             </span>
-            <br/>
-            
+            <br/><br/><br/>
             </div>
-
         </div>
 
         

@@ -5,7 +5,7 @@
 export default function Coquette() {
     window.scroll(top);
     return (
-        <div className="mx-5 my-10 font-light">
+        <div className="mx-5 font-light"><br/><br/>
             <span className="text-2xl font-medium lg:text-6xl">Coquette<br/></span>
             <div>
 
@@ -64,11 +64,8 @@ export default function Coquette() {
             이러한 행동은 상대방에게 혼란과 의문을 불러일으키며, 때때로  Coquette의 행동은 악의적으로 보일 수 있습니다. 
             Coquette는 상대의 죄책감과 호기심을 불러일으키는 존재로, Coquette의 의도와 행동은 항상 예측하기 어렵습니다.
             </span>
-            <br/>
-
-
+            <br/><br/><br/>
             </div>
-
         </div>
     );
 }
