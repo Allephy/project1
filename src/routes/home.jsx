@@ -4,7 +4,7 @@ export default function Home(){
         <div className="mb:flex font-light mx-4 tracking-wide leading-loose">
             <h5 className="text-2xl text-justify mb-5">연인역할유형검사 <br/> <span className="text-xl">Lovers' Role Type Test (LoReT Test)</span></h5>
             <Link to='/testpage'>
-            <img src="/icon.png" alt="The Art of Seduction" height="100%" width="100%" className="mx-auto mb-5" />
+            <img src="/icon.png" alt="LoReT Test" height="100%" width="100%" className="mx-auto mb-5" />
             </Link>
             <a className="text-2xl font-light underline decoration-1 mx-5" href="/testpage">검사 실시</a>
             <h1 className="text-lg mx-5">
@@ -28,8 +28,6 @@ export default function Home(){
             하지만, 어쩌면 가장 중요한 건 '있는 그 자체를 받아들인다'는 걸지도 모르겠습니다.
             </h1>
             <br/>
-            
-            <h1 className="text-sm font-light mx-5 mb-8">Contract Us: <br/> iforgoten@naver.com  &  lightwalk12@gmail.com</h1>
             
        </div>
         
