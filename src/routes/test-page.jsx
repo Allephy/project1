@@ -96,7 +96,7 @@ function TestPage (props) {
     
     
         return(
-        <div>
+        <div className='mt-20'>
             <Header2></Header2>
             <TestPage id={id} ></TestPage>
             <div className="text-center mx-20  mt-10 mb-20">

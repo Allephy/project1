@@ -3,6 +3,7 @@
 //Coquet 	4. DFCTM, DFCFM,*
 
 export default function Coquette() {
+    window.scroll(top);
     return (
         <div className="mx-5 my-10 font-light">
             <span className="text-2xl font-medium lg:text-6xl">Coquette<br/></span>

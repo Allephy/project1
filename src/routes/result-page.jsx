@@ -183,7 +183,7 @@ export default function ResultPage(props) {
         return(
         <div>
 
-            <div className="text-2xl mx-5">
+            <div className="text-2xl mx-5 mt-10">
             {your_result} 
             </div>
             <div className="mx-5 my-5 ">

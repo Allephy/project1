@@ -4,6 +4,7 @@
 //IdealLover 	3. PFCTM, PFCFM, PFCTP, PFCTP,
 
 export default function Ideallover() {
+    window.scroll(top);
     return (
         <div className="mx-5 my-10 font-light">
             <span className="text-2xl font-medium lg:text-6xl">Ideal Lover<br/></span>

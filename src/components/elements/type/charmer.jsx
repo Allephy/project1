@@ -2,6 +2,7 @@
 
 
 export default function Charmer() {
+    window.scroll(top);
     return (
         <div className="mx-5 my-10 font-light">
             <span className="text-2xl font-medium lg:text-6xl">Charmer<br/></span>
@@ -68,7 +69,7 @@ export default function Charmer() {
             이러한 칭찬은 상대방 스스로가 자신에 대해 긍정적으로 생각하도록 도와주며, 그들의 자존감을 높입니다. 
             Charmer는 상대의 작은 성공에도 관심을 기울이고, 그들의 노력과 기여를 크게 인정합니다.
             <br/><br/>
-            만약, 상대방이 새로운 도전을 맞닥뜨렸을 다면,Charmer는 상대를 격려하고 긍정적인 피드백을 제공합니다. 
+            만약, 상대방이 새로운 도전에 맞닥뜨린다면 ,Charmer는 상대를 격려하고 긍정적인 피드백을 제공합니다. 
             이러한 격려와 피드백은 상대방 스스로가 자신의 능력을 믿고 목표에 도전하는 데 동기를 부여합니다. 
             Charmer는 상대방의 잠재력을 믿고, 그들이 성장하고 발전할 수 있도록 지원합니다.
             <br/><br/>

@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 export default function Home(){
     return (
         <div className="mb:flex font-light mx-4 tracking-wide leading-loose">
-            <h5 className="text-2xl text-justify mb-5">연인역할유형검사 <br/> <span className="text-xl">Lovers' Role Type Test (LoReT Test)</span></h5>
+            <h5 className="text-2xl text-justify mt-20 mb-5">연인역할유형검사 <br/> <span className="text-xl">Lovers' Role Type Test (LoReT Test)</span></h5>
             <Link to='/testpage'>
             <img src="/icon.png" alt="LoReT Test" height="100%" width="100%" className="mx-auto mb-5" />
             </Link>

@@ -3,6 +3,7 @@
 //Lake		6. PCCTP, PCCFP, PCNTP, PCNFP 
 
 export default function Lake() {
+    window.scroll(top);
     return (
         <div className="mx-5 my-10 font-light">
             <span className="text-2xl font-medium lg:text-6xl">Lake<br/></span>

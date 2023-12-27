@@ -4,6 +4,7 @@
 //Siren		8. DFCTP, DFCFP, *
 
 export default function Siren() {
+    window.scroll(top);
     return (
         <div className="mx-5 my-10 font-light">
             <span className="text-2xl font-medium lg:text-6xl">Siren<br/></span>

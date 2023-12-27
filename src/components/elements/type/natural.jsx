@@ -3,6 +3,7 @@
 //Natural 	7. DCNTP, DCNTM, DFNTP, DFNTM
 
 export default function Natural() {
+    window.scroll(top);
     return (
         <div className="mx-5 my-10 font-light">
             <span className="text-2xl font-medium lg:text-6xl">Natural<br/></span>

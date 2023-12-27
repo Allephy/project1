@@ -42,15 +42,15 @@ function App() {
     <div className="sm:max-lg:mx-[0.01rem] lg:mx-[40rem] text-xl">
       {isLoading ? <LoadingScreen /> : (
         <BrowserRouter>
-        <ul className="sm:max-lg flex font-light mt-1 mb-3 border-d-black">
+        <ul className="fixed top-0 sm:max-lg flex  ml-5 font-light mt-1 mb-3 border-d-black ">
           <li className="mr-3">
-              <a className="inline-block border  border-white rounded hover:border-gray-200 text-black-500 hover:bg-gray-200 py-1 px-3" href="/">Home</a>
+              <a className="inline-block border  border-black rounded bg-black text-white hover:border-gray-200 text-black-500 hover:bg-gray-200 py-1 px-3" href="/">Home</a>
           </li>
           <li className="mr-3">
-              <a className="inline-block border border-white rounded hover:border-gray-200 text-black-500 hover:bg-gray-200 py-1 px-3" href="/testpage">Test</a>
+              <a className="inline-block border border-black rounded bg-black text-white hover:border-gray-200 text-black-500 hover:bg-gray-200 py-1 px-3" href="/testpage">Test</a>
           </li>
           <li className="mr-3">
-              <a className="inline-block border border-white rounded hover:border-gray-200 text-black-500 hover:bg-gray-200 py-1 px-3" href="/typeview">Type</a>
+              <a className="inline-block border border-black rounded bg-black text-white hover:border-gray-200 text-black-500 hover:bg-gray-200 py-1 px-3" href="/typeview">Type</a>
           </li>
         </ul>
 
