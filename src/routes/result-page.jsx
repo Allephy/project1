@@ -5,6 +5,7 @@ import { useNavigate } from "react-router-dom";
 //testpage->result-logiv->result-page
 //ResultPage 구현
 
+
 export function RenderImage(name) {
     return `/images/${name}.png`;
 }
@@ -24,8 +25,26 @@ export default function ResultPage(props) {
         const percentage3 = Number(props.percentage[2].value) + 50;
         const percentage4 = Number(props.percentage[3].value) + 50;
 
-    
+        window.onload = function share(){
+        let shareData = {
+            title: 'MDN',
+            text: 'Learn web development on MDN!',
+            url: 'https://developer.mozilla.org',
+          }
         
+          const btn = document.querySelector('button');
+          const resultPara = document.querySelector('.result');
+        
+          btn.addEventListener('click', () => {
+            navigator.share(shareData)
+              .then(() =>
+                resultPara.textContent = 'MDN shared successfully'
+              )
+              .catch((e) =>
+                resultPara.textContent = 'Error: ' + e
+              )
+          });   
+        }
 
     
         function NextPage() {
@@ -34,21 +53,42 @@ export default function ResultPage(props) {
         setId(Number(id)+1);
         }  
         console.log('props', id)
-        let move = null;
+        let next_move = null;
         if (id < 5) {
-            move = <button onClick={Next}>Next Page</button>
+            next_move = <button onClick={Next}>다음</button>
         } else if (id === 5) {
-            move = <input type='submit' value='Get Your Result Type' onClick={TypeNavigation}></input>
+            next_move = <input type='submit' value='결과 확인하기' onClick={TypeNavigation}></input>
         } else if (id === 6) {
-            move = null;
+            next_move = null;
         }
-    
+
         return(
             <div>
-                {move}
+                {next_move}
             </div>
-        ); 
+            ); 
         };
+
+        function PrevPage() {
+            const Prev = (event) => {
+            event.preventDefault();
+            setId(Number(id)-1);
+            }  
+            console.log('props', id)
+            let prev_move = null;
+            if ((id > 1)&&(id < 6))  {
+                prev_move = <button onClick={Prev}>이전</button>
+            } 
+    
+            return(
+                <div>
+                    {prev_move}
+                </div>
+                ); 
+            };
+
+        
+    
         if (Number(id) === 1) {
 
             if( props.type === "Charisma") {
@@ -180,9 +220,11 @@ export default function ResultPage(props) {
         
         console.log('id', id);
     
-    
+        
+
+
         return(
-        <div>
+        <div><br/>
             <div className="text-2xl px-[1.25rem] py-[2.5rem]">
             당신의 LoReT: {your_result} 
             </div>
@@ -199,16 +241,23 @@ export default function ResultPage(props) {
             {result_element_show}
             </div>
             
-            <div className="text-center font-semibold py-[0.5rem] px-[1.0rem] mx-[5.0rem]  mt-[2.5rem]">
-            <div className='py-3 px-4 inline-flex items-center gap-x-2 font-light text-sm rounded-full
-            border-2  bg-black text-white shadow-md
+
+            
+            <div className="text-center font-semibold w-[2.5rem] py-[0.05rem] px-[0rem] mx-[5.00rem] ">
+            <div className='py-3 px-[0.5rem] items-center font-light text-sm rounded-full
+            border-2 border-black  bg-white text-black 
             disabled:opacity-50 disabled:pointer-events-none '>
-            <NextPage id={id} ></NextPage>  
+             <PrevPage id={id} ></PrevPage>  
             </div>
+            <div className='py-3 px-[0.5rem] items-center font-light text-sm rounded-full
+            border-1  bg-black text-white 
+            disabled:opacity-50 disabled:pointer-events-none '>
+             <NextPage id={id} ></NextPage>  
             </div>
 
-            <br/><br/><br/>
+            </div>
         </div>
+        
         )
 
     

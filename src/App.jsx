@@ -47,6 +47,17 @@ function App() {
               <a className="px-[0.75rem]" href="/testpage">검사 하기</a>     
               <a className="px-[0.75rem]" href="/typeview">유형</a>
         </div> 
+        <ul className="fixed top-0 sm:max-lg flex ml-5 font-light text-lg mt-1 mb-3 border-d-black ">
+          <li className="mr-3">
+              <a className="inline-block border  border-black rounded bg-black text-white hover:border-gray-200 text-black-500 hover:bg-gray-200 py-1 px-3" href="/">Home</a>
+          </li>
+          <li className="mr-3">
+              <a className="inline-block border border-black rounded bg-black text-white hover:border-gray-200 text-black-500 hover:bg-gray-200 py-1 px-3" href="/testpage">Test</a>
+          </li>
+          <li className="mr-3">
+              <a className="inline-block border border-black rounded bg-black text-white hover:border-gray-200 text-black-500 hover:bg-gray-200 py-1 px-3" href="/typeview">Type</a>
+          </li>
+        </ul>
 
           <Routes>
             <Route path="/" element={<Layout />} />

@@ -13,10 +13,10 @@ export default function QuestionBlock(props){
         props.setAns(newAns)
     }
     return(
-        <div className = "border-b-2  border-t-2 h-70  px-5 py-10 mx-5 my-5  text-sm lg:text-lg" >
+        <div className = "border-gray-300  border-b-2  border-t-2 h-[15.0rem]  px-[1.25rem] py-[2.5rem] mx-[1.25rem] my-[1.25rem] text-sm lg:text-lg" >
             <form>
                 <fieldset>
-                <legend className='mb-5 text-lg lg:text-xl' ><span>{props.name}</span></legend>
+                <legend className='mb-5 text-lg font-semibold lg:text-xl' ><span>{props.name}</span></legend>
                 
                 <div className="" >
                     <input

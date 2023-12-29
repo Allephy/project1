@@ -73,10 +73,10 @@ function TestPage (props) {
         console.log('props', id)
         let move = null;
         if (id <= 3) {
-            move = <button onClick={Next} className= "mx-auto">다음 페이지</button>
+            move = <button onClick={Next} className= "font-semibold">다음 페이지</button>
         } else if (id === 4) { 
             // id가 4가 된 후 submit을 하면, result-page로 
-            move = <input type='submit' value='Get Your Result' className= "mx-auto" onClick={() => navigate("/resultlogic") } ></input>
+            move = <input type='submit' value='결과 확인하기' className = "font-semibold" onClick={() => navigate("/resultlogic") } ></input>
         } else if (id === 5) {
             move = null;
         }
@@ -101,7 +101,7 @@ function TestPage (props) {
             <TestPage id={id} ></TestPage>
             <div className="text-center font-semibold py-[0.5rem] px-[1.0rem] mx-[5.0rem]  mt-[2.5rem]">
             <div className='py-3 px-4 inline-flex items-center gap-x-2 font-light text-sm rounded-full
-            border-2  bg-black text-white shadow-md
+            border-2  border-black bg-white text-black shadow-md
             disabled:opacity-50 disabled:pointer-events-none '>
             <NextPage id={id} ></NextPage>  
             </div>
