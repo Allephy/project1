@@ -76,7 +76,10 @@ export default function ResultPage(props) {
             }  
             console.log('props', id)
             let prev_move = null;
-            if ((id > 1)&&(id < 6))  {
+            if (id === 1 )  {
+                prev_move = <button>이전</button>
+            } 
+            else if ((id > 1)&&(id < 6))  {
                 prev_move = <button onClick={Prev}>이전</button>
             } 
     
@@ -241,21 +244,22 @@ export default function ResultPage(props) {
             {result_element_show}
             </div>
             
-
+            <div className="text-left font-semibold py-[0.5rem] px-[1.0rem] mx-[3.0rem]  mt-[2.5rem]">
+            <div className='py-3 px-4 inline-flex items-center gap-x-2 font-light text-lg rounded-lg
+            border-b-2 border-r-2 border-gray-300  bg-white text-black shadow-lg drop-shadow-md
+            disabled:opacity-50 disabled:pointer-events-none '>
+            <PrevPage id={id} ></PrevPage>  
+            </div>
+            </div>
+            <div className="text-right font-semibold py-[0.5rem] px-[1.0rem] mx-[3.0rem] -mt-[4.5rem]">
+            <div className='py-3 px-4 inline-flex items-center gap-x-2 font-light text-lg rounded-lg
+            border-b-2 border-r-2 border-gray-300 bg-white text-black shadow-lg drop-shadow-md
+            disabled:opacity-50 disabled:pointer-events-none '>
+            <NextPage id={id} ></NextPage>  
+            </div>
+            </div>
             
-            <div className="text-center font-semibold w-[2.5rem] py-[0.05rem] px-[0rem] mx-[5.00rem] ">
-            <div className='py-3 px-[0.5rem] items-center font-light text-sm rounded-full
-            border-2 border-black  bg-white text-black 
-            disabled:opacity-50 disabled:pointer-events-none '>
-             <PrevPage id={id} ></PrevPage>  
-            </div>
-            <div className='py-3 px-[0.5rem] items-center font-light text-sm rounded-full
-            border-1  bg-black text-white 
-            disabled:opacity-50 disabled:pointer-events-none '>
-             <NextPage id={id} ></NextPage>  
-            </div>
-
-            </div>
+           
         </div>
         
         )

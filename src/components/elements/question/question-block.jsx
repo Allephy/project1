@@ -13,63 +13,13 @@ export default function QuestionBlock(props){
         props.setAns(newAns)
     }
     return(
-        <div className = "border-gray-300  border-b-2  border-t-2 h-[15.0rem]  px-[1.25rem] py-[2.5rem] mx-[1.25rem] my-[1.25rem] text-sm lg:text-lg" >
+        <div className = "border-gray-300  border-b-2  border-r-2 shadow-lg drop-shadow-md rounded-md h-[17.5rem] px-[1.25rem] py-[2.5rem] mx-[1.25rem] my-[1.5rem] text-sm lg:text-lg" >
             <form>
                 <fieldset>
-                <legend className='mb-5 text-lg font-semibold lg:text-xl' ><span>{props.name}</span></legend>
+                <legend className='mb-[1.0rem] text-lg lg:text-xl' ><span>{props.name}</span></legend>
                 
-                <div className="" >
-                    <input
-                    className=""
-                    type="radio"
-                    name="name"
-                    id="strongly agree"
-                    value='+2'
-                    onChange={clicked}
-                    />
-                    <label
-                    className=""
-                    htmlFor=""
-                    >
-                    매우긍정
-                    </label>
-                    </div>
-
-                    <div className="" >
-                    <input
-                    className=""
-                    type="radio"
-                    name="name"
-                    id="agree"
-                    value='+1'
-                    onChange={clicked}
-                    />
-                    <label
-                    className=""
-                    htmlFor=""
-                    >
-                    긍정
-                    </label>
-                    </div>
-
-                    <div className="" >
-                    <input
-                    className=""
-                    type="radio"
-                    name="name"
-                    id="disagree"
-                    value='-1'
-                    onChange={clicked}
-                    />
-                    <label
-                    className=""
-                    htmlFor=""
-                    >
-                    부정
-                    </label>
-                    </div>
-
-                    <div className="" >
+                <div className='absolute flex item-center mx-auto before:my-[0.5rem] appearance-none'>
+                    <div className="flex me-[1.0rem] py-[0.25rem]" >
                     <input
                     className=""
                     type="radio"
@@ -78,19 +28,57 @@ export default function QuestionBlock(props){
                     value='-2'
                     onChange={clicked}
                     />
-                    <label
+                    
+                    </div>
+
+                    <div className="flex  me-[1.0rem] py-[0.25rem]" >
+                    <input
                     className=""
-                    htmlFor=""
-                    >
-                    매우부정
-                    </label>
+                    type="radio"
+                    name="name"
+                    id="disagree"
+                    value='-1'
+                    onChange={clicked}
+                    />
+                    </div>
+
+                    <div className="flex me-[1.0rem] py-[0.25rem]" >
+                    <input
+                    className=""
+                    type="radio"
+                    name="name"
+                    id="neutral"
+                    value='0'
+                    onChange={clicked}
+                    />
+                    
                     </div>
 
 
-
-
+                    <div className="flex me-[1.0rem] py-[0.25rem]" >
+                    <input
+                    className=""
+                    type="radio"
+                    name="name"
+                    id="agree"
+                    value='+1'
+                    onChange={clicked}
+                    />
                     
+                    </div>
 
+                    <div className="flex me-[1.0rem] py-[0.25rem]" >
+                    <input
+                    className=""
+                    type="radio"
+                    name="name"
+                    id="strongly agree"
+                    value='+2'
+                    onChange={clicked}
+                    />
+                    
+                    </div>
+                </div>
 
                     
             </fieldset>
@@ -98,7 +86,6 @@ export default function QuestionBlock(props){
             
         </div>
         
-
     );
 }
 
