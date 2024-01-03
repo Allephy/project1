@@ -20,10 +20,10 @@ export default function ResultPage(props) {
 
         const [id, setId] = useState(1);
 
-        const percentage1 = Number(props.percentage[0].value) + 50;
-        const percentage2 = Number(props.percentage[1].value) + 50;
-        const percentage3 = Number(props.percentage[2].value) + 50;
-        const percentage4 = Number(props.percentage[3].value) + 50;
+        const percentage1 = Math.round(Number(props.percentage[0].value) + 50);
+        const percentage2 = Math.round(Number(props.percentage[1].value) + 50);
+        const percentage3 = Math.round(Number(props.percentage[2].value) + 50);
+        const percentage4 = Math.round(Number(props.percentage[3].value) + 50);
 
         window.onload = function share(){
         let shareData = {
